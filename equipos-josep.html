@@ -25,45 +25,70 @@
             </li>
         </ul>
     </nav>
-   <main class="equipo-entrenador">
-      <div class="pokemon-linea" id="pokemon-container">
-      </div>
-  </main>
-  <script type="module">
-  import { cargarDatos, calcularKC } from './data-loader.js';
 
-  document.addEventListener("DOMContentLoaded", async () => {
-    const data = await cargarDatos();
-    const entrenador = data.entrenadores.josep; // Cambia según la página
-    
-    // Actualiza el header
-    document.querySelector('.entrenador-header h1').textContent = `Equipo de ${entrenador.nombre}`;
-    document.querySelector('.entrenador-stats').innerHTML = `
-      <span>🗡️ Kills: ${entrenador.kills}</span>
-      <span>☠️ Muertes: ${entrenador.deaths}</span>
-      <span>⚔️ Combates: ${entrenador.battles}</span>
-      <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
-    `;
-    
-    // Genera los Pokémon
-    const pokemonHTML = entrenador.equipo.map(p => `
-      <div class="pokemon-horizontal">
-        <img src="${p.imagen}" alt="${p.nombre}">
-        <h3>${p.nombre}</h3>
-        <div class="stats">
-          <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
-          <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
-          <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
-          <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
+    <main class="equipo-entrenador">
+        <!-- Añadí la sección del header del entrenador que faltaba -->
+        <header class="entrenador-header">
+            <img src="https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png" alt="Josep">
+            <div>
+                <h1>Equipo de Josep</h1>
+                <div class="entrenador-stats">
+                    <!-- Las stats se llenarán con JavaScript -->
+                </div>
+            </div>
+        </header>
+
+        <div class="pokemon-linea" id="pokemon-container">
+            <!-- Los Pokémon se insertarán aquí -->
         </div>
-        <div class="ataques-horizontal">
-          ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
-        </div>
-      </div>
-    `).join('');
-    
-    document.querySelector('.pokemon-linea').innerHTML = pokemonHTML;
-  });
-</script>
+    </main>
+
+    <script type="module">
+        import { cargarDatos, calcularKC } from './data-loader.js';
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const data = await cargarDatos();
+                const entrenador = data.entrenadores.josep;
+                
+                // Actualiza el header
+                const header = document.querySelector('.entrenador-header');
+                if (header) {
+                    header.querySelector('img').src = entrenador.imagen;
+                    header.querySelector('h1').textContent = `Equipo de ${entrenador.nombre}`;
+                    header.querySelector('.entrenador-stats').innerHTML = `
+                        <span>🗡️ Kills: ${entrenador.kills}</span>
+                        <span>☠️ Muertes: ${entrenador.deaths}</span>
+                        <span>⚔️ Combates: ${entrenador.battles}</span>
+                        <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+                    `;
+                }
+                
+                // Genera los Pokémon
+                const container = document.getElementById('pokemon-container');
+                if (container) {
+                    container.innerHTML = entrenador.equipo.map(p => `
+                        <div class="pokemon-horizontal">
+                            <img src="${p.imagen}" alt="${p.nombre}">
+                            <h3>${p.nombre}</h3>
+                            <div class="stats">
+                                <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
+                                <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
+                                <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
+                                <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
+                            </div>
+                            <div class="ataques-horizontal">
+                                ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Error cargando los datos:', error);
+                // Puedes mostrar un mensaje de error al usuario si lo deseas
+            }
+        });
+    </script>
 </body>
 </html>
+
