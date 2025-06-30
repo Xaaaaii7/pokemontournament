@@ -3,7 +3,7 @@
     {
       "id": 1,
       "titulo": "Torneig Pokémon a Paldea: Comença l’Aventura!",
-      "imagen": "https://img.pokemondb.net/artwork/large/charizard.jpg",
+      "imagen": "Paldea.jpg",
       "fecha": "2025-06-30",
       "destacada": true,
       "contenido": "<p>El sol llueix sobre Paldea mentre Eudald, Josep i Jordi comencen la seva gran aventura Pokémon, cadascú amb un company diferent però amb la mateixa determinació.<br>Eudald, amb el seu Sprigatito elegant i misteriós, busca dominar els combats amb estratègia i agilitat.<br>Josep, sempre passional, confia en la força del seu Fuecoco per cremar tots els obstacles, mentre que Jordi, amb el seu Quaxly ple d’energia, està decidit a demostrar que l’esforç i la disciplina porten a la victòria.<br><br>El camí per Paldea està ple de reptes, gimnasos i rivals inesperats, però els tres entrenadors estan llestos per escriure la seva pròpia història.<br>Qui aconseguirà convertir-se en el veritable campió?</p>"
@@ -11,10 +11,10 @@
     {
       "id": 2,
       "titulo": "Els 3 entrenadors acorden les regles del torneig Pokémon",
-      "imagen": "https://img.pokemondb.net/artwork/large/dragonite.jpg",
+      "imagen": "regles.jpg",
       "fecha": "2025-06-29",
       "destacada": true,
       "contenido": "<p>Eudald, Josep i Jordi han definit les peculiars regles del proper torneig:<br><br>Ban pre-combat: Cada rival podrà vetar un Pokémon de l'adversari abans dels enfrontaments<br><br>Captures limitades: Només es permetran els Pokémon designats pels organitzadors<br><br>Equips tancats: No es podran fer canvis durant el torneig<br><br>'Volíem afegir estratègia extra', explicà Eudald mentre en Josep afegia: 'Això posarà a prova la nostra adaptabilitat'.</p>"
-    },
+    }
   ]
 }
