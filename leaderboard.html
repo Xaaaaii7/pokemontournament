@@ -28,47 +28,52 @@
 <div class="leaderboard" id="leaderboard"></div>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const pokemons = [
-      { name: 'Charizard', img: 'https://img.pokemondb.net/artwork/charizard.jpg', kills: 25, deaths: 4, battles: 10 },
-      { name: 'Gengar',    img: 'https://img.pokemondb.net/artwork/gengar.jpg',    kills: 19, deaths: 7, battles: 9 },
-      { name: 'Blastoise', img: 'https://img.pokemondb.net/artwork/blastoise.jpg', kills: 17, deaths: 5, battles: 11 },
-      { name: 'Alakazam',  img: 'https://img.pokemondb.net/artwork/alakazam.jpg',  kills: 15, deaths: 6, battles: 8 }
-    ];
+ document.addEventListener("DOMContentLoaded", () => {
+  const pokemons = [
+    { name: 'Charizard', img: 'https://img.pokemondb.net/artwork/charizard.jpg', kills: 25, deaths: 4, battles: 10 },
+    { name: 'Gengar',    img: 'https://img.pokemondb.net/artwork/gengar.jpg',    kills: 19, deaths: 7, battles: 9 },
+    { name: 'Blastoise', img: 'https://img.pokemondb.net/artwork/blastoise.jpg', kills: 17, deaths: 5, battles: 11 },
+    { name: 'Alakazam',  img: 'https://img.pokemondb.net/artwork/alakazam.jpg',  kills: 15, deaths: 6, battles: 8 }
+  ];
 
-    pokemons.forEach(p => {
-      p.killsPerBattle = p.battles > 0 ? (p.kills / p.battles).toFixed(2) : '0.00';
-    });
+  // Calcular kills por combate
+  pokemons.forEach(p => {
+    p.killsPerBattle = p.battles > 0 ? (p.kills / p.battles).toFixed(2) : '0.00';
+  });
 
-    pokemons.sort((a, b) => b.kills - a.kills);
-    const [topPlayer, ...others] = pokemons;
-    const lb = document.getElementById('leaderboard');
+  // Ordenar por kills (de mayor a menor)
+  pokemons.sort((a, b) => b.kills - a.kills);
+  
+  const [topPlayer, ...others] = pokemons;
+  const lb = document.getElementById('leaderboard');
 
-    lb.innerHTML = `
-      <div class="title">🏆 Clasificación de Kills</div>
-      <div class="top-card">
-        <img src="${topPlayer.img}" alt="${topPlayer.name}">
-        <div class="stats">
-          <h2>${topPlayer.name}</h2>
-          <div class="numbers">
-            <strong>⚔️ Combates:</strong> ${topPlayer.battles}<br>
-            <strong>🗡️ Kills:</strong> ${topPlayer.kills}<br>
-            <strong>☠️ Muertes:</strong> ${topPlayer.deaths}<br>
-            <strong>⚡ Kills/Combate:</strong> ${topPlayer.killsPerBattle}
-          </div>
+  // Generar HTML
+  lb.innerHTML = `
+    <div class="title">🏆 Clasificación de Kills</div>
+    <div class="top-card">
+      <img src="${topPlayer.img}" alt="${topPlayer.name}">
+      <div class="stats">
+        <h2>${topPlayer.name}</h2>
+        <div class="numbers">
+          <strong>⚔️ Combates:</strong> ${topPlayer.battles}<br>
+          <strong>🗡️ Kills:</strong> ${topPlayer.kills}<br>
+          <strong>☠️ Muertes:</strong> ${topPlayer.deaths}<br>
+          <strong>⚡ Kills/Combate:</strong> ${topPlayer.killsPerBattle}
         </div>
       </div>
-      <ul class="others">
-        ${others.map(p => `
-          <li>
-            <img src="${p.img}" alt="${p.name}">
-            <span class="name">${p.name}</span>
-            <span class="kills">🗡️ ${p.kills}</span>
-            <span class="deaths">☠️ ${p.deaths}</span>
-            <span class="battles">⚔️ ${p.battles}</span>
-            <span class="kpb">⚡ ${p.killsPerBattle}</span>
-          </li>`).join('')}
-      </ul>`;
+    </div>
+    <ul class="others">
+      ${others.map(p => `
+        <li>
+          <img src="${p.img}" alt="${p.name}">
+          <span class="name">${p.name}</span>
+          <span class="kills">🗡️ ${p.kills}</span>
+          <span class="deaths">☠️ ${p.deaths}</span>
+          <span class="battles">⚔️ ${p.battles}</span>
+          <span class="kpb">⚡ ${p.killsPerBattle}</span>
+        </li>`).join('')}
+    </ul>`;
+});
 </script>
 </body>
 </html>
