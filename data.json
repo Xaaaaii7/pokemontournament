@@ -1,0 +1,55 @@
+{
+  "entrenadores": {
+    "jordi": {
+      "nombre": "Jordi",
+      "imagen": "https://img.pokemondb.net/sprites/trainers/normal/blackbelt.png",
+      "kills": 0,
+      "deaths": 0,
+      "battles": 0,
+      "equipo": [
+        {
+          "nombre": "Quaxly",
+          "imagen": "https://img.pokemondb.net/artwork/quaxly.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+      ]
+    },
+    "josep": {
+      "nombre": "Josep",
+      "imagen": "https://img.pokemondb.net/sprites/trainers/normal/youngster.png",
+      "kills": 0,
+      "deaths": 0,
+      "battles": 0,
+      "equipo": [
+        {
+          "nombre": "Fuecoco",
+          "imagen": "https://img.pokemondb.net/artwork/fuecoco.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        }
+      ]
+    },
+    "eudald": {
+      "nombre": "Eudald",
+      "imagen": "https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png",
+      "kills": 0,
+      "deaths": 0,
+      "battles": 0,
+      "equipo": [
+        {
+          "nombre": "Sprigatito",
+          "imagen": "https://img.pokemondb.net/artwork/sprigatito.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        }
+      ]
+    }
+  }
+}
