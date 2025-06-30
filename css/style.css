@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+/* Banner */
+header {
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navegación */
+nav {
+  background-color: #e62429;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  position: relative;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: block;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  background-color: #c8232c;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  top: 100%;
+  left: 0;
+}
+
+nav li:hover ul {
+  display: block;
+}
+
+nav li ul li a {
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+/* Leaderboard */
+.leaderboard {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-card {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.top-card img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.top-card .stats {
+  flex: 1;
+}
+
+.top-card h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.numbers {
+  font-size: 16px;
+}
+
+.others {
+  list-style: none;
+  padding: 0;
+}
+
+.others li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.others img {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.others .name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.others .kills,
+.others .deaths,
+.others .battles,
+.others .kpb {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
