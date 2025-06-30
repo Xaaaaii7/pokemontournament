@@ -492,19 +492,81 @@ nav ul li ul li:hover {
   box-shadow: var(--shadow);
 }
 
-.pokemon-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 1rem;
+/* ESTILO POKÉMON EN LÍNEA */
+.pokemon-linea {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) #f1f1f1;
 }
 
-.pokemon-stats {
+.pokemon-linea::-webkit-scrollbar {
+  height: 8px;
+}
+
+.pokemon-linea::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 4px;
+}
+
+.pokemon-horizontal {
+  min-width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
   display: flex;
-  justify-content: space-around;
-  margin: 1rem 0;
-  font-size: 0.9rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon-horizontal img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.pokemon-horizontal h3 {
+  margin: 0.3rem 0;
+  color: var(--secondary);
+  font-size: 1.1rem;
+}
+
+.pokemon-horizontal .stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.pokemon-horizontal .stats span {
+  background: #f8f9fa;
+  padding: 0.3rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.ataques-horizontal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.ataque-horizontal {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .ataques-grid {
