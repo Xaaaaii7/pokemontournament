@@ -24,7 +24,6 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  position: relative; /* Añadido: contexto para z-index */
 }
 
 nav ul li {
@@ -252,24 +251,24 @@ main {
     width: 100%;
   }
   
-  nav ul li ul {
-    position: static; /* Cambiamos a static para móvil */
+  nav ul li {
     width: 100%;
-    box-shadow: none;
-    border-radius: 0;
+    text-align: center;
+  }
+  
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f4b800; /* Color diferente para distinguir */
     display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     z-index: 1001;
   }
   
   nav ul li:hover ul {
     display: block;
-    position: relative; /* Mantenemos sobre otros elementos */
-    z-index: 1002;
-  }
-  
-  nav ul li {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -304,4 +303,23 @@ main {
     position: absolute;
     z-index: 1001;
   }
+}
+nav ul li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #212529;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  background: #f4b800;
+}
+
+nav ul li ul li a {
+  padding: 0.75rem 1rem;
+}
+
+nav ul li ul li:hover {
+  background: #e6ac00;
 }
