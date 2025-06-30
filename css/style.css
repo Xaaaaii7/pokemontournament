@@ -87,34 +87,54 @@
 }
 
 /* --- Primer Puesto --- */
+/* --- Primer Puesto (versión blanco/dorado) --- */
 .top-card.champion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(135deg, var(--primary) 0%, #f4b800 100%);
-  border: 2px solid var(--secondary);
+  background: white; /* Fondo blanco */
+  border: 3px solid var(--primary); /* Borde dorado */
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative; /* Para el efecto de corona */
 }
 
-.top-card.champion img {
-  width: 100px;  /* Más compacto */
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 0.8rem;
+.top-card.champion::before {
+  content: "👑"; /* Corona para el campeón */
+  position: absolute;
+  top: -15px;
+  font-size: 2rem;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--primary);
 }
 
 .top-card.champion .stats h2 {
   font-size: 1.6rem;
   margin: 0 0 0.5rem 0;
+  color: var(--primary); /* Texto dorado */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 .top-card.champion .numbers span {
   display: inline-block;
   margin: 0 0.5rem;
   font-size: 0.95rem;
+  color: #d4af37; /* Dorado más oscuro para contraste */
+  font-weight: bold;
+}
+
+/* Iconos con color dorado */
+.top-card.champion .numbers span::before {
+  color: var(--primary);
 }
 
 /* --- Podio --- */
@@ -219,9 +239,13 @@
   .top-card.champion {
     flex-direction: row;
     text-align: left;
-    padding: 1.5rem;
+    padding: 1.8rem;
   }
   
+  .top-card.champion::before {
+    top: 10px;
+    left: -15px;
+  }
   .top-card.champion img {
     margin-right: 1.5rem;
     margin-bottom: 0;
