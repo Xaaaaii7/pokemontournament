@@ -14,6 +14,38 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+        {
+          "nombre": "Buizel",
+          "imagen": "https://img.pokemondb.net/artwork/buizel.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+        {
+          "nombre": "Happiny",
+          "imagen": "https://img.pokemondb.net/artwork/happiny.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+        {
+          "nombre": "Yungoos",
+          "imagen": "https://img.pokemondb.net/artwork/yungoos.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+        {
+          "nombre": "Fletchling",
+          "imagen": "https://img.pokemondb.net/artwork/fletchling.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
         }
       ]
     },
@@ -31,6 +63,38 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        },
+        {
+          "nombre": "Hoppip",
+          "imagen": "https://img.pokemondb.net/artwork/hoppip.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        },
+        {
+          "nombre": "Lechonk",
+          "imagen": "https://img.pokemondb.net/artwork/lechonk.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        },
+        {
+          "nombre": "Houndour",
+          "imagen": "https://img.pokemondb.net/artwork/houndour.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        },
+        {
+          "nombre": "Buizel",
+          "imagen": "https://img.pokemondb.net/artwork/buizel.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
         }
       ]
     },
@@ -44,6 +108,38 @@
         {
           "nombre": "Sprigatito",
           "imagen": "https://img.pokemondb.net/artwork/sprigatito.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        },
+        {
+          "nombre": "Psyduck",
+          "imagen": "https://img.pokemondb.net/artwork/psyduck.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        },
+        {
+          "nombre": "Deerling",
+          "imagen": "https://img.pokemondb.net/artwork/deerling.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        },
+        {
+          "nombre": "Diglett",
+          "imagen": "https://img.pokemondb.net/artwork/diglett.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        },
+        {
+          "nombre": "Pawmi",
+          "imagen": "https://img.pokemondb.net/artwork/pawmi.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
