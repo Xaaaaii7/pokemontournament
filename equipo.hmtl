@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos Pokémon</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="reglas.html">Reglas</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li>
+      <a href="equipos.html">Equipos ▼</a>
+      <ul>
+        <li><a href="equipos-jordi.html">Jordi</a></li>
+        <li><a href="equipos-josep.html">Josep</a></li>
+        <li><a href="equipos-eudald.html">Eudald</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+  <main class="equipos-main">
+    <h1>Entrenadores Destacados</h1>
+    <div class="entrenadores-grid">
+      <!-- Bloque Jordi -->
+      <a href="equipos-jordi.html" class="entrenador-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/jordi-trainer.png" alt="Jordi">
+        <h2>Jordi</h2>
+        <div class="stats">
+          <span>🏆 Victorias: 15</span>
+          <span>⚔️ Combates: 22</span>
+        </div>
+      </a>
+
+      <!-- Bloque Josep -->
+      <a href="equipos-josep.html" class="entrenador-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/josep-trainer.png" alt="Josep">
+        <h2>Josep</h2>
+        <div class="stats">
+          <span>🏆 Victorias: 12</span>
+          <span>⚔️ Combates: 18</span>
+        </div>
+      </a>
+
+      <!-- Bloque Eudald -->
+      <a href="equipos-eudald.html" class="entrenador-card">
+        <img src="https://img.pokemondb.net/sprites/home/normal/eudald-trainer.png" alt="Eudald">
+        <h2>Eudald</h2>
+        <div class="stats">
+          <span>🏆 Victorias: 10</span>
+          <span>⚔️ Combates: 15</span>
+        </div>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
