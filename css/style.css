@@ -1,3 +1,8 @@
+  :root {
+    --card: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --primary: #ffcb05;
+  }
   body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -59,79 +64,131 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-.leaderboard{
-    max-width:800px;
-    margin:2rem auto;
-    padding:1rem;
-  }
-  .title{
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:1rem;
-  }
-  .top-card{
-    display:flex;
-    align-items:center;
-    background:var(--card);
-    border-radius:1rem;
-    padding:1rem 1.5rem;
-    box-shadow:var(--shadow);
-    margin-bottom:2rem;
-  }
-  .top-card img{
-    width:150px;
-    height:150px;
-    object-fit:contain;
-    margin-right:1.5rem;
-  }
-  .top-card .stats{
-    flex:1;
-  }
-  .top-card .stats h2{
-    margin:0 0 .5rem 0;
-    font-size:1.8rem;
-    color:var(--primary);
-  }
-  .top-card .stats .numbers{
-    font-size:1.2rem;
-  }
-  ul.others{
-    list-style:none;
-    padding:0;
-    margin:0;
-  }
+.leaderboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.top-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--card);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.top-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.top-card .stats h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.top-card .stats .numbers {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul.others {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.others li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--card);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: var(--shadow);
+  gap: 0.5rem;
+}
+
+ul.others li img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+ul.others li .name {
+  flex: 1;
+  min-width: 120px;
+  font-weight: 600;
+}
+
+ul.others li .kills,
+ul.others li .deaths,
+ul.others li .battles,
+ul.others li .kpb {
+  flex: 0 0 calc(25% - 0.5rem);
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+}
+
+/* Media queries para móvil */
+@media (max-width: 600px) {
   ul.others li {
-    display: grid;
-    grid-template-columns: 60px 1fr repeat(4, 80px);
-    align-items: center;
-    background: var(--card);
-    border-radius: .75rem;
-    padding: .75rem 1rem;
-    margin-bottom: .75rem;
-    box-shadow: var(--shadow);
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
   }
-  ul.others li img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
-  }
+  
   ul.others li .name {
-    font-weight: 600;
+    margin: 0.5rem 0;
+    min-width: 100%;
   }
+  
   ul.others li .kills,
   ul.others li .deaths,
   ul.others li .battles,
   ul.others li .kpb {
-    text-align: center;
-    font-size: 0.95rem;
+    flex: 0 0 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
   }
-  @media (max-width:600px){
-    .top-card{
-      flex-direction:column;
-      text-align:center;
-    }
-    .top-card img{
-      margin:0 0 1rem 0;
-    }
+  
+  ul.others li .kills::before { content: "Kills: "; font-weight: bold; }
+  ul.others li .deaths::before { content: "Muertes: "; font-weight: bold; }
+  ul.others li .battles::before { content: "Combates: "; font-weight: bold; }
+  ul.others li .kpb::before { content: "K/C: "; font-weight: bold; }
+}
+
+/* Estilo para pantallas más grandes */
+@media (min-width: 601px) {
+  .top-card {
+    flex-direction: row;
+    text-align: left;
   }
+  
+  .top-card img {
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+    width: 150px;
+    height: 150px;
+  }
+}
