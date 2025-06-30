@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pokémon Torneo</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+  }
+  nav {
+    background: #ffcb05;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  nav ul li {
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #212529;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li:hover {
+    background: #f4b800;
+  }
+  /* Desplegable */
+  nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffcb05;
+    display: none;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 0 0 8px 8px;
+  }
+  nav ul li:hover ul {
+    display: block;
+  }
+  nav ul li ul li a {
+    padding: 0.75rem 1rem;
+    font-weight: normal;
+  }
+  nav ul li ul li:hover {
+    background: #f4b800;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li>
+      <a href="#">Equipos ▼</a>
+      <ul>
+        <li><a href="equipos-jordi.html">Jordi</a></li>
+        <li><a href="equipos-josep.html">Josep</a></li>
+        <li><a href="equipos-eudald.html">Eudald</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Bienvenido al Torneo Pokémon</h1>
+  <p>Selecciona una opción del menú para ver clasificaciones o los equipos de cada jugador.</p>
+</main>
+
+</body>
+</html>
