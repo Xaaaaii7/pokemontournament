@@ -550,6 +550,15 @@ nav ul li ul li:hover {
   padding: 0.3rem;
   border-radius: 6px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+/* Nuevos iconos para stats */
+.icon-stat {
+  font-size: 0.9em;
 }
 
 .ataques-horizontal {
