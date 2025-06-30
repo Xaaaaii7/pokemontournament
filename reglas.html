@@ -10,13 +10,18 @@
   <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
   <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
 </header>
-  <nav>
+<nav>
   <ul>
     <li><a href="index.html">Inicio</a></li>
     <li><a href="reglas.html">Reglas</a></li>
-    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li><a href="#">Leaderboard ▼</a>
+    <ul>
+        <li><a href="leaderboard.html">Classificación Pokemon</a></li>
+        <li><a href="leaderboard-entrenadores.html">Classificación Entrenadores</a></li>
+      </ul>
+    </li>
     <li>
-      <a href="#">Equipos ▼</a>
+      <a href="equipos.html">Equipos ▼</a>
       <ul>
         <li><a href="equipos-jordi.html">Jordi</a></li>
         <li><a href="equipos-josep.html">Josep</a></li>
@@ -27,28 +32,37 @@
 </nav>
 
   <main class="reglas-container">
-    <h1>Reglas del Torneo Pokémon</h1>
+    <h1>Reglas del Torneig Pokémon</h1>
     <ol class="lista-reglas">
       <li>
-        <h2>Formato de Combate</h2>
+        <h2>Format de Combat</h2>
         <p>Batallas 6vs6 con el sistema de combate estándar de Pokémon Escarlata/Púrpura.</p>
       </li>
       <li>
-        <h2>Cláusulas Especiales</h2>
-        <p>Se aplican las cláusulas Sleep, Species y Item. No se permiten Pokémon legendarios.</p>
+        <h2>Sistema de draft</h2>
+        <p>Abans de cada combat entre dos entrenadors, cada un dels entrenadors podrà banejar un pokemon de l'altre persona. El primer enfrontament el entrenador qui baneji serà al atzar, per les següents el perdedor de l'anterior enfrontament decideix primer.</p>
       </li>
       <li>
-        <h2>Sistema de Puntuación</h2>
-        <p>Victoria = 3 puntos, Empate = 1 punto, Derrota = 0 puntos.</p>
+        <h2>Sistema de Puntuació</h2>
+        <p>Victoria = 3 punts, Empat = 1 punt, Derrota = 0 punts.</p>
       </li>
       <li>
-        <h2>Tiempo por Turno</h2>
-        <p>Máximo 60 segundos por turno. Exceder el tiempo resulta en penalización.</p>
+        <h2>Vidas Pokemon</h2>
+        <p>Si el pokemon mort durant l'aventura 3 cops, aquest es considera mort.</p>
       </li>
       <li>
-        <h2>Resolución de Conflictos</h2>
-        <p>Cualquier disputa será resuelta por los organizadores del torneo.</p>
+        <h2>Pokemon valids</h2>
+        <p>Nomes es poden fer servir pokemons que toquin pel sistema de nuzlocke.</p>
       </li>
+      <li>
+        <h2>Pokemon shiny</h2>
+        <p>En cas de trobar-se un pokemon shiny aquest pot ser ficat al equip.</p>
+      </li>      
+      <li>
+        <h2>Etapes</h2>
+        <p>El joc conta de 18 "medalles", cada 3 "medalles" es farà un combat entre tots els entrenadors.</p>
+      </li>
+      
     </ol>
   </main>
 </body>
