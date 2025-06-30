@@ -59,81 +59,79 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
-/* Leaderboard */
-.leaderboard {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-  font-size: 24px;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.top-card {
-  display: flex;
-  align-items: center;
-  background: #f5f5f5;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 25px;
-}
-
-.top-card img {
-  width: 120px;
-  height: auto;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.top-card .stats {
-  flex: 1;
-}
-
-.top-card h2 {
-  margin: 0 0 10px;
-  font-size: 22px;
-}
-
-.numbers {
-  font-size: 16px;
-}
-
-.others {
-  list-style: none;
-  padding: 0;
-}
-
-.others li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.others img {
-  width: 50px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 12px;
-}
-
-.others .name {
-  flex: 1;
-  font-weight: bold;
-}
-
-.others .kills,
-.others .deaths,
-.others .battles,
-.others .kpb {
-  margin-left: 10px;
-  font-size: 14px;
-  color: #333;
-}
+.leaderboard{
+    max-width:800px;
+    margin:2rem auto;
+    padding:1rem;
+  }
+  .title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  .top-card{
+    display:flex;
+    align-items:center;
+    background:var(--card);
+    border-radius:1rem;
+    padding:1rem 1.5rem;
+    box-shadow:var(--shadow);
+    margin-bottom:2rem;
+  }
+  .top-card img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    margin-right:1.5rem;
+  }
+  .top-card .stats{
+    flex:1;
+  }
+  .top-card .stats h2{
+    margin:0 0 .5rem 0;
+    font-size:1.8rem;
+    color:var(--primary);
+  }
+  .top-card .stats .numbers{
+    font-size:1.2rem;
+  }
+  ul.others{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  ul.others li {
+    display: grid;
+    grid-template-columns: 60px 1fr repeat(4, 80px);
+    align-items: center;
+    background: var(--card);
+    border-radius: .75rem;
+    padding: .75rem 1rem;
+    margin-bottom: .75rem;
+    box-shadow: var(--shadow);
+    gap: 0.5rem;
+  }
+  ul.others li img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+  }
+  ul.others li .name {
+    font-weight: 600;
+  }
+  ul.others li .kills,
+  ul.others li .deaths,
+  ul.others li .battles,
+  ul.others li .kpb {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  @media (max-width:600px){
+    .top-card{
+      flex-direction:column;
+      text-align:center;
+    }
+    .top-card img{Add commentMore actions
+      margin:0 0 1rem 0;
+    }
+  }
