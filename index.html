@@ -133,6 +133,13 @@
     border: none;
   }
 
+  /* Loading state */
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
   /* Responsive */
   @media (max-width: 768px) {
     .carousel {
@@ -176,14 +183,14 @@
   <!-- Carrusel de noticias destacadas -->
   <div class="carousel">
     <div class="carousel-inner" id="carousel-inner">
-      <!-- Las noticias destacadas se cargarán aquí con JavaScript -->
+      <div class="loading">Cargando noticias destacadas...</div>
     </div>
   </div>
   
   <!-- Listado de todas las noticias -->
   <h2>Todas las Noticias</h2>
   <div class="news-list" id="news-list">
-    <!-- Las noticias se cargarán aquí con JavaScript -->
+    <div class="loading">Cargando todas las noticias...</div>
   </div>
 </main>
 
@@ -199,54 +206,32 @@
 </div>
 
 <script>
-// Datos de ejemplo de noticias (puedes cargarlos desde JSON después)
-const noticias = [
-  {
-    id: 1,
-    titulo: "Gran victoria de Jordi en el último combate",
-    imagen: "https://img.pokemondb.net/artwork/large/charizard.jpg",
-    fecha: "2023-05-15",
-    destacada: true,
-    contenido: "<p>Jordi ha conseguido una impresionante victoria en el último combate del torneo, con su Charizard demostrando un dominio absoluto del campo de batalla. El combate duró 15 turnos y terminó con un espectacular lanzallamas que dejó fuera de combate al último Pokémon de su rival.</p><p>Con esta victoria, Jordi se consolida en el primer puesto de la clasificación.</p>"
-  },
-  {
-    id: 2,
-    titulo: "Nuevo Pokémon capturado por Eudald",
-    imagen: "https://img.pokemondb.net/artwork/large/dragonite.jpg",
-    fecha: "2023-05-12",
-    destacada: true,
-    contenido: "<p>Eudald ha añadido un poderoso Dragonite a su equipo después de una intensa sesión de entrenamiento. Este Pokémon, conocido por su versatilidad en combate, promete dar mucho que hablar en los próximos enfrentamientos.</p>"
-  },
-  {
-    id: 3,
-    titulo: "Cambios en las reglas del torneo",
-    imagen: "https://img.pokemondb.net/artwork/large/pikachu.jpg",
-    fecha: "2023-05-10",
-    destacada: false,
-    contenido: "<p>El comité organizador ha anunciado pequeños ajustes en las reglas del torneo para equilibrar mejor los combates. Las principales modificaciones afectan al uso de objetos y al tiempo máximo por turno.</p>"
-  },
-  {
-    id: 4,
-    titulo: "Josep domina con su Fuecoco",
-    imagen: "https://img.pokemondb.net/artwork/large/fuecoco.jpg",
-    fecha: "2023-05-08",
-    destacada: true,
-    contenido: "<p>El Fuecoco de Josep ha sido la sensación de la última ronda de combates, consiguiendo 3 victorias consecutivas. Su estrategia de combate ha sorprendido a todos los participantes.</p>"
-  },
-  {
-    id: 5,
-    titulo: "Próximo torneo de captura",
-    imagen: "https://img.pokemondb.net/artwork/large/gengar.jpg",
-    fecha: "2023-05-05",
-    destacada: false,
-    contenido: "<p>Se anuncia un torneo especial de captura que tendrá lugar el próximo fin de semana. Los participantes competirán por capturar el Pokémon más raro en una zona designada.</p>"
+// Función para cargar noticias desde JSON
+async function cargarNoticias() {
+  try {
+    const response = await fetch('data/noticias.json');
+    if (!response.ok) {
+      throw new Error('No se pudieron cargar las noticias');
+    }
+    const data = await response.json();
+    return data.noticias;
+  } catch (error) {
+    console.error('Error cargando noticias:', error);
+    throw error;
   }
-];
+}
 
 // Función para inicializar el carrusel
-function initCarousel() {
+function initCarousel(noticias) {
   const carouselInner = document.getElementById('carousel-inner');
+  carouselInner.innerHTML = ''; // Limpiar loading
+  
   const destacadas = noticias.filter(noticia => noticia.destacada);
+  
+  if (destacadas.length === 0) {
+    carouselInner.innerHTML = '<div class="loading">No hay noticias destacadas</div>';
+    return;
+  }
   
   destacadas.forEach((noticia, index) => {
     const item = document.createElement('div');
@@ -264,18 +249,27 @@ function initCarousel() {
   
   // Auto-rotación cada 5 segundos
   let currentIndex = 0;
-  setInterval(() => {
+  const intervalId = setInterval(() => {
     currentIndex = (currentIndex + 1) % destacadas.length;
     carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
   }, 5000);
+  
+  // Retornar el ID del intervalo para poder limpiarlo después
+  return intervalId;
 }
 
 // Función para cargar el listado de noticias
-function loadNewsList() {
+function loadNewsList(noticias) {
   const newsList = document.getElementById('news-list');
+  newsList.innerHTML = ''; // Limpiar loading
   
   // Ordenar por fecha (más reciente primero)
   const sortedNews = [...noticias].sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+  
+  if (sortedNews.length === 0) {
+    newsList.innerHTML = '<div class="loading">No hay noticias disponibles</div>';
+    return;
+  }
   
   sortedNews.forEach(noticia => {
     const card = document.createElement('div');
@@ -310,9 +304,20 @@ function closePopup() {
 }
 
 // Inicialización cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', () => {
-  initCarousel();
-  loadNewsList();
+document.addEventListener('DOMContentLoaded', async () => {
+  let carouselInterval;
+  
+  try {
+    const noticias = await cargarNoticias();
+    carouselInterval = initCarousel(noticias);
+    loadNewsList(noticias);
+  } catch (error) {
+    document.getElementById('carousel-inner').innerHTML = 
+      '<div class="loading error">Error cargando noticias destacadas</div>';
+    document.getElementById('news-list').innerHTML = 
+      '<div class="loading error">Error cargando el listado de noticias</div>';
+    console.error(error);
+  }
   
   // Evento para cerrar el popup
   document.getElementById('close-popup').addEventListener('click', closePopup);
@@ -320,6 +325,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === document.getElementById('news-popup')) {
       closePopup();
     }
+  });
+  
+  // Limpiar intervalo cuando la página se cierre
+  window.addEventListener('beforeunload', () => {
+    if (carouselInterval) clearInterval(carouselInterval);
   });
 });
 </script>
