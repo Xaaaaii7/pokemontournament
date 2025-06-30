@@ -25,60 +25,45 @@
             </li>
         </ul>
     </nav>
+  <main class="equipo-entrenador">
+      <div class="pokemon-linea" id="pokemon-container">
+      </div>
+  </main>
+  <script type="module">
+  import { cargarDatos, calcularKC } from './data-loader.js';
 
-    <main class="equipo-entrenador">
-        <header class="entrenador-header">
-            <img src="https://img.pokemondb.net/sprites/trainers/normal/youngster.png" alt="Josep">
-            <div>
-                <h1>Equipo de Josep</h1>
-                <div class="entrenador-stats">
-                    <span>🗡️ Kills: 38</span>
-                    <span>☠️ Muertes: 15</span>
-                    <span>⚔️ Combates: 20</span>
-                    <span>⚡ Ratio: 1.90</span>
-                </div>
-            </div>
-        </header>
-
-        <div class="pokemon-linea">
-            <!-- Pokémon 1 -->
-            <div class="pokemon-horizontal">
-                <img src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="Blastoise">
-                <h3>Blastoise</h3>
-                <div class="stats">
-                    <span><span class="icon-stat">🗡️</span> 10K</span>
-                    <span><span class="icon-stat">☠️</span> 3M</span>
-                    <span><span class="icon-stat">⚔️</span> 8C</span>
-                    <span><span class="icon-stat">⚡</span> 1.25K/C</span>
-                </div>
-                <div class="ataques-horizontal">
-                    <div class="ataque-horizontal">💦 Hidrobomba</div>
-                    <div class="ataque-horizontal">❄️ Rayo Hielo</div>
-                    <div class="ataque-horizontal">🛡️ Defensa</div>
-                    <div class="ataque-horizontal">🌀 Vórtice</div>
-                </div>
-            </div>
-
-            <!-- Pokémon 2 -->
-            <div class="pokemon-horizontal">
-                <img src="https://img.pokemondb.net/artwork/gengar.jpg" alt="Gengar">
-                <h3>Gengar</h3>
-                <div class="stats">
-                    <span><span class="icon-stat">🗡️</span> 8K</span>
-                    <span><span class="icon-stat">☠️</span> 4M</span>
-                    <span><span class="icon-stat">⚔️</span> 7C</span>
-                    <span><span class="icon-stat">⚡</span> 1.14K/C</span>
-                </div>
-                <div class="ataques-horizontal">
-                    <div class="ataque-horizontal">👻 Lanzamiento</div>
-                    <div class="ataque-horizontal">☠️ Venoshock</div>
-                    <div class="ataque-horizontal">🌑 Bola Sombra</div>
-                    <div class="ataque-horizontal">😵 Hipnosis</div>
-                </div>
-            </div>
-
-            <!-- Pokémon 3-6 (similar structure) -->
+  document.addEventListener("DOMContentLoaded", async () => {
+    const data = await cargarDatos();
+    const entrenador = data.entrenadores.josep; // Cambia según la página
+    
+    // Actualiza el header
+    document.querySelector('.entrenador-header h1').textContent = `Equipo de ${entrenador.nombre}`;
+    document.querySelector('.entrenador-stats').innerHTML = `
+      <span>🗡️ Kills: ${entrenador.kills}</span>
+      <span>☠️ Muertes: ${entrenador.deaths}</span>
+      <span>⚔️ Combates: ${entrenador.battles}</span>
+      <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+    `;
+    
+    // Genera los Pokémon
+    const pokemonHTML = entrenador.equipo.map(p => `
+      <div class="pokemon-horizontal">
+        <img src="${p.imagen}" alt="${p.nombre}">
+        <h3>${p.nombre}</h3>
+        <div class="stats">
+          <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
+          <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
+          <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
+          <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
         </div>
+        <div class="ataques-horizontal">
+          ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
+        </div>
+      </div>
+    `).join('');
+    
+    document.querySelector('.pokemon-linea').innerHTML = pokemonHTML;
+  });
     </main>
 </body>
 </html>
