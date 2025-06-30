@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Equipo de Jordi</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Jordi</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
-  </header>
-  <nav>
-  <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="reglas.html">Reglas</a></li>
-    <li><a href="leaderboard.html">Leaderboard</a></li>
-    <li>
-      <a href="#">Equipos ▼</a>
-      <ul>
-        <li><a href="equipos-jordi.html">Jordi</a></li>
-        <li><a href="equipos-josep.html">Josep</a></li>
-        <li><a href="equipos-eudald.html">Eudald</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li>
+                <a href="equipos.html">Equipos ▼</a>
+                <ul>
+                    <li><a href="equipos-jordi.html">Jordi</a></li>
+                    <li><a href="equipos-josep.html">Josep</a></li>
+                    <li><a href="equipos-eudald.html">Eudald</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-  <main class="equipo-entrenador">
-      <div class="pokemon-linea" id="pokemon-container">
-      </div>
-  </main>
-  <script type="module">
-  import { cargarDatos, calcularKC } from './data-loader.js';
+    <main class="equipo-entrenador">
+        <!-- Añadí la sección del header del entrenador que faltaba -->
+        <header class="entrenador-header">
+            <img src="https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png" alt="Jordi">
+            <div>
+                <h1>Equipo de Jordi</h1>
+                <div class="entrenador-stats">
+                    <!-- Las stats se llenarán con JavaScript -->
+                </div>
+            </div>
+        </header>
 
-  document.addEventListener("DOMContentLoaded", async () => {
-    const data = await cargarDatos();
-    const entrenador = data.entrenadores.jordi; // Cambia según la página
-    
-    // Actualiza el header
-    document.querySelector('.entrenador-header h1').textContent = `Equipo de ${entrenador.nombre}`;
-    document.querySelector('.entrenador-stats').innerHTML = `
-      <span>🗡️ Kills: ${entrenador.kills}</span>
-      <span>☠️ Muertes: ${entrenador.deaths}</span>
-      <span>⚔️ Combates: ${entrenador.battles}</span>
-      <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
-    `;
-    
-    // Genera los Pokémon
-    const pokemonHTML = entrenador.equipo.map(p => `
-      <div class="pokemon-horizontal">
-        <img src="${p.imagen}" alt="${p.nombre}">
-        <h3>${p.nombre}</h3>
-        <div class="stats">
-          <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
-          <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
-          <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
-          <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
+        <div class="pokemon-linea" id="pokemon-container">
+            <!-- Los Pokémon se insertarán aquí -->
         </div>
-        <div class="ataques-horizontal">
-          ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
-        </div>
-      </div>
-    `).join('');
-    
-    document.querySelector('.pokemon-linea').innerHTML = pokemonHTML;
-  });
-</script>
+    </main>
+
+    <script type="module">
+        import { cargarDatos, calcularKC } from './data-loader.js';
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const data = await cargarDatos();
+                const entrenador = data.entrenadores.jordi;
+                
+                // Actualiza el header
+                const header = document.querySelector('.entrenador-header');
+                if (header) {
+                    header.querySelector('img').src = entrenador.imagen;
+                    header.querySelector('h1').textContent = `Equipo de ${entrenador.nombre}`;
+                    header.querySelector('.entrenador-stats').innerHTML = `
+                        <span>🗡️ Kills: ${entrenador.kills}</span>
+                        <span>☠️ Muertes: ${entrenador.deaths}</span>
+                        <span>⚔️ Combates: ${entrenador.battles}</span>
+                        <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+                    `;
+                }
+                
+                // Genera los Pokémon
+                const container = document.getElementById('pokemon-container');
+                if (container) {
+                    container.innerHTML = entrenador.equipo.map(p => `
+                        <div class="pokemon-horizontal">
+                            <img src="${p.imagen}" alt="${p.nombre}">
+                            <h3>${p.nombre}</h3>
+                            <div class="stats">
+                                <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
+                                <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
+                                <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
+                                <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
+                            </div>
+                            <div class="ataques-horizontal">
+                                ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Error cargando los datos:', error);
+                // Puedes mostrar un mensaje de error al usuario si lo deseas
+            }
+        });
+    </script>
 </body>
 </html>
