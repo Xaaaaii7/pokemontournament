@@ -606,3 +606,26 @@ nav ul li ul li:hover {
     justify-content: center;
   }
 }
+/* Estilos para el entrenador */
+.entrenador {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.entrenador-mini {
+  font-size: 0.7rem;
+  color: #777;
+  margin-left: 0.5rem;
+}
+
+/* Estilos para estados de carga/error */
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #d32f2f;
+}
