@@ -1,0 +1,44 @@
+{
+  "noticias": [
+    {
+      "id": 1,
+      "titulo": "Gran victoria de Jordi en el último combate",
+      "imagen": "https://img.pokemondb.net/artwork/large/charizard.jpg",
+      "fecha": "2023-05-15",
+      "destacada": true,
+      "contenido": "<p>Jordi ha conseguido una impresionante victoria en el último combate del torneo, con su Charizard demostrando un dominio absoluto del campo de batalla. El combate duró 15 turnos y terminó con un espectacular lanzallamas que dejó fuera de combate al último Pokémon de su rival.</p><p>Con esta victoria, Jordi se consolida en el primer puesto de la clasificación.</p>"
+    },
+    {
+      "id": 2,
+      "titulo": "Nuevo Pokémon capturado por Eudald",
+      "imagen": "https://img.pokemondb.net/artwork/large/dragonite.jpg",
+      "fecha": "2023-05-12",
+      "destacada": true,
+      "contenido": "<p>Eudald ha añadido un poderoso Dragonite a su equipo después de una intensa sesión de entrenamiento. Este Pokémon, conocido por su versatilidad en combate, promete dar mucho que hablar en los próximos enfrentamientos.</p>"
+    },
+    {
+      "id": 3,
+      "titulo": "Cambios en las reglas del torneo",
+      "imagen": "https://img.pokemondb.net/artwork/large/pikachu.jpg",
+      "fecha": "2023-05-10",
+      "destacada": false,
+      "contenido": "<p>El comité organizador ha anunciado pequeños ajustes en las reglas del torneo para equilibrar mejor los combates. Las principales modificaciones afectan al uso de objetos y al tiempo máximo por turno.</p>"
+    },
+    {
+      "id": 4,
+      "titulo": "Josep domina con su Fuecoco",
+      "imagen": "https://img.pokemondb.net/artwork/large/fuecoco.jpg",
+      "fecha": "2023-05-08",
+      "destacada": true,
+      "contenido": "<p>El Fuecoco de Josep ha sido la sensación de la última ronda de combates, consiguiendo 3 victorias consecutivas. Su estrategia de combate ha sorprendido a todos los participantes.</p>"
+    },
+    {
+      "id": 5,
+      "titulo": "Próximo torneo de captura",
+      "imagen": "https://img.pokemondb.net/artwork/large/gengar.jpg",
+      "fecha": "2023-05-05",
+      "destacada": false,
+      "contenido": "<p>Se anuncia un torneo especial de captura que tendrá lugar el próximo fin de semana. Los participantes competirán por capturar el Pokémon más raro en una zona designada.</p>"
+    }
+  ]
+}
