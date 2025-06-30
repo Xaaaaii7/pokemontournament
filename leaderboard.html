@@ -4,145 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Clasificación Pokémon - Leaderboard</title>
-<style>
-  :root {
-    --bg: #f8f9fa;
-    --card: #ffffff;
-    --primary: #ffcb05;
-    --text: #212529;
-    --shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  body{
-    margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-  }
-  nav {
-    background: #ffcb05;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  nav ul li {
-    position: relative;
-  }
-  nav ul li a {
-    display: block;
-    padding: 1rem 1.5rem;
-    color: #212529;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  nav ul li:hover {
-    background: #f4b800;
-  }
-  /* Desplegable */
-  nav ul li ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #ffcb05;
-    display: none;
-    min-width: 150px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    border-radius: 0 0 8px 8px;
-  }
-  nav ul li:hover ul {
-    display: block;
-  }
-  nav ul li ul li a {
-    padding: 0.75rem 1rem;
-    font-weight: normal;
-  }
-  nav ul li ul li:hover {
-    background: #f4b800;
-  }
-
-  .leaderboard{
-    max-width:800px;
-    margin:2rem auto;
-    padding:1rem;
-  }
-  .title{
-    text-align:center;
-    font-size:2rem;
-    margin-bottom:1rem;
-  }
-  .top-card{
-    display:flex;
-    align-items:center;
-    background:var(--card);
-    border-radius:1rem;
-    padding:1rem 1.5rem;
-    box-shadow:var(--shadow);
-    margin-bottom:2rem;
-  }
-  .top-card img{
-    width:150px;
-    height:150px;
-    object-fit:contain;
-    margin-right:1.5rem;
-  }
-  .top-card .stats{
-    flex:1;
-  }
-  .top-card .stats h2{
-    margin:0 0 .5rem 0;
-    font-size:1.8rem;
-    color:var(--primary);
-  }
-  .top-card .stats .numbers{
-    font-size:1.2rem;
-  }
-  ul.others{
-    list-style:none;
-    padding:0;
-    margin:0;
-  }
-  ul.others li {
-    display: grid;
-    grid-template-columns: 60px 1fr repeat(4, 80px);
-    align-items: center;
-    background: var(--card);
-    border-radius: .75rem;
-    padding: .75rem 1rem;
-    margin-bottom: .75rem;
-    box-shadow: var(--shadow);
-    gap: 0.5rem;
-  }
-  ul.others li img{
-    width:60px;
-    height:60px;
-    object-fit:contain;
-  }
-  ul.others li .name {
-    font-weight: 600;
-  }
-  ul.others li .kills,
-  ul.others li .deaths,
-  ul.others li .battles,
-  ul.others li .kpb {
-    text-align: center;
-    font-size: 0.95rem;
-  }
-  @media (max-width:600px){
-    .top-card{
-      flex-direction:column;
-      text-align:center;
-    }
-    .top-card img{
-      margin:0 0 1rem 0;
-    }
-  }
-</style>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
@@ -150,6 +12,7 @@
 </header>
 <nav>
   <ul>
+    <li><a href="index.html">Inicio</a></li>
     <li><a href="leaderboard.html">Leaderboard</a></li>
     <li>
       <a href="#">Equipos ▼</a>
