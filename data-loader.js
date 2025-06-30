@@ -1,4 +1,4 @@
-// Función para cargar datos JSON
+// Función  para cargar datos JSON
 async function cargarDatos() {
   const response = await fetch('data.json');
   return await response.json();
