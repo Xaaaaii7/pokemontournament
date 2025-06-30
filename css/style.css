@@ -64,6 +64,7 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
+/* --- Leaderboard --- */
 .leaderboard {
   max-width: 800px;
   margin: 2rem auto;
@@ -77,16 +78,22 @@
   color: #333;
 }
 
+/* --- Primer puesto (estilo existente modificado) --- */
 .top-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--card);
+  background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
-  box-shadow: var(--shadow);
-  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.top-card.champion {
+  background: linear-gradient(135deg, #ffcb05 0%, #f4b800 100%);
+  border: 2px solid #3d7dca;
 }
 
 .top-card img {
@@ -96,86 +103,53 @@
   margin-bottom: 1rem;
 }
 
-.top-card .stats h2 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.8rem;
-  color: var(--primary);
+/* --- Podio (nuevo) --- */
+.podium {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.top-card .stats .numbers {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.podium-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-ul.others {
+/* --- Lista compacta (reemplaza ul.others) --- */
+.compact-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ul.others li {
+.compact-list li {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  background: var(--card);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
-  box-shadow: var(--shadow);
-  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-ul.others li img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-right: 0.5rem;
-}
-
-ul.others li .name {
-  flex: 1;
-  min-width: 120px;
-  font-weight: 600;
-}
-
-ul.others li .kills,
-ul.others li .deaths,
-ul.others li .battles,
-ul.others li .kpb {
-  flex: 0 0 calc(25% - 0.5rem);
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 0.25rem;
-}
-
-/* Media queries para móvil */
+/* --- Responsive --- */
 @media (max-width: 600px) {
-  ul.others li {
+  .podium {
     flex-direction: column;
-    align-items: flex-start;
+  }
+  
+  .top-card {
     padding: 1rem;
   }
   
-  ul.others li .name {
-    margin: 0.5rem 0;
-    min-width: 100%;
+  .compact-list li {
+    padding: 0.4rem 0.8rem;
   }
-  
-  ul.others li .kills,
-  ul.others li .deaths,
-  ul.others li .battles,
-  ul.others li .kpb {
-    flex: 0 0 100%;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.2rem 0;
-  }
-  
-  ul.others li .kills::before { content: "🗡️ Kills: "; }
-  ul.others li .deaths::before { content: "☠️ Muertes: "; }
-  ul.others li .battles::before { content: "⚔️ Combates: "; }
-  ul.others li .kpb::before { content: "⚡ K/C: "; }
 }
 
 /* Estilo para pantallas más grandes */
