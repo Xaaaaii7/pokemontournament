@@ -247,6 +247,30 @@ main {
   .compact-list .icons {
     gap: 0.5rem;
   }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  nav ul li ul {
+    position: static; /* Cambiamos a static para móvil */
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    display: none;
+    z-index: 1001;
+  }
+  
+  nav ul li:hover ul {
+    display: block;
+    position: relative; /* Mantenemos sobre otros elementos */
+    z-index: 1002;
+  }
+  
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 601px) {
@@ -275,5 +299,9 @@ main {
   
   .top-card.champion .stats {
     flex: 1;
+  }
+   nav ul li ul {
+    position: absolute;
+    z-index: 1001;
   }
 }
