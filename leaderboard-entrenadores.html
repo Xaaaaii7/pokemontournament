@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clasificación Pokémon - Leaderboard</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="reglas.html">Reglas</a></li>
+    <li><a href="leaderboard.html">Leaderboard</a></li>
+    <li>
+      <a href="equipos.html">Equipos ▼</a>
+      <ul>
+        <li><a href="equipos-jordi.html">Jordi</a></li>
+        <li><a href="equipos-josep.html">Josep</a></li>
+        <li><a href="equipos-eudald.html">Eudald</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div class="leaderboard" id="leaderboard">
+  <div class="loading">Cargando clasificación...</div>
+</div>
+
+<script type="module">
+  import { cargarDatos, calcularKC } from './data-loader.js';
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    try {
+      const data = await cargarDatos();
+      const entrenadores = Object.values(data.entrenadores);
+      
+      // Calcular kills por combate para cada entrenador
+      entrenadores.forEach(e => {
+        e.killsPerBattle = calcularKC(e);
+      });
+
+      // Ordenar por kills (de mayor a menor)
+      entrenadores.sort((a, b) => b.kills - a.kills);
+      
+      const [first, second, third, ...others] = entrenadores;
+      const lb = document.getElementById('leaderboard');
+
+      // Generar HTML
+      lb.innerHTML = `
+        <div class="title">🏆 Clasificación de Entrenadores</div>
+        
+        <!-- Primer puesto -->
+        <div class="top-card champion">
+          <img src="${first.imagen}" alt="${first.nombre}">
+          <div class="stats">
+            <h2>${first.nombre}</h2>
+            <div class="numbers">
+              <span title="Combates">⚔️ ${first.battles}</span>
+              <span title="Kills">🗡️ ${first.kills}</span>
+              <span title="Muertes">☠️ ${first.deaths}</span>
+              <span title="Kills/Combate">⚡ ${first.killsPerBattle}</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Segundo y tercer puesto -->
+        <div class="podium">
+          ${[second, third].map(p => `
+            <div class="podium-card">
+              <img src="${p.imagen}" alt="${p.nombre}">
+              <div class="stats">
+                <h3>${p.nombre}</h3>
+                <div class="numbers">
+                  <span>⚔️ ${p.battles}</span>
+                  <span>🗡️ ${p.kills}</span>
+                  <span>☠️ ${p.deaths}</span>
+                  <span>⚡ ${p.killsPerBattle}</span>
+                </div>
+              </div>
+            </div>`).join('')}
+        </div>
+        
+        <!-- Demás participantes (lista compacta) -->
+        <ul class="compact-list">
+          ${others.map((p, index) => `
+            <li>
+              <span class="pos">${index + 4}º</span>
+              <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
+              <span class="icons">
+                <span title="Kills">🗡️${p.kills}</span>
+                <span title="Muertes">☠️${p.deaths}</span>
+                <span title="Combates">⚔️${p.battles}</span>
+                <span title="Kills/Combate">⚡${p.killsPerBattle}</span>
+              </span>
+            </li>`).join('')}
+        </ul>`;
+    } catch (error) {
+      console.error('Error:', error);
+      document.getElementById('leaderboard').innerHTML = `
+        <div class="error">
+          <p>⚠️ No se pudo cargar la clasificación</p>
+          <p>${error.message}</p>
+        </div>`;
+    }
+  });
+</script>
+</body>
+</html>
