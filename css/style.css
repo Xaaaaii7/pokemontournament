@@ -399,3 +399,139 @@ nav ul li ul li a {
 nav ul li ul li:hover {
   background: #e6ac00;
 }
+/* PÁGINA PRINCIPAL DE EQUIPOS */
+.equipos-main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.entrenadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.entrenador-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.entrenador-card:hover {
+  transform: translateY(-5px);
+}
+
+.entrenador-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.entrenador-card h2 {
+  color: var(--secondary);
+  margin: 0.5rem 0;
+}
+
+.entrenador-card .stats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* PÁGINA INDIVIDUAL DE ENTRENADOR */
+.equipo-entrenador {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.entrenador-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.entrenador-header img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.entrenador-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.pokemon-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.ataques-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.ataque {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .entrenador-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .entrenador-stats {
+    justify-content: center;
+  }
+}
