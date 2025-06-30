@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Clasificación Pokémon - Leaderboard</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --card: #ffffff;
+    --primary: #ffcb05;
+    --text: #212529;
+    --shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .leaderboard{
+    max-width:800px;
+    margin:2rem auto;
+    padding:1rem;
+  }
+  .title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+  .top-card{
+    display:flex;
+    align-items:center;
+    background:var(--card);
+    border-radius:1rem;
+    padding:1rem 1.5rem;
+    box-shadow:var(--shadow);
+    margin-bottom:2rem;
+  }
+  .top-card img{
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    margin-right:1.5rem;
+  }
+  .top-card .stats{
+    flex:1;
+  }
+  .top-card .stats h2{
+    margin:0 0 .5rem 0;
+    font-size:1.8rem;
+    color:var(--primary);
+  }
+  .top-card .stats .numbers{
+    font-size:1.2rem;
+  }
+  ul.others{
+    list-style:none;
+    padding:0;
+    margin:0;
+  }
+  ul.others li {
+    display: grid;
+    grid-template-columns: 60px 1fr repeat(4, 80px);
+    align-items: center;
+    background: var(--card);
+    border-radius: .75rem;
+    padding: .75rem 1rem;
+    margin-bottom: .75rem;
+    box-shadow: var(--shadow);
+    gap: 0.5rem;
+  }
+  ul.others li img{
+    width:60px;
+    height:60px;
+    object-fit:contain;
+  }
+  ul.others li .name {
+    font-weight: 600;
+  }
+  ul.others li .kills,
+  ul.others li .deaths,
+  ul.others li .battles,
+  ul.others li .kpb {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  @media (max-width:600px){
+    .top-card{
+      flex-direction:column;
+      text-align:center;
+    }
+    .top-card img{
+      margin:0 0 1rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="leaderboard" id="leaderboard"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const pokemons = [
+      { name: 'Charizard', img: 'https://img.pokemondb.net/artwork/charizard.jpg', kills: 25, deaths: 4, battles: 10 },
+      { name: 'Gengar',    img: 'https://img.pokemondb.net/artwork/gengar.jpg',    kills: 19, deaths: 7, battles: 9 },
+      { name: 'Blastoise', img: 'https://img.pokemondb.net/artwork/blastoise.jpg', kills: 17, deaths: 5, battles: 11 },
+      { name: 'Alakazam',  img: 'https://img.pokemondb.net/artwork/alakazam.jpg',  kills: 15, deaths: 6, battles: 8 }
+    ];
+
+    pokemons.forEach(p => {
+      p.killsPerBattle = p.battles > 0 ? (p.kills / p.battles).toFixed(2) : '0.00';
+    });
+
+    pokemons.sort((a, b) => b.kills - a.kills);
+    const [topPlayer, ...others] = pokemons;
+    const lb = document.getElementById('leaderboard');
+
+    lb.innerHTML = `
+      <div class="title">🏆 Clasificación de Kills</div>
+      <div class="top-card">
+        <img src="${topPlayer.img}" alt="${topPlayer.name}">
+        <div class="stats">
+          <h2>${topPlayer.name}</h2>
+          <div class="numbers">
+            <strong>Combates:</strong> ${topPlayer.battles}<br>
+            <strong>Kills:</strong> ${topPlayer.kills}<br>
+            <strong>Muertes:</strong> ${topPlayer.deaths}<br>
+            <strong>Kills/Combate:</strong> ${topPlayer.killsPerBattle}
+          </div>
+        </div>
+      </div>
+      <ul class="others">
+        ${others.map(p => `
+          <li>
+            <img src="${p.img}" alt="${p.name}">
+            <span class="name">${p.name}</span>
+            <span class="kills">${p.kills} K</span>
+            <span class="deaths">${p.deaths} M</span>
+            <span class="battles">${p.battles} C</span>
+            <span class="kpb">${p.killsPerBattle} K/C</span>
+          </li>`).join('')}
+      </ul>`;
+  });
+</script>
+</body>
+</html>
