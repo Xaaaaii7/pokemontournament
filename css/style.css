@@ -172,10 +172,10 @@ ul.others li .kpb {
     padding: 0.2rem 0;
   }
   
-  ul.others li .kills::before { content: "Kills: "; font-weight: bold; }
-  ul.others li .deaths::before { content: "Muertes: "; font-weight: bold; }
-  ul.others li .battles::before { content: "Combates: "; font-weight: bold; }
-  ul.others li .kpb::before { content: "K/C: "; font-weight: bold; }
+  ul.others li .kills::before { content: "🗡️ Kills: "; }
+  ul.others li .deaths::before { content: "☠️ Muertes: "; }
+  ul.others li .battles::before { content: "⚔️ Combates: "; }
+  ul.others li .kpb::before { content: "⚡ K/C: "; }
 }
 
 /* Estilo para pantallas más grandes */
