@@ -27,59 +27,44 @@
 </nav>
 
   <main class="equipo-entrenador">
-    <header class="entrenador-header">
-      <img src="https://img.pokemondb.net/sprites/home/normal/jordi-trainer.png" alt="Jordi">
-      <div>
-        <h1>Equipo de Jordi</h1>
-        <div class="entrenador-stats">
-          <span>🗡️ Kills: 42</span>
-          <span>☠️ Muertes: 18</span>
-          <span>⚔️ Combates: 22</span>
-          <span>⚡ Ratio: 1.91</span>
+      <div class="pokemon-linea" id="pokemon-container">
+      </div>
+  </main>
+  <script type="module">
+  import { cargarDatos, calcularKC } from './data-loader.js';
+
+  document.addEventListener("DOMContentLoaded", async () => {
+    const data = await cargarDatos();
+    const entrenador = data.entrenadores.jordi; // Cambia según la página
+    
+    // Actualiza el header
+    document.querySelector('.entrenador-header h1').textContent = `Equipo de ${entrenador.nombre}`;
+    document.querySelector('.entrenador-stats').innerHTML = `
+      <span>🗡️ Kills: ${entrenador.kills}</span>
+      <span>☠️ Muertes: ${entrenador.deaths}</span>
+      <span>⚔️ Combates: ${entrenador.battles}</span>
+      <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+    `;
+    
+    // Genera los Pokémon
+    const pokemonHTML = entrenador.equipo.map(p => `
+      <div class="pokemon-horizontal">
+        <img src="${p.imagen}" alt="${p.nombre}">
+        <h3>${p.nombre}</h3>
+        <div class="stats">
+          <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
+          <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
+          <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
+          <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
+        </div>
+        <div class="ataques-horizontal">
+          ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
         </div>
       </div>
-    </header>
-
-   <div class="pokemon-linea">
-    <!-- Pokémon 1 -->
-    <div class="pokemon-horizontal">
-      <img src="https://img.pokemondb.net/artwork/charizard.jpg" alt="Charizard">
-      <h3>Charizard</h3>
-      <div class="stats">
-        <span><span class="icon-stat">🗡️</span> 2 K</span>
-        <span><span class="icon-stat">☠️</span> 3 M</span>
-        <span><span class="icon-stat">⚔️</span> 2 C</span>
-        <span><span class="icon-stat">⚡</span> 1.2 K/C</span>
-      </div>
-      <div class="ataques-horizontal">
-        <div class="ataque-horizontal">🔥 Lanzallamas</div>
-        <div class="ataque-horizontal">💨 Tornado</div>
-        <div class="ataque-horizontal">✈️ Ataque Aéreo</div>
-        <div class="ataque-horizontal">👊 Garra Dragón</div>
-      </div>
-    </div>
-
-    <!-- Pokémon 2 -->
-    <div class="pokemon-horizontal">
-      <img src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="Blastoise">
-      <h3>Blastoise</h3>
-      <div class="stats">
-        <span><span class="icon-stat">🗡️</span> 2 K</span>
-        <span><span class="icon-stat">☠️</span> 3 M</span>
-        <span><span class="icon-stat">⚔️</span> 4 C</span>
-        <span><span class="icon-stat">⚡</span> 1.2 K/C</span>
-      </div>
-      <div class="ataques-horizontal">
-        <div class="ataque-horizontal">💦 Hidrobomba</div>
-        <div class="ataque-horizontal">❄️ Rayo Hielo</div>
-        <div class="ataque-horizontal">🛡️ Defensa</div>
-        <div class="ataque-horizontal">🌀 Vórtice</div>
-      </div>
-    </div>
-
-      <!-- Repite para los otros 5 Pokémon -->
-      ...
-    </div>
-  </main>
+    `).join('');
+    
+    document.querySelector('.pokemon-linea').innerHTML = pokemonHTML;
+  });
+</script>
 </body>
 </html>
