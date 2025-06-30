@@ -51,10 +51,10 @@
         <div class="stats">
           <h2>${topPlayer.name}</h2>
           <div class="numbers">
-            <strong>Combates:</strong> ${topPlayer.battles}<br>
-            <strong>Kills:</strong> ${topPlayer.kills}<br>
-            <strong>Muertes:</strong> ${topPlayer.deaths}<br>
-            <strong>Kills/Combate:</strong> ${topPlayer.killsPerBattle}
+            <strong>⚔️ Combates:</strong> ${topPlayer.battles}<br>
+            <strong>🗡️ Kills:</strong> ${topPlayer.kills}<br>
+            <strong>☠️ Muertes:</strong> ${topPlayer.deaths}<br>
+            <strong>⚡ Kills/Combate:</strong> ${topPlayer.killsPerBattle}
           </div>
         </div>
       </div>
@@ -63,13 +63,12 @@
           <li>
             <img src="${p.img}" alt="${p.name}">
             <span class="name">${p.name}</span>
-            <span class="kills">${p.kills}</span>
-            <span class="deaths">${p.deaths}</span>
-            <span class="battles">${p.battles}</span>
-            <span class="kpb">${p.killsPerBattle} K/C</span>
+            <span class="kills">🗡️ ${p.kills}</span>
+            <span class="deaths">☠️ ${p.deaths}</span>
+            <span class="battles">⚔️ ${p.battles}</span>
+            <span class="kpb">⚡ ${p.killsPerBattle}</span>
           </li>`).join('')}
       </ul>`;
-  });
 </script>
 </body>
 </html>
