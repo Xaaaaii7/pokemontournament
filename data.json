@@ -46,6 +46,30 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["🔥 Lanzallamas", "💨 Tornado", "✈️ Ataque Aéreo", "👊 Garra Dragón"]
+        },
+        {
+          "nombre": "Bonsly",
+          "imagen": "https://img.pokemondb.net/artwork/bonsly.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Tinkatink",
+          "imagen": "https://img.pokemondb.net/artwork/tinkatink.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Fidough",
+          "imagen": "https://img.pokemondb.net/artwork/fidough.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
         }
       ]
     },
@@ -95,6 +119,46 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
+        },
+        {
+          "nombre": "Kricketot",
+          "imagen": "https://img.pokemondb.net/artwork/kricketot.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Eevee",
+          "imagen": "https://img.pokemondb.net/artwork/eevee.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Tadbulb",
+          "imagen": "https://img.pokemondb.net/artwork/tadbulb.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Pawmo",
+          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Toedscool",
+          "imagen": "https://img.pokemondb.net/artwork/toedscool.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
         }
       ]
     },
@@ -144,6 +208,30 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+        },
+        {
+          "nombre": "Charcadet",
+          "imagen": "https://img.pokemondb.net/artwork/charcadet.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Rockruff",
+          "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Eevee",
+          "imagen": "https://img.pokemondb.net/artwork/eevee.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
         }
       ]
     }
