@@ -62,10 +62,10 @@
                     header.querySelector('img').src = entrenador.imagen;
                     header.querySelector('h1').textContent = `Equip d'${entrenador.nombre}`;
                     header.querySelector('.entrenador-stats').innerHTML = `
-                        <span>🗡️ Kills: ${entrenador.kills}</span>
-                        <span>☠️ Muertes: ${entrenador.deaths}</span>
-                        <span>⚔️ Combates: ${entrenador.battles}</span>
-                        <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+                        <span>🗡️ Abatuts: ${entrenador.kills}</span>
+                        <span>☠️ Morts: ${entrenador.deaths}</span>
+                        <span>⚔️ Combats: ${entrenador.battles}</span>
+                        <span>⚡ Proporció: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
                     `;
                 }
                 
