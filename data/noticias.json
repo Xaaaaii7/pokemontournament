@@ -5,7 +5,7 @@
       "titulo": "Torneig Pokémon a Paldea: Comença l'Aventura!",
       "imagen": "img/Paldea.jpg",
       "fecha": "2025-06-30",
-      "destacada": true,
+      "destacada": false,
       "contenido": "<p>El sol ix sobre Paldea mentre Eudald, Josep i Jordi comencen la seva gran aventura Pokémon, cadascú amb un company diferent però amb la mateixa determinació.<br>Eudald, amb el seu Sprigatito elegant i misteriós, busca dominar els combats amb estratègia i agilitat.<br>Josep, sempre passional, confia en la força del seu Fuecoco per cremar tots els obstacles, mentre que Jordi, amb el seu Quaxly ple d'energia, està decidit a demostrar que l'esforç i la disciplina porten a la victòria.<br><br>El camí per Paldea està ple de reptes, gimnasos i rivals inesperats, però els tres entrenadors estan llestos per escriure la seva pròpia història.<br>Qui aconseguirà convertir-se en el veritable campió?</p>"
     },
     {
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "titulo": "Eudald troba un Pawmi shiny al Sendero Cahíz!",
-      "imagen": "pawmi.jpg",
+      "imagen": "img/pawmi.jpg",
       "fecha": "2025-07-01",
       "destacada": true,
       "contenido": "<p>Durant una sessió d'entrenament al Sendero Cahíz, Eudald i el seu Sprigatito van tenir una trobada inesperada: un raríssim <strong>Pawmi shiny</strong>!<br><br>\"Estava practicant moviments amb Sprigatito quan vaig veure aquesta bola de pèl rosat entre els arbustos\", explicava emocionat Eudald.<br><br>Després d'una intensa batalla on Sprigatito va demostrar el seu creixement, Eudald va aconseguir <strong>capturar el Pawmi</strong>, afegint una peça única al seu equip.<br><br>Aquest trobada afortunada podria donar-li un avantatge en els propers combats del torneig. Josep i Jordi ja han felicitat al seu rival, però estan més decidits que mai a superar-lo!</p>"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "titulo": "Jordi sobreviu al xoc elèctric de Mencia!",
-      "imagen": "mencia.jpeg",
+      "imagen": "img/mencia.jpeg",
       "fecha": "2025-07-02",
       "destacada": true,
       "contenido": "<p>El combat més intens del que portem de temporada d'en Jordi va tenir lloc ahir a les portes de <strong>Ciudad Meseta</strong>, on es va enfrontar-se a una Mencia que els va deixar tremolant amb el seu temible <strong>Pawmi</strong>.<br><br>\"Els seus Impactruenos ens van deixar paralitzats\", confessava un Jordi encara sacsejat. \"Quaxly gairebe cau d'un sol toc, Yungoos va resistir dos atacs, i la nostra pobre Happiny va quedar amb 1 PS després del tercer impacte... Mai havia vist un Pawmi tan poderós!\"<br><br>El moment més dramàtic va arribar quan Mencia va activar la <strong>teracristal·lització elèctrica</strong>, convertint els seus atacs en veritables descàrregues devastadores. \"Quan vaig veure aquell aura daurada i els llamps creuant la zona, vaig saber que estàvem en problemes\", va afegir Jordi.<br><br>Tot i la derrota, l'equip mèdic del Centre Pokémon va assegurar que tots els Pokémon es recuperaran completament. Jordi, mentre revisava les seves notes de combat, va prometre: \"Aprendrem a contrarestar aquesta estratègia. El proper cop, serem nosaltres qui deixarem a Mencia tremolant!\"</p>"
