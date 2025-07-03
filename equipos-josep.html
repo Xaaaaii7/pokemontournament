@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo de Josep</title>
+    <title>Pokemon Torneig - Equip de Josep</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,16 +12,16 @@
     </header>
 <nav>
   <ul>
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="reglas.html">Reglas</a></li>
-    <li><a href="#">Leaderboard ▼</a>
+    <li><a href="index.html">Notícies</a></li>
+    <li><a href="reglas.html">Regles</a></li>
+    <li><a href="#">Classificacions ▼</a>
     <ul>
-        <li><a href="leaderboard.html">Classificación Pokemon</a></li>
-        <li><a href="leaderboard-entrenadores.html">Classificación Entrenadores</a></li>
+        <li><a href="leaderboard.html">Classificació Pokemon</a></li>
+        <li><a href="leaderboard-entrenadores.html">Classificació Entrenadors</a></li>
       </ul>
     </li>
     <li>
-      <a href="equipos.html">Equipos ▼</a>
+      <a href="equipos.html">Equips ▼</a>
       <ul>
         <li><a href="equipos-jordi.html">Jordi</a></li>
         <li><a href="equipos-josep.html">Josep</a></li>
@@ -36,7 +36,7 @@
         <header class="entrenador-header">
             <img src="https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png" alt="Josep">
             <div>
-                <h1>Equipo de Josep</h1>
+                <h1>Equip de Josep</h1>
                 <div class="entrenador-stats">
                     <!-- Las stats se llenarán con JavaScript -->
                 </div>
@@ -60,12 +60,12 @@
                 const header = document.querySelector('.entrenador-header');
                 if (header) {
                     header.querySelector('img').src = entrenador.imagen;
-                    header.querySelector('h1').textContent = `Equipo de ${entrenador.nombre}`;
+                    header.querySelector('h1').textContent = `Equip de ${entrenador.nombre}`;
                     header.querySelector('.entrenador-stats').innerHTML = `
-                        <span>🗡️ Kills: ${entrenador.kills}</span>
-                        <span>☠️ Muertes: ${entrenador.deaths}</span>
-                        <span>⚔️ Combates: ${entrenador.battles}</span>
-                        <span>⚡ Ratio: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
+                        <span>🗡️ Abatuts: ${entrenador.kills}</span>
+                        <span>☠️ Morts: ${entrenador.deaths}</span>
+                        <span>⚔️ Combats: ${entrenador.battles}</span>
+                        <span>⚡ Proporció: ${(entrenador.kills/entrenador.battles).toFixed(2)}</span>
                     `;
                 }
                 
