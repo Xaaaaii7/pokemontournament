@@ -97,24 +97,24 @@
       "battles": 0,
       "equipo": [
         {
-          "nombre": "Fuecoco",
-          "imagen": "https://img.pokemondb.net/artwork/fuecoco.jpg",
+          "nombre": "Crocalor",
+          "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
         },
         {
-          "nombre": "Hoppip",
-          "imagen": "https://img.pokemondb.net/artwork/hoppip.jpg",
+          "nombre": "Skiploom",
+          "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
         },
         {
-          "nombre": "Lechonk",
-          "imagen": "https://img.pokemondb.net/artwork/lechonk.jpg",
+          "nombre": "Oinkologne",
+          "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -137,16 +137,16 @@
           "ataques": ["👻 Lanzamiento", "☠️ Venoshock", "🌑 Bola Sombra", "😵 Hipnosis"]
         },
         {
-          "nombre": "Kricketot",
-          "imagen": "https://img.pokemondb.net/artwork/kricketot.jpg",
+          "nombre": "Kricketune",
+          "imagen": "https://img.pokemondb.net/artwork/kricketune.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": []
         },
         {
-          "nombre": "Eevee",
-          "imagen": "https://img.pokemondb.net/artwork/eevee.jpg",
+          "nombre": "Espeon",
+          "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
