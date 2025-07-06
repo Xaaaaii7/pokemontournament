@@ -99,9 +99,9 @@
         {
           "nombre": "Crocalor",
           "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
-          "kills": 1,
+          "kills": 3,
           "deaths": 1,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Fuego"]
         },
         {
@@ -115,9 +115,9 @@
         {
           "nombre": "Oinkologne",
           "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
-          "kills": 0,
-          "deaths": 1,
-          "battles": 1,
+          "kills": 2,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Normal"]
         },
         {
@@ -140,8 +140,8 @@
           "nombre": "Kricketune",
           "imagen": "https://img.pokemondb.net/artwork/kricketune.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Bicho"]
         },
         {
@@ -172,8 +172,8 @@
           "nombre": "Toedscool",
           "imagen": "https://img.pokemondb.net/artwork/toedscool.jpg",
           "kills": 1,
-          "deaths": 0,
-          "battles": 1,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Tierra","Planta"]
         }
       ]
@@ -188,17 +188,17 @@
         {
           "nombre": "Floragato",
           "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
-          "kills": 1,
-          "deaths": 1,
-          "battles": 1,
+          "kills": 3,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Planta"]
         },
         {
           "nombre": "Psyduck",
           "imagen": "https://img.pokemondb.net/artwork/psyduck.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Agua"]
         },
         {
@@ -230,7 +230,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
           "kills": 3,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Electrico","Lucha"]
         },
         {
@@ -245,8 +245,8 @@
           "nombre": "Rockruff",
           "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
           "kills": 0,
-          "deaths": 1,
-          "battles": 1,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Roca"]
         },
         {
@@ -260,9 +260,9 @@
         {
           "nombre": "Skiploom*",
           "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
-          "kills": 0,
+          "kills": 2,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Planta","Volador"]
         },
         {
