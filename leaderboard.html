@@ -68,22 +68,24 @@
 
       pokemons.sort((a, b) => {
   // Primero comparar por kills (descendente)
-  if (b.kills !== a.kills) {
+  else if (b.kills !== a.kills) {
     return b.kills - a.kills;
   }
   
   // Si kills son iguales, comparar por ratio (descendente)
-  if (b.killsPerBattle !== a.killsPerBattle) {
+  else if (b.killsPerBattle !== a.killsPerBattle) {
     return b.killsPerBattle - a.killsPerBattle;
   }
   
   // Si ratio son iguales, comparar por deaths (ascendente)
-  if (a.deaths !== b.deaths) {
+  else if (a.deaths !== b.deaths) {
     return a.death - b.death;
   }
   
   // Si deaths son iguales, comparar por batallas (ascendente)
+else{
   return b.battles - a.battles;
+}
 });
       
       const [first, second, third, ...others] = pokemons;
