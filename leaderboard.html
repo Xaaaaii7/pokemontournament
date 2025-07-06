@@ -68,7 +68,7 @@
 
       pokemons.sort((a, b) => {
   // Primero comparar por kills (descendente)
-  else if (b.kills !== a.kills) {
+  if (b.kills !== a.kills) {
     return b.kills - a.kills;
   }
   
