@@ -274,14 +274,6 @@
           "ataques": ["Electrico"]
         },
         {
-          "nombre": "Rockruff",
-          "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
-          "ataques": ["Roca"]
-        },
-        {
           "nombre": "Gulpin",
           "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
           "kills": 0,
