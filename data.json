@@ -140,7 +140,7 @@
           "nombre": "Kricketune",
           "imagen": "https://img.pokemondb.net/artwork/kricketune.jpg",
           "kills": 0,
-          "deaths": 1,
+          "deaths": 2,
           "battles": 2,
           "ataques": ["Bicho"]
         },
@@ -164,7 +164,7 @@
           "nombre": "Pawmo",
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
           "kills": 1,
-          "deaths": 0,
+          "deaths": 2,
           "battles": 2,
           "ataques": ["Electrico","Lucha"]
         },
