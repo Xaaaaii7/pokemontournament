@@ -186,8 +186,8 @@
       "battles": 0,
       "equipo": [
         {
-          "nombre": "Sprigatito",
-          "imagen": "https://img.pokemondb.net/artwork/sprigatito.jpg",
+          "nombre": "Floragato",
+          "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -218,12 +218,20 @@
           "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
         },
         {
-          "nombre": "Pawmi",
-          "imagen": "https://img.pokemondb.net/artwork/pawmi.jpg",
+          "nombre": "Pawmo",
+          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["🌀 Huracán", "✈️ Ataque Aéreo", "💥 Hiperrayo", "🛡️ Defensa"]
+          "ataques": []
+        },
+        {
+          "nombre": "Pawmo*",
+          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
         },
         {
           "nombre": "Charcadet",
@@ -242,8 +250,40 @@
           "ataques": []
         },
         {
-          "nombre": "Eevee",
-          "imagen": "https://img.pokemondb.net/artwork/eevee.jpg",
+          "nombre": "Silveon",
+          "imagen": "https://img.pokemondb.net/artwork/silveon.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Skiploom*",
+          "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Tadbulb",
+          "imagen": "https://img.pokemondb.net/artwork/tadbulb.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Rockruff",
+          "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": []
+        },
+        {
+          "nombre": "Gulpin",
+          "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
