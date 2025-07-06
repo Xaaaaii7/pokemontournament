@@ -3,9 +3,9 @@
     "jordi": {
       "nombre": "Jordi",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/blckbelt.png",
-      "kills": 0,
-      "deaths": 0,
-      "battles": 0,
+      "kills": 1,
+      "deaths": 1,
+      "battles": 2,
       "equipo": [
         {
           "nombre": "Quaxwell",
@@ -27,8 +27,8 @@
           "nombre": "Chansey",
           "imagen": "https://img.pokemondb.net/artwork/chansey.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Normal"]
         },
         {
@@ -43,16 +43,16 @@
           "nombre": "Fletchinder",
           "imagen": "https://img.pokemondb.net/artwork/fletchinder.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Fuego","Volador"]
         },
         {
           "nombre": "Sudowoodo",
           "imagen": "https://img.pokemondb.net/artwork/sudowoodo.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 2,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Sudowoodo"]
         },
         {
@@ -66,25 +66,25 @@
         {
           "nombre": "Fidough",
           "imagen": "https://img.pokemondb.net/artwork/fidough.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Hada"]
         },
         {
           "nombre": "Corvisquire",
           "imagen": "https://img.pokemondb.net/artwork/corvisquire.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 2,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Volador"]
         },
         {
           "nombre": "Luxio",
           "imagen": "https://img.pokemondb.net/artwork/luxio.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 4,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Electrico"]
         }
       ]
@@ -93,31 +93,31 @@
       "nombre": "Josep",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/youngster.png",
       "kills": 0,
-      "deaths": 0,
-      "battles": 0,
+      "deaths": 1,
+      "battles": 1,
       "equipo": [
         {
           "nombre": "Crocalor",
           "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Fuego"]
         },
         {
           "nombre": "Skiploom",
           "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Planta","Volador"]
         },
         {
           "nombre": "Oinkologne",
           "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Normal"]
         },
         {
@@ -163,17 +163,17 @@
         {
           "nombre": "Pawmo",
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Electrico","Lucha"]
         },
         {
           "nombre": "Toedscool",
           "imagen": "https://img.pokemondb.net/artwork/toedscool.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Tierra","Planta"]
         }
       ]
@@ -181,16 +181,16 @@
     "eudald": {
       "nombre": "Eudald",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png",
-      "kills": 0,
+      "kills": 1,
       "deaths": 0,
-      "battles": 0,
+      "battles": 1,
       "equipo": [
         {
           "nombre": "Floragato",
           "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Planta"]
         },
         {
@@ -213,8 +213,8 @@
           "nombre": "Diglett",
           "imagen": "https://img.pokemondb.net/artwork/diglett.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Tierra"]
         },
         {
@@ -228,9 +228,9 @@
         {
           "nombre": "Pawmo*",
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
-          "kills": 0,
+          "kills": 3,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Electrico","Lucha"]
         },
         {
@@ -245,8 +245,8 @@
           "nombre": "Rockruff",
           "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Roca"]
         },
         {
@@ -276,9 +276,9 @@
         {
           "nombre": "Gulpin",
           "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
-          "kills": 0,
+          "kills": 2,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Veneno"]
         }
       ]
