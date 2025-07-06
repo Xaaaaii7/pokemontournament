@@ -43,7 +43,7 @@
           "nombre": "Fletchinder",
           "imagen": "https://img.pokemondb.net/artwork/fletchinder.jpg",
           "kills": 0,
-          "deaths": 2,
+          "deaths": 1,
           "battles": 2,
           "ataques": ["Fuego","Volador"]
         },
