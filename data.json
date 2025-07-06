@@ -237,7 +237,7 @@
           "nombre": "Charcadet",
           "imagen": "https://img.pokemondb.net/artwork/charcadet.jpg",
           "kills": 0,
-          "deaths": 0,
+          "deaths": 1,
           "battles": 1,
           "ataques": ["Fuego"]
         },
