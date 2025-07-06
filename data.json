@@ -238,7 +238,7 @@
           "imagen": "https://img.pokemondb.net/artwork/charcadet.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Fuego"]
         },
         {
@@ -278,7 +278,7 @@
           "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
           "kills": 2,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Veneno"]
         }
       ]
