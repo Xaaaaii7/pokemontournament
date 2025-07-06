@@ -109,7 +109,7 @@
           "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
           "kills": 1,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Planta","Volador"]
         },
         {
@@ -165,7 +165,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
           "kills": 1,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Electrico","Lucha"]
         },
         {
