@@ -79,11 +79,11 @@
   
   // Si ratio son iguales, comparar por deaths (ascendente)
   if (a.deaths !== b.deaths) {
-    return b.death - a.death;
+    return a.death - b.death;
   }
   
   // Si deaths son iguales, comparar por batallas (ascendente)
-  return a.battles - b.battles;
+  return b.battles - a.battles;
 });
       
       const [first, second, third, ...others] = pokemons;
