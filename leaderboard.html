@@ -62,8 +62,25 @@
         p.killsPerBattle = calcularKC(p);
       });
 
-      // Ordenar por kills (de mayor a menor)
-      pokemons.sort((a, b) => b.kills - a.kills);
+      pokemons.sort((a, b) => {
+  // Primero comparar por kills (descendente)
+  if (b.kills !== a.kills) {
+    return b.kills - a.kills;
+  }
+  
+  // Si kills son iguales, comparar por ratio (descendente)
+  if (b.killsPerBattle !== a.killsPerBattle) {
+    return b.killsPerBattle - a.killsPerBattle;
+  }
+  
+  // Si ratio son iguales, comparar por deaths (ascendente)
+  if (a.deaths !== b.deaths) {
+    return a.deaths - b.deaths;
+  }
+  
+  // Si deaths son iguales, comparar por batallas (ascendente)
+  return a.batallas - b.batallas;
+});
       
       const [first, second, third, ...others] = pokemons;
       const lb = document.getElementById('leaderboard');
