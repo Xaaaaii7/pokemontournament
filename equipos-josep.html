@@ -75,7 +75,7 @@
                     container.innerHTML = entrenador.equipo.map(p => `
                         <div class="pokemon-horizontal">
                             <img src="${p.imagen}" alt="${p.nombre}">
-                            <h3>${p.nombre}</h3>
+                            <h3><a href="https://www.wikidex.net/wiki/${p.nombre}">${p.nombre}</a></h3>
                             <div class="stats">
                                 <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
                                 <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
