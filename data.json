@@ -277,7 +277,7 @@
           "nombre": "Gulpin",
           "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
           "kills": 2,
-          "deaths": 0,
+          "deaths": 1,
           "battles": 2,
           "ataques": ["Veneno"]
         }
