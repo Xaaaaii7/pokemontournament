@@ -13,7 +13,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Agua"]
+          "ataques": ["Agua"],
           "inscrito": true
         },
         {
@@ -22,7 +22,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Agua"]
+          "ataques": ["Agua"],
           "inscrito": true
         },
         {
@@ -31,7 +31,7 @@
           "kills": 0,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Normal"]
+          "ataques": ["Normal"],
           "inscrito": true
         },
         {
@@ -40,7 +40,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Normal"]
+          "ataques": ["Normal"],
           "inscrito": true
         },
         {
@@ -49,7 +49,7 @@
           "kills": 0,
           "deaths": 1,
           "battles": 2,
-          "ataques": ["Fuego","Volador"]
+          "ataques": ["Fuego","Volador"],
           "inscrito": true
         },
         {
@@ -58,7 +58,7 @@
           "kills": 2,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Sudowoodo"]
+          "ataques": ["Sudowoodo"],
           "inscrito": true
         },
         {
@@ -67,7 +67,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Hada","Acero"]
+          "ataques": ["Hada","Acero"],
           "inscrito": true
         },
         {
@@ -76,7 +76,7 @@
           "kills": 1,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Hada"]
+          "ataques": ["Hada"],
           "inscrito": true
         },
         {
@@ -85,7 +85,7 @@
           "kills": 2,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Volador"]
+          "ataques": ["Volador"],
           "inscrito": true
         },
         {
@@ -94,7 +94,7 @@
           "kills": 4,
           "deaths": 1,
           "battles": 2,
-          "ataques": ["Electrico"]
+          "ataques": ["Electrico"],
           "inscrito": true
         }
       ]
@@ -112,7 +112,7 @@
           "kills": 3,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Fuego"]
+          "ataques": ["Fuego"],
           "inscrito": true
         },
         {
@@ -121,7 +121,7 @@
           "kills": 1,
           "deaths": 0,
           "battles": 2,
-          "ataques": ["Planta","Volador"]
+          "ataques": ["Planta","Volador"],
           "inscrito": true
         },
         {
@@ -130,7 +130,7 @@
           "kills": 2,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Normal"]
+          "ataques": ["Normal"],
           "inscrito": true
         },
         {
@@ -139,7 +139,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Siniestro","Fuego"]
+          "ataques": ["Siniestro","Fuego"],
           "inscrito": true
         },
         {
@@ -148,7 +148,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Agua"]
+          "ataques": ["Agua"],
           "inscrito": true
         },
         {
@@ -157,7 +157,7 @@
           "kills": 0,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Bicho"]
+          "ataques": ["Bicho"],
           "inscrito": true
         },
         {
@@ -166,7 +166,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Psiquico"]
+          "ataques": ["Psiquico"],
           "inscrito": true
         },
         {
@@ -175,7 +175,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Electrico"]
+          "ataques": ["Electrico"],
           "inscrito": true
         },
         {
@@ -184,7 +184,7 @@
           "kills": 1,
           "deaths": 0,
           "battles": 2,
-          "ataques": ["Electrico","Lucha"]
+          "ataques": ["Electrico","Lucha"],
           "inscrito": true
         },
         {
@@ -193,7 +193,7 @@
           "kills": 1,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Tierra","Planta"]
+          "ataques": ["Tierra","Planta"],
           "inscrito": true
         }
       ]
@@ -211,7 +211,7 @@
           "kills": 3,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Planta"]
+          "ataques": ["Planta"],
           "inscrito": true
         },
         {
@@ -220,7 +220,7 @@
           "kills": 0,
           "deaths": 1,
           "battles": 1,
-          "ataques": ["Agua"]
+          "ataques": ["Agua"],
           "inscrito": true
         },
         {
@@ -229,7 +229,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Normal","Planta"]
+          "ataques": ["Normal","Planta"],
           "inscrito": true
         },
         {
@@ -238,7 +238,7 @@
           "kills": 0,
           "deaths": 1,
           "battles": 1,
-          "ataques": ["Tierra"]
+          "ataques": ["Tierra"],
           "inscrito": true
         },
         {
@@ -247,7 +247,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Electrico","Lucha"]
+          "ataques": ["Electrico","Lucha"],
           "inscrito": false
         },
         {
@@ -256,7 +256,7 @@
           "kills": 3,
           "deaths": 1,
           "battles": 2,
-          "ataques": ["Electrico","Lucha"]
+          "ataques": ["Electrico","Lucha"],
           "inscrito": true
         },
         {
@@ -265,7 +265,7 @@
           "kills": 0,
           "deaths": 1,
           "battles": 1,
-          "ataques": ["Fuego"]
+          "ataques": ["Fuego"],
           "inscrito": true
         },
         {
@@ -274,7 +274,7 @@
           "kills": 0,
           "deaths": 2,
           "battles": 2,
-          "ataques": ["Roca"]
+          "ataques": ["Roca"],
           "inscrito": true
         },
         {
@@ -283,7 +283,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Hada"]
+          "ataques": ["Hada"],
           "inscrito": true
         },
         {
@@ -292,7 +292,7 @@
           "kills": 2,
           "deaths": 0,
           "battles": 1,
-          "ataques": ["Planta","Volador"]
+          "ataques": ["Planta","Volador"],
           "inscrito": true
         },
         {
@@ -301,7 +301,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Electrico"]
+          "ataques": ["Electrico"],
           "inscrito": true
         },
         {
@@ -310,7 +310,7 @@
           "kills": 2,
           "deaths": 1,
           "battles": 2,
-          "ataques": ["Veneno"]
+          "ataques": ["Veneno"],
           "inscrito": true
         }
       ]
