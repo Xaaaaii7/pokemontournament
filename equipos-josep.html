@@ -101,7 +101,12 @@
               <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
             </div>
             <div class="ataques-horizontal">
-              ${p.ataques.map(a => `<div class="ataque-horizontal">${a}</div>`).join('')}
+              ${p.ataques
+                .map(t => {
+                  const tipoLower = t.toLowerCase();
+                  return `<img class="tipo-icon" src="https://img.pokemondb.net/images/types/${tipoLower}.png" alt="${t}">`;
+                })
+                .join('')}
             </div>
           </div>`;
       }
