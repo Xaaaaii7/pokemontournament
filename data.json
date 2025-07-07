@@ -100,7 +100,7 @@
           "nombre": "Crocalor",
           "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
           "kills": 3,
-          "deaths": 1,
+          "deaths": 2,
           "battles": 2,
           "ataques": ["Fuego"]
         },
@@ -164,7 +164,7 @@
           "nombre": "Pawmo",
           "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
           "kills": 1,
-          "deaths": 2,
+          "deaths": 0,
           "battles": 2,
           "ataques": ["Electrico","Lucha"]
         },
@@ -172,7 +172,7 @@
           "nombre": "Toedscool",
           "imagen": "https://img.pokemondb.net/artwork/toedscool.jpg",
           "kills": 1,
-          "deaths": 1,
+          "deaths": 2,
           "battles": 2,
           "ataques": ["Tierra","Planta"]
         }
