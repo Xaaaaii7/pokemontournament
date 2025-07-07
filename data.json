@@ -106,6 +106,36 @@
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Arrokuda",
+          "imagen": "https://img.pokemondb.net/artwork/arrokuda.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Bronzor",
+          "imagen": "https://img.pokemondb.net/artwork/bronzor.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Acero","Psiquico"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Hawlucha",
+          "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha","Volador"],
+          "inscrito": true,
+          "deathsAdventure": 0
         }
       ]
     },
