@@ -15,7 +15,7 @@
           "battles": 0,
           "ataques": ["Agua"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Buizel",
@@ -25,7 +25,7 @@
           "battles": 0,
           "ataques": ["Agua"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Chansey",
@@ -35,7 +35,7 @@
           "battles": 2,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Yungoos",
@@ -45,7 +45,7 @@
           "battles": 0,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Fletchinder",
@@ -55,7 +55,7 @@
           "battles": 2,
           "ataques": ["Fuego","Volador"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Sudowoodo",
@@ -65,7 +65,7 @@
           "battles": 2,
           "ataques": ["Sudowoodo"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Tinkatink",
@@ -75,7 +75,7 @@
           "battles": 0,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Fidough",
@@ -85,7 +85,7 @@
           "battles": 2,
           "ataques": ["Hada"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Corvisquire",
@@ -95,7 +95,7 @@
           "battles": 2,
           "ataques": ["Volador"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Luxio",
@@ -105,7 +105,7 @@
           "battles": 2,
           "ataques": ["Electrico"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         }
       ]
     },
@@ -124,7 +124,7 @@
           "battles": 2,
           "ataques": ["Fuego"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Skiploom",
@@ -134,7 +134,7 @@
           "battles": 2,
           "ataques": ["Planta","Volador"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Oinkologne",
@@ -144,7 +144,7 @@
           "battles": 2,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Houndour",
@@ -154,7 +154,7 @@
           "battles": 0,
           "ataques": ["Siniestro","Fuego"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Arrokuda",
@@ -164,7 +164,7 @@
           "battles": 0,
           "ataques": ["Agua"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Kricketune",
@@ -174,7 +174,7 @@
           "battles": 2,
           "ataques": ["Bicho"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Espeon",
@@ -184,7 +184,7 @@
           "battles": 0,
           "ataques": ["Psiquico"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Tadbulb",
@@ -194,7 +194,7 @@
           "battles": 0,
           "ataques": ["Electrico"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Pawmo",
@@ -204,7 +204,7 @@
           "battles": 2,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Toedscool",
@@ -214,7 +214,7 @@
           "battles": 2,
           "ataques": ["Tierra","Planta"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         }
       ]
     },
@@ -233,7 +233,7 @@
           "battles": 2,
           "ataques": ["Planta"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Psyduck",
@@ -243,7 +243,7 @@
           "battles": 1,
           "ataques": ["Agua"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Deerling",
@@ -253,7 +253,7 @@
           "battles": 0,
           "ataques": ["Normal","Planta"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Diglett",
@@ -263,7 +263,7 @@
           "battles": 1,
           "ataques": ["Tierra"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Pawmo",
@@ -273,7 +273,7 @@
           "battles": 0,
           "ataques": ["Electrico","Lucha"],
           "inscrito": false,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Pawmo*",
@@ -283,7 +283,7 @@
           "battles": 2,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Charcadet",
@@ -293,7 +293,7 @@
           "battles": 1,
           "ataques": ["Fuego"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Rockruff",
@@ -303,7 +303,7 @@
           "battles": 2,
           "ataques": ["Roca"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Sylveon",
@@ -313,7 +313,7 @@
           "battles": 0,
           "ataques": ["Hada"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Skiploom*",
@@ -323,7 +323,7 @@
           "battles": 1,
           "ataques": ["Planta","Volador"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Tadbulb",
@@ -333,7 +333,7 @@
           "battles": 0,
           "ataques": ["Electrico"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         },
         {
           "nombre": "Gulpin",
@@ -343,7 +343,7 @@
           "battles": 2,
           "ataques": ["Veneno"],
           "inscrito": true,
-          "deathwAdventure": 0
+          "deathsAdventure": 0
         }
       ]
     }
