@@ -182,12 +182,17 @@
       }
 
       /* Preparar datos de Pokémon ----------------------------------------- */
-      allPokemonData = entrenador.equipo.map(p => ({
-        ...p,
-        ratio: calcularKC(p),
-        deathsAdventure: p.deathsAdventure || 0,
-        type: p.ataques.join(',')
-      }));
+        allPokemonData = entrenador.equipo.map(p => {
+          // Asegurar que ratio sea siempre un número
+          const ratio = typeof calcularKC(p) === 'number' ? calcularKC(p) : 0;
+          
+          return {
+            ...p,
+            ratio: ratio,  // Usamos el valor asegurado
+            deathsAdventure: p.deathsAdventure || 0,
+            type: p.ataques.join(',')
+          };
+        });
       
       inscritosData = allPokemonData.filter(p => p.inscrito);
 
