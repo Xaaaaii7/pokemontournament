@@ -5,6 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Torneig - Equip de Josep</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos adicionales para la tabla de ranking */
+        .pokemon-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pokemon-table thead tr {
+            background-color: #e60012;
+            color: white;
+            text-align: left;
+        }
+        
+        .pokemon-table th,
+        .pokemon-table td {
+            padding: 12px 15px;
+        }
+        
+        .pokemon-table th {
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .pokemon-table th:hover {
+            background-color: #c5000f;
+        }
+        
+        .pokemon-table th.sort-asc::after {
+            content: " ↑";
+        }
+        
+        .pokemon-table th.sort-desc::after {
+            content: " ↓";
+        }
+        
+        .pokemon-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+        .pokemon-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        
+        .pokemon-table tbody tr:last-of-type {
+            border-bottom: 2px solid #e60012;
+        }
+        
+        .pokemon-table tbody tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .pokemon-table .tipo-cell {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .pokemon-table .tipo-icon {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .pokemon-table .pokemon-name {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pokemon-table .pokemon-name img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
     <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
@@ -33,7 +108,6 @@
 </nav>
 
     <main class="equipo-entrenador">
-        <!-- Añadí la sección del header del entrenador que faltaba -->
         <header class="entrenador-header">
             <img src="https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png" alt="Josep">
             <div>
@@ -44,12 +118,44 @@
             </div>
         </header>
 
-        <div class="pokemon-linea" id="pokemon-container">
-            <!-- Los Pokémon se insertarán aquí -->
-        </div>
+        <section>
+          <h2>Tots els Pokémon</h2>
+          <table class="pokemon-table" id="pokemon-table">
+            <thead>
+              <tr>
+                <th data-sort="name">Nom</th>
+                <th data-sort="type">Tipus</th>
+                <th data-sort="battles" data-sort-init="desc">Combats</th>
+                <th data-sort="kills">Kills</th>
+                <th data-sort="deaths">Morts</th>
+                <th data-sort="ratio">Proporció</th>
+                <th data-sort="deathsAdventure">MortsAventura</th>
+              </tr>
+            </thead>
+            <tbody id="pokemon-container">
+              <!-- Los Pokémon se insertarán aquí -->
+            </tbody>
+          </table>
+        </section>
+        
         <section>
           <h2>Pokémon inscrits</h2>
-          <div class="pokemon-linea" id="inscrits-container"></div>
+          <table class="pokemon-table" id="inscrits-table">
+            <thead>
+              <tr>
+                <th data-sort="name">Nom</th>
+                <th data-sort="type">Tipus</th>
+                <th data-sort="battles" data-sort-init="desc">Combats</th>
+                <th data-sort="kills">Kills</th>
+                <th data-sort="deaths">Morts</th>
+                <th data-sort="ratio">Proporció</th>
+                <th data-sort="deathsAdventure">MortsAventura</th>
+              </tr>
+            </thead>
+            <tbody id="inscrits-container">
+              <!-- Los Pokémon inscritos se insertarán aquí -->
+            </tbody>
+          </table>
         </section>
     </main>
 
@@ -60,6 +166,8 @@
     try {
       const data       = await cargarDatos();
       const entrenador = data.entrenadores.josep;
+      let allPokemonData = [];
+      let inscritosData = [];
 
       /* Header ------------------------------------------------------------- */
       const header = document.querySelector('.entrenador-header');
@@ -73,42 +181,109 @@
           <span>⚡ Proporció: ${(entrenador.kills / entrenador.battles).toFixed(2)}</span>`;
       }
 
-      /* Bloc 1 – tots els Pokémon ----------------------------------------- */
-      const container = document.getElementById('pokemon-container');
-      if (container) {
-        container.innerHTML = entrenador.equipo.map(renderCard).join('');
+      /* Preparar datos de Pokémon ----------------------------------------- */
+      allPokemonData = entrenador.equipo.map(p => ({
+        ...p,
+        ratio: calcularKC(p),
+        deathsAdventure: p.deathsAdventure || 0,
+        type: p.ataques.join(',')
+      }));
+      
+      inscritosData = allPokemonData.filter(p => p.inscrito);
+
+      /* Renderizar tablas iniciales --------------------------------------- */
+      renderTable('pokemon-container', allPokemonData);
+      renderTable('inscrits-container', inscritosData);
+
+      /* Configurar ordenación -------------------------------------------- */
+      setupSorting('pokemon-table', 'pokemon-container', allPokemonData);
+      setupSorting('inscrits-table', 'inscrits-container', inscritosData);
+
+      /* Función para renderizar tabla ------------------------------------ */
+      function renderTable(containerId, pokemonList) {
+        const container = document.getElementById(containerId);
+        if (container) {
+          container.innerHTML = pokemonList.map(renderRow).join('');
+        }
       }
 
-      /* Bloc 2 – només inscrits ------------------------------------------ */
-      const inscritsContainer = document.getElementById('inscrits-container');
-      if (inscritsContainer) {
-        inscritsContainer.innerHTML = entrenador.equipo
-          .filter(p => p.inscrito)        // 👈 filtra per inscrit
-          .map(renderCard)
-          .join('');
-      }
-
-      /* Funció reutilitzable --------------------------------------------- */
-      function renderCard(p) {
+      /* Función para renderizar fila ------------------------------------- */
+      function renderRow(p) {
         return `
-          <div class="pokemon-horizontal">
-            <img src="${p.imagen}" alt="${p.nombre}">
-            <h3><a href="https://www.wikidex.net/wiki/${p.nombre}">${p.nombre}</a></h3>
-            <div class="stats">
-              <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
-              <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
-              <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
-              <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
-            </div>
-            <div class="ataques-horizontal">
+          <tr>
+            <td class="pokemon-name">
+              <img src="${p.imagen}" alt="${p.nombre}">
+              <a href="https://www.wikidex.net/wiki/${p.nombre}">${p.nombre}</a>
+            </td>
+            <td class="tipo-cell">
               ${p.ataques
-                .map(t => {
-                  const tipoLower = t.toLowerCase();
-                  return `<img class="tipo-icon" src="img/${t}.png" alt="${t}">`;
-                })
+                .map(t => `<img class="tipo-icon" src="img/${t}.png" alt="${t}">`)
                 .join('')}
-            </div>
-          </div>`;
+            </td>
+            <td>${p.battles}</td>
+            <td>${p.kills}</td>
+            <td>${p.deaths}</td>
+            <td>${p.ratio.toFixed(2)}</td>
+            <td>${p.deathsAdventure}</td>
+          </tr>`;
+      }
+
+      /* Función para configurar ordenación ------------------------------- */
+      function setupSorting(tableId, containerId, pokemonData) {
+        const table = document.getElementById(tableId);
+        const headers = table.querySelectorAll('th[data-sort]');
+        let currentData = [...pokemonData];
+        
+        headers.forEach(header => {
+          // Orden inicial si está especificado
+          if (header.hasAttribute('data-sort-init')) {
+            const sortOrder = header.getAttribute('data-sort-init');
+            sortTable(header.getAttribute('data-sort'), sortOrder);
+            header.classList.add(`sort-${sortOrder}`);
+          }
+          
+          header.addEventListener('click', () => {
+            const sortKey = header.getAttribute('data-sort');
+            const isAsc = header.classList.contains('sort-asc');
+            const newOrder = isAsc ? 'desc' : 'asc';
+            
+            // Resetear clases de ordenación en todos los headers
+            headers.forEach(h => {
+              h.classList.remove('sort-asc', 'sort-desc');
+            });
+            
+            // Aplicar clase al header actual
+            header.classList.add(`sort-${newOrder}`);
+            
+            // Ordenar y renderizar
+            sortTable(sortKey, newOrder);
+          });
+        });
+        
+        function sortTable(sortKey, order) {
+          currentData.sort((a, b) => {
+            let valueA, valueB;
+            
+            // Para ordenar por tipos (que es un array)
+            if (sortKey === 'type') {
+              valueA = a.ataques.join('');
+              valueB = b.ataques.join('');
+            } else {
+              valueA = a[sortKey];
+              valueB = b[sortKey];
+            }
+            
+            if (valueA < valueB) {
+              return order === 'asc' ? -1 : 1;
+            }
+            if (valueA > valueB) {
+              return order === 'asc' ? 1 : -1;
+            }
+            return 0;
+          });
+          
+          renderTable(containerId, currentData);
+        }
       }
     } catch (error) {
       console.error('Error cargando los datos:', error);
@@ -118,4 +293,3 @@
 
 </body>
 </html>
-
