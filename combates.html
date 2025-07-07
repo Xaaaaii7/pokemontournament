@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pokemon Torneig - Combats</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  /* Estilos específicos para la página de combates */
+  .combates-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .jornada {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .jornada-header {
+    background: var(--primary);
+    padding: 1rem;
+    color: #212529;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .jornada-header::before {
+    content: "🎮";
+    font-size: 1.2rem;
+  }
+  
+  .combates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .combate-card {
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .combate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  .combate-video {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación 16:9 */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .combate-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .combate-info {
+    padding: 1rem;
+    background: #f8f9fa;
+  }
+  
+  .combate-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--secondary);
+    font-size: 1.2rem;
+  }
+  
+  .participantes {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .ganador {
+    font-weight: bold;
+    color: #d4af37;
+  }
+  
+  .combate-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  @media (max-width: 768px) {
+    .combates-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .jornada-header {
+      font-size: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Notícies</a></li>
+    <li><a href="reglas.html">Regles</a></li>
+    <li><a href="#">Classificacions ▼</a>
+      <ul>
+        <li><a href="leaderboard.html">Classificació Pokemon</a></li>
+        <li><a href="leaderboard-entrenadores.html">Classificació Entrenadors</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="equipos.html">Equips ▼</a>
+      <ul>
+        <li><a href="equipos-jordi.html">Jordi</a></li>
+        <li><a href="equipos-josep.html">Josep</a></li>
+        <li><a href="equipos-eudald.html">Eudald</a></li>
+      </ul>
+    </li>
+    <li><a href="combates.html">Combats</a></li>
+  </ul>
+</nav>
+
+<div class="combates-container">
+  <h1 style="text-align:center; color:var(--secondary); margin-bottom:2rem;">🎥 Combats per Jornada</h1>
+  
+  <!-- Jornada 1 -->
+  <div class="jornada">
+    <div class="jornada-header">Jornada 1 - Inici de Temporada</div>
+    <div class="combates-grid">
+      <!-- Combate 1 -->
+      <div class="combate-card">
+        <div class="combate-video">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="combate-info">
+          <h3>Semifinal - Grup A</h3>
+          <div class="participantes">
+            <span>Jordi</span>
+            <span class="ganador">Josep (Guanyador)</span>
+          </div>
+          <div class="combate-meta">
+            <span>12/04/2023</span>
+            <span>⏱️ 8:24</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Combate 2 -->
+      <div class="combate-card">
+        <div class="combate-video">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        </div>
+        <div class="combate-info">
+          <h3>Semifinal - Grup B</h3>
+          <div class="participantes">
+            <span class="ganador">Eudald (Guanyador)</span>
+            <span>Marc</span>
+          </div>
+          <div class="combate-meta">
+            <span>12/04/2023</span>
+            <span>⏱️ 10:45</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Jornada 2 -->
+  <div class="jornada">
+    <div class="jornada-header">Jornada 2 - Eliminatòries</div>
+    <div class="combates-grid">
+      <!-- Combate 1 -->
+      <div class="combate-card">
+        <div class="combate-video">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+        </div>
+        <div class="combate-info">
+          <h3>Final de Jornada</h3>
+          <div class="participantes">
+            <span>Josep</span>
+            <span class="ganador">Eudald (Guanyador)</span>
+          </div>
+          <div class="combate-meta">
+            <span>19/04/2023</span>
+            <span>⏱️ 15:32</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Más jornadas según necesites -->
+</div>
+
+</body>
+</html>
