@@ -21,58 +21,47 @@ export function renderNav(currentPage = '') {
         { href: "combates.html", text: "Combats" }
     ];
 
-    const navHTML = `
-    <nav>
-        <ul>
-            ${navItems.map(item => {
-                const isActive = currentPage === item.href;
-                const hasSubItems = item.subItems && item.subItems.length > 0;
-                
-                return `
-                <li class="${isActive ? 'active' : ''}">
-                    ${hasSubItems ? `
-                        <a href="#">${item.text}</a>
-                        <ul>
-                            ${item.subItems.map(subItem => `
-                                <li><a href="${subItem.href}" ${currentPage === subItem.href ? 'class="active"' : ''}>${subItem.text}</a></li>
-                            `).join('')}
-                        </ul>
-                    ` : `
-                        <a href="${item.href}" ${isActive ? 'class="active"' : ''}>${item.text}</a>
-                    `}
-                </li>`;
-            }).join('')}
-        </ul>
-    </nav>`;
-
-    return navHTML;
+    return `
+    <ul>
+        ${navItems.map(item => {
+            const isActive = currentPage === item.href || 
+                            (item.subItems && item.subItems.some(subItem => currentPage === subItem.href));
+            
+            const hasSubItems = item.subItems && item.subItems.length > 0;
+            
+            return `
+            <li class="${isActive ? 'active' : ''}">
+                ${hasSubItems ? `
+                    <a href="#" class="dropdown-toggle">${item.text}</a>
+                    <ul class="dropdown-menu">
+                        ${item.subItems.map(subItem => `
+                            <li><a href="${subItem.href}" ${currentPage === subItem.href ? 'class="active"' : ''}>${subItem.text}</a></li>
+                        `).join('')}
+                    </ul>
+                ` : `
+                    <a href="${item.href}" ${currentPage === item.href ? 'class="active"' : ''}>${item.text}</a>
+                `}
+            </li>`;
+        }).join('')}
+    </ul>`;
 }
 
 export function setupNav() {
     const navContainer = document.querySelector('nav');
-    if (navContainer) {
-        const currentPage = window.location.pathname.split('/').pop();
-        navContainer.innerHTML = renderNav(currentPage);
+    if (!navContainer) {
+        console.error('No se encontró el contenedor del menú');
+        return;
     }
-}
-// En nav-component.js
-export function setupNav() {
-    const navContainer = document.querySelector('nav');
-    if (navContainer) {
-        const currentPage = window.location.pathname.split('/').pop();
-        navContainer.innerHTML = renderNav(currentPage);
-        
-        // Añadir comportamiento responsive
-        const menuItems = document.querySelectorAll('nav > ul > li');
-        menuItems.forEach(item => {
-            if (item.querySelector('ul')) {
-                item.addEventListener('click', (e) => {
-                    if (window.innerWidth <= 600) {
-                        e.preventDefault();
-                        item.classList.toggle('open');
-                    }
-                });
-            }
+    
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    navContainer.innerHTML = renderNav(currentPage);
+    
+    // Añadir interactividad al menú desplegable
+    const dropdowns = document.querySelectorAll('.dropdown-toggle');
+    dropdowns.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.nextElementSibling.classList.toggle('show');
         });
-    }
+    });
 }
