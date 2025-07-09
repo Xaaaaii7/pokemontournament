@@ -641,7 +641,26 @@ nav ul li ul li:hover {
 .compact-list .icons span {
   white-space: nowrap;
 }
+/* Añade al CSS */
+.top-card.champion .stats h2::after {
+  content: "👑";
+  margin-left: 0.5rem;
+}
 
+.podium-card:nth-child(1) h3::after {
+  content: "🥈";
+  margin-left: 0.5rem;
+}
+
+.podium-card:nth-child(2) h3::after {
+  content: "🥉";
+  margin-left: 0.5rem;
+}
+
+.compact-list li:nth-child(1) .pos::after {
+  content: "⭐";
+  margin-left: 0.3rem;
+}
 .error {
   color: #d32f2f;
 }
