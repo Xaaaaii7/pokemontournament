@@ -625,6 +625,22 @@ nav ul li ul li:hover {
   padding: 2rem;
   font-size: 1.2rem;
 }
+/* Añadir al CSS */
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.compact-list .icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.compact-list .icons span {
+  white-space: nowrap;
+}
 
 .error {
   color: #d32f2f;
