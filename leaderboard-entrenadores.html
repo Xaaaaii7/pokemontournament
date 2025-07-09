@@ -37,25 +37,41 @@
 </div>
 
 <script type="module">
-  import { cargarDatos, calcularKC } from './data-loader.js';
+  import { cargarDatos } from './data-loader.js';
 
   document.addEventListener("DOMContentLoaded", async () => {
     try {
       const data = await cargarDatos();
       const entrenadores = Object.values(data.entrenadores);
       
-      // Calcular kills por combate para cada entrenador
-      entrenadores.forEach(e => {
-        e.killsPerBattle = calcularKC(e);
+      // Calcular estadísticas para cada entrenador
+      entrenadores.forEach(entrenador => {
+        // Sumar kills y deaths de todos sus Pokémon
+        entrenador.totalKills = entrenador.equipo.reduce((sum, pokemon) => sum + (pokemon.kills || 0), 0);
+        entrenador.totalDeaths = entrenador.equipo.reduce((sum, pokemon) => sum + (pokemon.deaths || 0), 0);
+        
+        // Calcular puntos (3 por victoria, 1 por empate)
+        entrenador.puntos = (entrenador.wins * 3) + (entrenador.draw * 1);
       });
 
-      // Ordenar por kills (de mayor a menor)
-      entrenadores.sort((a, b) => b.kills - a.kills);
+      // Ordenar con sistema de desempate
+      entrenadores.sort((a, b) => {
+        // Primero por puntos (descendente)
+        if (b.puntos !== a.puntos) return b.puntos - a.puntos;
+        
+        // Si hay empate en puntos, ordenar por kills (descendente)
+        else if (b.totalKills !== a.totalKills) return b.totalKills - a.totalKills;
+        
+        // Si persiste el empate, ordenar por menos muertes (ascendente)
+        else{
+        return a.totalDeaths - b.totalDeaths;
+        }
+      });
       
       const [first, second, third, ...others] = entrenadores;
       const lb = document.getElementById('leaderboard');
 
-      // Generar HTML
+      // Resto del código permanece igual...
       lb.innerHTML = `
         <div class="title">🏆 Classificació de Entrenadors</div>
         
@@ -65,10 +81,12 @@
           <div class="stats">
             <h2>${first.nombre}</h2>
             <div class="numbers">
-              <span title="Combates">⚔️ ${first.battles}</span>
-              <span title="Kills">🗡️ ${first.kills}</span>
-              <span title="Muertes">☠️ ${first.deaths}</span>
-              <span title="Kills/Combate">⚡ ${first.killsPerBattle}</span>
+              <span title="Puntos">🏆 ${first.puntos}</span>
+              <span title="Victorias">✅ ${first.wins}</span>
+              <span title="Derrotas">❌ ${first.lose}</span>
+              <span title="Empates">⚖ ${first.draw}</span>
+              <span title="Kills totales">🗡️ ${first.totalKills}</span>
+              <span title="Muertes totales">☠️ ${first.totalDeaths}</span>
             </div>
           </div>
         </div>
@@ -81,10 +99,12 @@
               <div class="stats">
                 <h3>${p.nombre}</h3>
                 <div class="numbers">
-                  <span>⚔️ ${p.battles}</span>
-                  <span>🗡️ ${p.kills}</span>
-                  <span>☠️ ${p.deaths}</span>
-                  <span>⚡ ${p.killsPerBattle}</span>
+                  <span>🏆 ${p.puntos}</span>
+                  <span>✅ ${p.wins}</span>
+                  <span>❌ ${p.lose}</span>
+                  <span>⚖ ${p.draw}</span>
+                  <span>🗡️ ${p.totalKills}</span>
+                  <span>☠️ ${p.totalDeaths}</span>
                 </div>
               </div>
             </div>`).join('')}
@@ -97,10 +117,12 @@
               <span class="pos">${index + 4}º</span>
               <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
               <span class="icons">
-                <span title="Kills">🗡️${p.kills}</span>
-                <span title="Muertes">☠️${p.deaths}</span>
-                <span title="Combates">⚔️${p.battles}</span>
-                <span title="Kills/Combate">⚡${p.killsPerBattle}</span>
+                <span title="Puntos">🏆${p.puntos}</span>
+                <span title="Victorias">✅${p.wins}</span>
+                <span title="Derrotas">❌${p.lose}</span>
+                <span title="Empates">⚖${p.draw}</span>
+                <span title="Kills totales">🗡️${p.totalKills}</span>
+                <span title="Muertes totales">☠️${p.totalDeaths}</span>
               </span>
             </li>`).join('')}
         </ul>`;
