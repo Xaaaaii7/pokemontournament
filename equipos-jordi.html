@@ -10,27 +10,7 @@
     <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
       <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
     </header>
-<nav>
-  <ul>
-    <li><a href="index.html">Notícies</a></li>
-    <li><a href="reglas.html">Regles</a></li>
-    <li><a href="#">Classificacions ▼</a>
-    <ul>
-        <li><a href="leaderboard.html">Classificació Pokemon</a></li>
-        <li><a href="leaderboard-entrenadores.html">Classificació Entrenadors</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="equipos.html">Equips ▼</a>
-      <ul>
-        <li><a href="equipos-jordi.html">Jordi</a></li>
-        <li><a href="equipos-josep.html">Josep</a></li>
-        <li><a href="equipos-eudald.html">Eudald</a></li>
-      </ul>
-    </li>
-    <li><a href="combates.html">Combats</a></li>
-  </ul>
-</nav>
+<nav id="main-nav"></nav>
 
     <main class="equipo-entrenador">
         <!-- Añadí la sección del header del entrenador que faltaba -->
@@ -56,6 +36,10 @@
     <script type="module">
         import { renderEquipo } from './equipo-generico.js';
         document.addEventListener('DOMContentLoaded', () => renderEquipo('jordi'));
+    </script>
+    <script type="module">
+        import { setupNav } from './js/nav-component.js';
+        document.addEventListener('DOMContentLoaded', setupNav);
     </script>
 
 </body>
