@@ -661,6 +661,15 @@ nav ul li ul li:hover {
   content: "⭐";
   margin-left: 0.3rem;
 }
+/* Añadir al CSS */
+nav ul li.active > a {
+    background-color: var(--primary);
+    color: white;
+}
+
+nav ul li.active > a::after {
+    content: " ◀";
+}
 .error {
   color: #d32f2f;
 }
