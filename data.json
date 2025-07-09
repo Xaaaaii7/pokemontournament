@@ -136,6 +136,36 @@
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Drifloon",
+          "imagen": "https://img.pokemondb.net/artwork/drifloon.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Azurill",
+          "imagen": "https://img.pokemondb.net/artwork/azurill.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal","Hada"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Deerling",
+          "imagen": "https://img.pokemondb.net/artwork/deerling.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal","Planta"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
