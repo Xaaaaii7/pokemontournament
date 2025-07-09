@@ -326,8 +326,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Pawmo",
-          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
+          "nombre": "Pawmot",
+          "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -336,8 +336,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Pawmo*",
-          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
+          "nombre": "Pawmot*",
+          "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 3,
           "deaths": 1,
           "battles": 2,
@@ -356,8 +356,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Rockruff",
-          "imagen": "https://img.pokemondb.net/artwork/rockruff.jpg",
+          "nombre": "Lycanroc",
+          "imagen": "https://img.pokemondb.net/artwork/lycanroc.jpg",
           "kills": 0,
           "deaths": 2,
           "battles": 2,
@@ -386,8 +386,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Tadbulb",
-          "imagen": "https://img.pokemondb.net/artwork/tadbulb.jpg",
+          "nombre": "Bellibolt",
+          "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -403,6 +403,66 @@
           "battles": 2,
           "ataques": ["Veneno"],
           "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Sableye",
+          "imagen": "https://img.pokemondb.net/artwork/sableye.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Fantasma"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Flapple",
+          "imagen": "https://img.pokemondb.net/artwork/flapple.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Dragon"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Oinkologne",
+          "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Flittle",
+          "imagen": "https://img.pokemondb.net/artwork/flittle.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Shuppet",
+          "imagen": "https://img.pokemondb.net/artwork/shuppet.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Naclstack",
+          "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Roca"],
+          "inscrito": false,
           "deathsAdventure": 0
         }
       ]
