@@ -29,8 +29,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Chansey",
-          "imagen": "https://img.pokemondb.net/artwork/chansey.jpg",
+          "nombre": "Blissey",
+          "imagen": "https://img.pokemondb.net/artwork/blissey.jpg",
           "kills": 0,
           "deaths": 2,
           "battles": 2,
@@ -149,8 +149,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Azurill",
-          "imagen": "https://img.pokemondb.net/artwork/azurill.jpg",
+          "nombre": "Azumarill",
+          "imagen": "https://img.pokemondb.net/artwork/azumarill.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
