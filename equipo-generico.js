@@ -15,11 +15,6 @@ export async function renderEquipo(entrenadorId) {
     if (header) {
       header.querySelector('img').src = entrenador.imagen;
       header.querySelector('h1').textContent = `Equip de ${entrenador.nombre}`;
-      header.querySelector('.entrenador-stats').innerHTML = `
-        <span>🗡️ Abatuts: ${entrenador.kills}</span>
-        <span>☠️ Morts: ${entrenador.deaths}</span>
-        <span>⚔️ Combats: ${entrenador.battles}</span>
-        <span>⚡ Proporció: ${(entrenador.kills / entrenador.battles).toFixed(2)}</span>`;
     }
 
     /* Bloc 1 – tots els Pokémon ----------------------------------------- */
