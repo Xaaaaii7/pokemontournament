@@ -64,19 +64,26 @@ export async function renderEquipo(entrenadorId) {
       destacadosContainer.innerHTML = `
         <div class="destacado">
           <h2>🥇 Más Kills: ${maxKills.kills}</h2>
-          ${renderCard(maxKills)}
+          ${renderCard(maxKills,true)}
         </div>
         <div class="destacado">
           <h2>🛡️ Menos Muertes: ${minMuertes.deaths}</h2>
-          ${renderCard(minMuertes)}
+          ${renderCard(minMuertes,true)}
         </div>
         <div class="destacado">
           <h2>⚖️ Mejor K/C: ${calcularKC(mejorRatio)}</h2>
-          ${renderCard(mejorRatio)}
+          ${renderCard(mejorRatio,true)}
         </div>`;
     }
     /* Funció reutilitzable --------------------------------------------- */
-    function renderCard(p) {
+    function renderCard(p,destacado = false) {
+      if (destacado) {
+            return `
+              <div class="pokemon-destacado">
+                <h3>${p.nombre}">${p.nombre}</a></h3>
+                <img src="${p.imagen}" alt="${p.nombre}">
+              </div>`;
+      }
       return `
         <div class="pokemon-horizontal">
           <img src="${p.imagen}" alt="${p.nombre}">
