@@ -154,7 +154,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Normal","Hada"],
+          "ataques": ["Agua","Hada"],
           "inscrito": false,
           "deathsAdventure": 0
         },
