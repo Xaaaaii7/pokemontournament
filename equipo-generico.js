@@ -77,13 +77,6 @@ export async function renderEquipo(entrenadorId) {
     }
     /* Funció reutilitzable --------------------------------------------- */
     function renderCard(p,destacado = false) {
-      if (destacado) {
-            return `
-              <div class="pokemon-destacado">
-                <h3>${p.nombre}</h3>
-                <img src="${p.imagen}" alt="${p.nombre}">
-              </div>`;
-      }
       return `
         <div class="pokemon-horizontal">
           <img src="${p.imagen}" alt="${p.nombre}">
