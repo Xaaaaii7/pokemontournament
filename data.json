@@ -25,7 +25,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -36,17 +36,17 @@
           "battles": 2,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
-          "nombre": "Yungoos",
-          "imagen": "https://img.pokemondb.net/artwork/yungoos.jpg",
+          "nombre": "Gumshoos",
+          "imagen": "https://img.pokemondb.net/artwork/gumshoos.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Fletchinder",
@@ -56,7 +56,7 @@
           "battles": 2,
           "ataques": ["Fuego","Volador"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Sudowoodo",
@@ -86,7 +86,7 @@
           "battles": 2,
           "ataques": ["Hada"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Corvisquire",
@@ -186,7 +186,7 @@
           "battles": 2,
           "ataques": ["Fuego"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Skiploom",
@@ -196,7 +196,7 @@
           "battles": 2,
           "ataques": ["Planta","Volador"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 2
         },
         {
           "nombre": "Oinkologne",
@@ -216,7 +216,7 @@
           "battles": 0,
           "ataques": ["Siniestro","Fuego"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Arrokuda",
@@ -236,7 +236,7 @@
           "battles": 2,
           "ataques": ["Bicho"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 2
         },
         {
           "nombre": "Espeon",
@@ -275,6 +275,66 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Tierra","Planta"],
+          "inscrito": true,
+          "deathsAdventure": 1
+        },
+        {
+          "nombre": "Skiddo",
+          "imagen": "https://img.pokemondb.net/artwork/skiddo.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Nacli",
+          "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Roca"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Steenee",
+          "imagen": "https://img.pokemondb.net/artwork/steenee.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Tinkatuff",
+          "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hada","Acero"],
+          "inscrito": true,
+          "deathsAdventure": 1
+        },
+        {
+          "nombre": "Vespiquen",
+          "imagen": "https://img.pokemondb.net/artwork/vespiqueen.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Volador"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Flittle",
+          "imagen": "https://img.pokemondb.net/artwork/flittle.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 0
         }
