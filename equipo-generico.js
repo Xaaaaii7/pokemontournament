@@ -31,7 +31,44 @@ export async function renderEquipo(entrenadorId) {
         .map(renderCard)
         .join('');
     }
+ /* Bloc 3 – destacados ---------------------------------------------- */
+    const destacadosContainer = document.getElementById('destacados-container');
+    if (destacadosContainer) {
+      const equipo = entrenador.equipo.filter(p => p.battles > 0); // solo con combates
 
+      if (equipo.length === 0) {
+        destacadosContainer.innerHTML = '<p>No hay Pokémon con combates registrados.</p>';
+        return;
+      }
+
+      const getProporcion = p => calcularKC(p);
+
+      const maxKills = equipo
+        .slice()
+        .sort((a, b) => b.kills - a.kills || getProporcion(b) - getProporcion(a))[0];
+
+      const minMuertes = equipo
+        .slice()
+        .sort((a, b) => a.deaths - b.deaths || getProporcion(b) - getProporcion(a))[0];
+
+      const mejorRatio = equipo
+        .slice()
+        .sort((a, b) => getProporcion(b) - getProporcion(a) || b.kills - a.kills)[0];
+
+      destacadosContainer.innerHTML = `
+        <div class="destacado">
+          <h2>🥇 Más Kills: ${maxKills.kills}</h2>
+          ${renderCard(maxKills)}
+        </div>
+        <div class="destacado">
+          <h2>🛡️ Menos Muertes: ${minMuertes.deaths}</h2>
+          ${renderCard(minMuertes)}
+        </div>
+        <div class="destacado">
+          <h2>⚖️ Mejor K/C: ${calcularKC(mejorRatio)}</h2>
+          ${renderCard(mejorRatio)}
+        </div>`;
+    }
     /* Funció reutilitzable --------------------------------------------- */
     function renderCard(p) {
       return `
