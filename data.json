@@ -155,7 +155,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Hada"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -209,8 +209,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Houndour",
-          "imagen": "https://img.pokemondb.net/artwork/houndour.jpg",
+          "nombre": "Houndoum",
+          "imagen": "https://img.pokemondb.net/artwork/houndoum.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -225,7 +225,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -249,8 +249,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Tadbulb",
-          "imagen": "https://img.pokemondb.net/artwork/tadbulb.jpg",
+          "nombre": "Bellibolt",
+          "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -259,8 +259,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Pawmo",
-          "imagen": "https://img.pokemondb.net/artwork/pawmo.jpg",
+          "nombre": "Pawmot",
+          "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 1,
           "deaths": 0,
           "battles": 2,
@@ -275,7 +275,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Tierra","Planta"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -285,7 +285,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Planta"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -305,7 +305,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Planta"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -375,7 +375,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal","Planta"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -385,7 +385,7 @@
           "deaths": 1,
           "battles": 1,
           "ataques": ["Tierra"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -415,7 +415,7 @@
           "deaths": 1,
           "battles": 1,
           "ataques": ["Fuego"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -465,7 +465,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Veneno"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -485,7 +485,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Planta","Dragon"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -495,7 +495,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -525,7 +525,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Roca"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -535,7 +535,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fuego","Normal"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         }
       ]
