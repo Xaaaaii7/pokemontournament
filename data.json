@@ -335,7 +335,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         }
       ]
