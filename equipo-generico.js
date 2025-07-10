@@ -105,6 +105,7 @@ export async function renderEquipo(entrenadorId) {
         <div class="pokemon-destacado">
           <h3>${p.nombre}</h3>
           <img src="${p.imagen}" alt="${p.nombre}">
+        </div>`;
     }
   } catch (error) {
     console.error('Error cargando los datos:', error);
