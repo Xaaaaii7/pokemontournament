@@ -1,4 +1,4 @@
-// equipo-generico.js
+// equipo-generico.js (modificado)
 import { cargarDatos, calcularKC } from './data-loader.js';
 
 export async function renderEquipo(entrenadorId) {
@@ -10,10 +10,13 @@ export async function renderEquipo(entrenadorId) {
       throw new Error(`No se encontró el entrenador con ID: ${entrenadorId}`);
     }
 
-    // Calcular estadísticas para cada Pokémon
-    entrenador.equipo.forEach(pokemon => {
-      pokemon.proporcion = calcularKC(pokemon);
-    });
+    // Calcular estadísticas y filtrar Pokémon con battles > 0
+    const pokemonsConBattles = entrenador.equipo
+      .map(pokemon => ({
+        ...pokemon,
+        proporcion: calcularKC(pokemon)
+      }))
+      .filter(pokemon => pokemon.battles > 0);
 
     /* Header ------------------------------------------------------------- */
     const header = document.querySelector('.entrenador-header');
@@ -25,16 +28,27 @@ export async function renderEquipo(entrenadorId) {
     /* Sección de Pokémon destacados -------------------------------------- */
     const destacadosContainer = document.createElement('div');
     destacadosContainer.className = 'destacados-container';
-    destacadosContainer.innerHTML = `
-      <h2>Pokémon Destacats</h2>
-      <div class="destacados-grid">
-        ${renderPokemonDestacado(getPokemonMasKills(entrenador.equipo), 'kills')}
-        ${renderPokemonDestacado(getPokemonMenosMuertes(entrenador.equipo), 'deaths')}
-        ${renderPokemonDestacado(getPokemonMejorProporcion(entrenador.equipo), 'proporcion')}
-      </div>
-    `;
+    
+    // Verificar que hay Pokémon con battles > 0
+    if (pokemonsConBattles.length > 0) {
+      destacadosContainer.innerHTML = `
+        <h2>Pokémon Destacats</h2>
+        <div class="destacados-grid">
+          ${renderPokemonDestacado(getPokemonMasKills(pokemonsConBattles), 'kills')}
+          ${renderPokemonDestacado(getPokemonMenosMuertes(pokemonsConBattles), 'deaths')}
+          ${renderPokemonDestacado(getPokemonMejorProporcion(pokemonsConBattles), 'proporcion')}
+        </div>
+      `;
+    } else {
+      destacadosContainer.innerHTML = `
+        <h2>Pokémon Destacats</h2>
+        <p class="no-destacados">No hi ha Pokémon amb combats registrats</p>
+      `;
+    }
+    
     document.querySelector('main').prepend(destacadosContainer);
 
+    /* Resto del código permanece igual... */
     /* Bloc 1 – tots els Pokémon ----------------------------------------- */
     const container = document.getElementById('pokemon-container');
     if (container) {
@@ -50,9 +64,9 @@ export async function renderEquipo(entrenadorId) {
         .join('');
     }
 
-    /* Funciones auxiliares --------------------------------------------- */
+    /* Funciones auxiliares actualizadas --------------------------------- */
     function getPokemonMasKills(pokemons) {
-      // Ordenar por kills (descendente) y luego por proporción (descendente)
+      if (pokemons.length === 0) return null;
       return [...pokemons].sort((a, b) => {
         if (b.kills !== a.kills) return b.kills - a.kills;
         return b.proporcion - a.proporcion;
@@ -60,7 +74,7 @@ export async function renderEquipo(entrenadorId) {
     }
 
     function getPokemonMenosMuertes(pokemons) {
-      // Ordenar por deaths (ascendente) y luego por proporción (descendente)
+      if (pokemons.length === 0) return null;
       return [...pokemons].sort((a, b) => {
         if (a.deaths !== b.deaths) return a.deaths - b.deaths;
         return b.proporcion - a.proporcion;
@@ -68,7 +82,7 @@ export async function renderEquipo(entrenadorId) {
     }
 
     function getPokemonMejorProporcion(pokemons) {
-      // Ordenar por proporción (descendente) y luego por kills (descendente)
+      if (pokemons.length === 0) return null;
       return [...pokemons].sort((a, b) => {
         if (b.proporcion !== a.proporcion) return b.proporcion - a.proporcion;
         return b.kills - a.kills;
@@ -76,10 +90,12 @@ export async function renderEquipo(entrenadorId) {
     }
 
     function renderPokemonDestacado(pokemon, tipo) {
+      if (!pokemon) return '<div class="pokemon-destacado empty">No disponible</div>';
+      
       const titulos = {
         kills: 'Més Kills',
-        deaths: 'Menys Morts',
-        proporcion: 'Pokemon Equilibrat'
+        deaths: 'Menys Mortes',
+        proporcion: 'Millor Proporció'
       };
       
       const valores = {
@@ -119,7 +135,7 @@ export async function renderEquipo(entrenadorId) {
             <span><span class="icon-stat">🗡️</span> ${p.kills}K</span>
             <span><span class="icon-stat">☠️</span> ${p.deaths}M</span>
             <span><span class="icon-stat">⚔️</span> ${p.battles}C</span>
-            <span><span class="icon-stat">⚡</span> ${p.proporcion.toFixed(2)}K/C</span>
+            <span><span class="icon-stat">⚡</span> ${calcularKC(p)}K/C</span>
           </div>
           <div class="ataques-horizontal">
             ${p.ataques
