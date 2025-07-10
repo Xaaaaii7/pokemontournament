@@ -356,7 +356,7 @@
           "battles": 2,
           "ataques": ["Planta"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Psyduck",
@@ -386,7 +386,7 @@
           "battles": 1,
           "ataques": ["Tierra"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Pawmot",
@@ -526,7 +526,7 @@
           "battles": 0,
           "ataques": ["Roca"],
           "inscrito": false,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         }
       ]
     }
