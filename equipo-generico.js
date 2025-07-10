@@ -31,6 +31,12 @@ export async function renderEquipo(entrenadorId) {
         .map(renderCard)
         .join('');
     }
+    /* Cementerio: Pokémon con 3 muertes de aventura */
+    const cementerioContainer = document.getElementById('cementerio');
+    if (cementerioContainer) {
+      const muertos = entrenador.equipo.filter(p => p.deathsAdventure >= 3);
+      cementerioContainer.innerHTML = muertos.map(renderCard).join('');
+    }
  /* Bloc 3 – destacados ---------------------------------------------- */
     const destacadosContainer = document.getElementById('destacados-container');
     if (destacadosContainer) {
@@ -88,6 +94,9 @@ export async function renderEquipo(entrenadorId) {
                 return `<img class="tipo-icon" src="img/${t}.png" alt="${t}">`;
               })
               .join('')}
+          </div>
+          <div class="muertes-aventura">
+            ☠️ ${p.deathsAdventure} mort${p.deathsAdventure === 1 ? '' : 's'} a l'aventura
           </div>
         </div>`;
     }
