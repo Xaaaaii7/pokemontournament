@@ -69,14 +69,14 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Tinkatink",
-          "imagen": "https://img.pokemondb.net/artwork/tinkatink.jpg",
+          "nombre": "Tinkatuff",
+          "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Fidough",
@@ -320,7 +320,7 @@
         },
         {
           "nombre": "Vespiquen",
-          "imagen": "https://img.pokemondb.net/artwork/vespiqueen.jpg",
+          "imagen": "https://img.pokemondb.net/artwork/vespiquen.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
