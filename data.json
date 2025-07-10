@@ -66,7 +66,7 @@
           "battles": 2,
           "ataques": ["Roca"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Tinkatuff",
@@ -96,7 +96,7 @@
           "battles": 2,
           "ataques": ["Volador"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Luxio",
