@@ -64,19 +64,19 @@ export async function renderEquipo(entrenadorId) {
       destacadosContainer.innerHTML = `
         <div class="destacado">
           <h2>🥇 Más Kills: ${maxKills.kills}</h2>
-          ${renderCard(maxKills,true)}
+          ${renderCardDestacados(maxKills)}
         </div>
         <div class="destacado">
           <h2>🛡️ Menos Muertes: ${minMuertes.deaths}</h2>
-          ${renderCard(minMuertes,true)}
+          ${renderCardDestacados(minMuertes)}
         </div>
         <div class="destacado">
           <h2>⚖️ Mejor K/C: ${calcularKC(mejorRatio)}</h2>
-          ${renderCard(mejorRatio,true)}
+          ${renderCardDestacados(mejorRatio)}
         </div>`;
     }
     /* Funció reutilitzable --------------------------------------------- */
-    function renderCard(p,destacado = false) {
+    function renderCard(p) {
       return `
         <div class="pokemon-horizontal">
           <img src="${p.imagen}" alt="${p.nombre}">
@@ -99,6 +99,12 @@ export async function renderEquipo(entrenadorId) {
             ☠️ ${p.deathsAdventure} mort${p.deathsAdventure === 1 ? '' : 's'} a l'aventura
           </div>
         </div>`;
+    }
+     function renderCardDestacados(p) {
+      return `
+        <div class="pokemon-destacado">
+          <h3>${p.nombre}</h3>
+          <img src="${p.imagen}" alt="${p.nombre}">
     }
   } catch (error) {
     console.error('Error cargando los datos:', error);
