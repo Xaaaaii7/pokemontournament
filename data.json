@@ -527,6 +527,16 @@
           "ataques": ["Roca"],
           "inscrito": false,
           "deathsAdventure": 1
+        },
+        {
+          "nombre": "Litleo",
+          "imagen": "https://img.pokemondb.net/artwork/litleo.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     }
