@@ -21,7 +21,7 @@
       "titulo": "Eudald troba un Pawmi shiny al Sendero Cahíz!",
       "imagen": "img/pawmi.jpg",
       "fecha": "2025-07-01",
-      "destacada": true,
+      "destacada": false,
       "contenido": "<p>Durant una sessió d'entrenament al Sendero Cahíz, Eudald i el seu Sprigatito van tenir una trobada inesperada: un raríssim <strong>Pawmi shiny</strong>!<br><br>\"Estava practicant moviments amb Sprigatito quan vaig veure aquesta bola de pèl rosat entre els arbustos\", explicava emocionat Eudald.<br><br>Després d'una intensa batalla on Sprigatito va demostrar el seu creixement, Eudald va aconseguir <strong>capturar el Pawmi</strong>, afegint una peça única al seu equip.<br><br>Aquest trobada afortunada podria donar-li un avantatge en els propers combats del torneig. Josep i Jordi ja han felicitat al seu rival, però estan més decidits que mai a superar-lo!</p>"
     },
     {
@@ -29,7 +29,7 @@
       "titulo": "Jordi sobreviu al xoc elèctric de Mencia!",
       "imagen": "img/mencia.jpeg",
       "fecha": "2025-07-02",
-      "destacada": true,
+      "destacada": false,
       "contenido": "<p>El combat més intens del que portem de temporada d'en Jordi va tenir lloc ahir a les portes de <strong>Ciudad Meseta</strong>, on es va enfrontar-se a una Mencia que els va deixar tremolant amb el seu temible <strong>Pawmi</strong>.<br><br>El moment més dramàtic va arribar quan Mencia va activar la <strong>teracristal·lització elèctrica</strong>, convertint els seus atacs en veritables descàrregues devastadores. \"Quan vaig veure aquell aura daurada i els llamps creuant la zona, vaig saber que estàvem en problemes\", va afegir Jordi.<br><br>\"Els seus Impactruenos ens van deixar paralitzats\", confessava un Jordi encara sacsejat. \"Quaxly gairebe cau d'un sol toc, Yungoos va resistir dos atacs, i la nostra pobre Happiny va quedar amb 1 PS després del tercer impacte... Mai havia vist un Pawmi tan poderós!\"<br><br>Tot i la dura victoria, l'equip mèdic del Centre Pokémon va assegurar que tots els Pokémon es recuperaran completament. Jordi, mentre revisava les seves notes de combat, va prometre: \"Aprendrem a contrarestar aquesta estratègia. El proper cop, serem nosaltres qui deixarem a Mencia tremolant!\"</p>"
     },
     {
@@ -37,8 +37,24 @@
       "titulo": "Josep i Fuecoco superen els límits per capturar un Arrokuda!",
       "imagen": "img/captura_arrokuda.png",
       "fecha": "2025-06-30",
-      "destacada": true,
+      "destacada": false,
       "contenido": "<p>En una escena que va posar a prova la determinació d'entrenador i Pokémon, en Josep i el seu Fuecoco van viure ahir una <strong>captura èpica</strong> a les aigües properes a Pueblo Cahíz.<br><br>\"L'Arrokuda es movia massa lluny de la costa i jo no puc nedar\", explicava Josep mentre recordava l'esdeveniment. \"Però el meu Fuecoco es va negar a rendir-se. Vam idear un pla: ell llançava flames per sobre l'aigua per espantar el Pokémon cap a zones menys profundes!\"<br><br>Durant <strong>45 minuts</strong> d'intensa perseverança, la parella va demostrar una coordinació extraordinària:<br><ul><li>Fuecoco utilitzava <strong>Ascuas</strong> per crear ones de xoc a l'aigua</li><li>Josep llançava Pokéboles amb precisió mil·limètrica</li><li>Els dos sincronitzaven els moviments per bloquejar les rutes d'escapament</li></ul><br>Finalment, després de 8 intents fallits i amb l'última Superball que li quedava, Josep va aconseguir la captura. \"Quan la bola es va tancar, vam caure tots dos exhausts a la sorra. Valgué cada segon d'esforç!\", va declarar emocionat.<br><br>Aquesta captura demostra que amb creativitat i treball en equip, fins els reptes aparentment impossibles poden superar-se.</p>"
+    },
+    {
+      "id": 6,
+      "titulo": "Skiploom sorprèn a tots i es manté invicte!",
+      "imagen": "img/skiploom.jpg",
+      "fecha": "2025-07-08",
+      "destacada": true,
+      "contenido": "<p>Després de la Jornada 1 del torneig, ningú s’esperava que <strong>Skiploom</strong> es convertís en el gran protagonista. Tant el de <strong>Josep</strong> com el d’<strong>Eudald</strong> han participat en els seus respectius combats sense rebre cap derrota.<br><br>Ni un sol rival ha estat capaç de tombar aquest Pokémon tan aparentment inofensiu. Aquesta actuació ha deixat sorpresos als espectadors i als mateixos entrenadors.<br><br>En <strong>Jordi</strong>, l’únic dels tres que no compta amb un Skiploom al seu equip, ha declarat: “No entenc què està passant. Ho he subestimat completament. A partir d’ara, serà el primer que estudiaré abans de preparar un combat.”<br><br>Caldrà veure si Skiploom pot mantenir aquesta ratxa invicta a les properes jornades o si algun entrenador descobrirà com frenar el seu vol imparable.</p>"
+    },
+    {
+      "id": 7,
+      "titulo": "Jornada 1: un inici apassionant amb jugades clau i líders clars",
+      "imagen": "img/jornada1.jpg",
+      "fecha": "2025-07-07",
+      "destacada": true,
+      "contenido": "<p>La primera jornada del torneig Pokémon ha deixat moments intensos i estratègies que han marcat el rumb dels combats, posant de manifest que aquest serà un campionat ple de sorpreses i rivalitats apassionades.</p><p><strong>Resultats de la jornada:</strong></p><ul><li><strong>Jordi 4 – 4 Josep</strong></li><li><strong>Eudald 4 – 4 Josep</strong></li><li><strong>Eudald 6 – 5 Jordi</strong></li></ul><p>En el duel entre <strong>Jordi i Eudald</strong>, la tàctica i la paciència van ser claus. <strong>Rockruff</strong>, amb les seves <em>Trampa Rocas</em>, va convertir el camp de batalla en un terreny difícil per a Jordi, castigant-lo a cada moviment. Però no tot va ser foscor per a Jordi, ja que l’energia i resistència de <strong>Sudowoodo</strong> va mantenir viva la lluita fins al final. Al final, però, la <em>cura natural</em> de <strong>Pawmo</strong> va fer la diferència, recuperant forces just quan calia i assegurant la victòria per a Eudald.</p><p>El combat entre <strong>Jordi i Josep</strong> va ser un veritable duel de titans. <strong>Crocalor</strong> va imposar-se com el mur impenetrable, mantenint a ratlla a Jordi durant gran part del combat. Va ser l’entrada fulminant de <strong>Luxio</strong> que va sacsejar el camp i va permetre que Jordi trobés l’oportunitat per desfer-se del seu rival. Un combat ple d’adrenalina i moments vibrants.</p><p>Finalment, el xoc entre <strong>Eudald i Josep</strong> va ser un ball de tàctiques i moviments calculats. La combinació de <strong>Floragato</strong> i <strong>Skiploom</strong> per part d’Eudald va oferir una ofensiva fluida i sorpresiva, mentre que Josep va respondre amb la defensa ferma de <strong>Oinkologne</strong> i <strong>Crocalor</strong>, que van aguantar amb valentia. El resultat va ser un empat just, fruit d’un enfrontament d’alt nivell.</p><p>Pel que fa als Pokémon vetats, la presència absent de <strong>Espeon</strong> (Josep), <strong>Sylveon</strong> (Eudald) i <strong>Quaxwell</strong> (Jordi) va ser molt notable. La seva prohibició va obligar els entrenadors a adaptar-se i reinventar les seves estratègies, demostrant que la flexibilitat i l’enginy són tan importants com la força bruta en aquest torneig.</p><p><strong>Classificació provisional:</strong></p><ul><li>🥇 <strong>Eudald</strong> – 4 punts</li><li>🥈 <strong>Jordi</strong> – 3 punts</li><li>🥉 <strong>Josep</strong> – 1 punt</li></ul><p><strong>Pokémon destacats de la jornada:</strong></p><ul><li><strong>Luxio</strong> (Jordi): 4 kills i 1 mort</li><li><strong>Pawmo</strong> (Eudald): 3 kills i 1 mort</li><li><strong>Crocalor</strong> (Josep): 3 kills i 1 mort</li></ul><p>Amb aquestes jugades i resultats, el torneig es presenta com una batalla apassionant on la resistència, la tàctica i la sorpresa seran els grans protagonistes. Els seguidors ja estan expectants per veure com evolucionen les estratègies i quins nous herois emergiran en les properes jornades.</p>"
     }
   ]
 }
