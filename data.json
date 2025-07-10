@@ -286,7 +286,7 @@
           "battles": 0,
           "ataques": ["Planta"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Naclstack",
