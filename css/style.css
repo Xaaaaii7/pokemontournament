@@ -699,10 +699,10 @@ nav ul li.active > a::after {
 }
 .pokemon-destacado {
   text-align: center;
-  border: 2px solid gold;
+  border: 2px solid white;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: #fff9db;
+  background-color: white;
   max-width: 200px;
   margin: 0 auto;
 }
