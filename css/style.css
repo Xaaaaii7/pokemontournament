@@ -697,6 +697,20 @@ nav ul li.active > a::after {
 .destacado .pokemon-horizontal {
   margin-top: 0.5rem;
 }
+.pokemon-destacado {
+  text-align: center;
+  border: 2px solid gold;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff9db;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.pokemon-destacado img {
+  width: 100%;
+  border-radius: 1rem;
+}
 .muertes-aventura {
   margin-top: 0.5rem;
   font-weight: bold;
