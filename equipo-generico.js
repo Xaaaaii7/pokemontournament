@@ -80,7 +80,7 @@ export async function renderEquipo(entrenadorId) {
       if (destacado) {
             return `
               <div class="pokemon-destacado">
-                <h3>${p.nombre}">${p.nombre}</a></h3>
+                <h3>${p.nombre}</h3>
                 <img src="${p.imagen}" alt="${p.nombre}">
               </div>`;
       }
