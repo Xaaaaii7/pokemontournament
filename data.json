@@ -31,9 +31,9 @@
         {
           "nombre": "Blissey",
           "imagen": "https://img.pokemondb.net/artwork/blissey.jpg",
-          "kills": 0,
-          "deaths": 2,
-          "battles": 2,
+          "kills": 3,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Normal"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -52,8 +52,8 @@
           "nombre": "Fletchinder",
           "imagen": "https://img.pokemondb.net/artwork/fletchinder.jpg",
           "kills": 0,
-          "deaths": 1,
-          "battles": 2,
+          "deaths": 2,
+          "battles": 3,
           "ataques": ["Fuego","Volador"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -62,8 +62,8 @@
           "nombre": "Sudowoodo",
           "imagen": "https://img.pokemondb.net/artwork/sudowoodo.jpg",
           "kills": 2,
-          "deaths": 2,
-          "battles": 2,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -71,9 +71,9 @@
         {
           "nombre": "Tinkatuff",
           "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -122,8 +122,8 @@
           "nombre": "Bronzor",
           "imagen": "https://img.pokemondb.net/artwork/bronzor.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Acero","Psiquico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -152,8 +152,8 @@
           "nombre": "Azumarill",
           "imagen": "https://img.pokemondb.net/artwork/azumarill.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Agua","Hada"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -181,9 +181,9 @@
         {
           "nombre": "Crocalor",
           "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
-          "kills": 3,
-          "deaths": 2,
-          "battles": 2,
+          "kills": 4,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Fuego"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -241,9 +241,9 @@
         {
           "nombre": "Espeon",
           "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -253,7 +253,7 @@
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -261,9 +261,9 @@
         {
           "nombre": "Pawmot",
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
-          "kills": 1,
-          "deaths": 0,
-          "battles": 2,
+          "kills": 4,
+          "deaths": 1,
+          "battles": 3,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -291,9 +291,9 @@
         {
           "nombre": "Naclstack",
           "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -322,8 +322,8 @@
           "nombre": "Vespiquen",
           "imagen": "https://img.pokemondb.net/artwork/vespiquen.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Bicho","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
