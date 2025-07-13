@@ -167,6 +167,76 @@
           "ataques": ["Normal","Planta"],
           "inscrito": false,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Silicobra",
+          "imagen": "https://img.pokemondb.net/artwork/silicobra.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Tierra],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Noibat",
+          "imagen": "https://img.pokemondb.net/artwork/noibat.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Veneno","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Magnezone",
+          "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico","Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Polteageist",
+          "imagen": "https://img.pokemondb.net/artwork/polteageist.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Pelipper",
+          "imagen": "https://img.pokemondb.net/artwork/pelipper.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Qwilfish",
+          "imagen": "https://img.pokemondb.net/artwork/qwilfish.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Pachirisu",
+          "imagen": "https://img.pokemondb.net/artwork/pachirisu.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
