@@ -4,9 +4,9 @@
       "nombre": "Jordi",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/blckbelt.png",
       "wins": 1,
-      "lose": 1,
+      "lose": 2,
       "draw":0,
-      "battles": 2,
+      "battles": 3,
       "equipo": [
         {
           "nombre": "Quaxwell",
@@ -173,10 +173,10 @@
     "josep": {
       "nombre": "Josep",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/youngster.png",
-      "wins": 0,
+      "wins": 2,
       "lose": 1,
       "draw":1,
-      "battles": 2,
+      "battles": 3,
       "equipo": [
         {
           "nombre": "Crocalor",
@@ -344,9 +344,9 @@
       "nombre": "Eudald",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png",
       "wins": 1,
-      "lose": 0,
+      "lose": 1,
       "draw":1,
-      "battles": 2,
+      "battles": 3,
       "equipo": [
         {
           "nombre": "Floragato",
