@@ -19,8 +19,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Buizel",
-          "imagen": "https://img.pokemondb.net/artwork/buizel.jpg",
+          "nombre": "Floatzel",
+          "imagen": "https://img.pokemondb.net/artwork/floatzel.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -79,8 +79,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Fidough",
-          "imagen": "https://img.pokemondb.net/artwork/fidough.jpg",
+          "nombre": "Dachsbun",
+          "imagen": "https://img.pokemondb.net/artwork/dachsbun.jpg",
           "kills": 1,
           "deaths": 2,
           "battles": 2,
@@ -99,8 +99,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Luxio",
-          "imagen": "https://img.pokemondb.net/artwork/luxio.jpg",
+          "nombre": "Luxray",
+          "imagen": "https://img.pokemondb.net/artwork/luxray.jpg",
           "kills": 4,
           "deaths": 1,
           "battles": 2,
@@ -109,8 +109,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Arrokuda",
-          "imagen": "https://img.pokemondb.net/artwork/arrokuda.jpg",
+          "nombre": "Barraskewda",
+          "imagen": "https://img.pokemondb.net/artwork/barraskewda.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -139,8 +139,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Drifloon",
-          "imagen": "https://img.pokemondb.net/artwork/drifloon.jpg",
+          "nombre": "Drifblim",
+          "imagen": "https://img.pokemondb.net/artwork/drifblim.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -174,7 +174,7 @@
           "kills": 0,
           "deaths": 0,
           "battles": 0,
-          "ataques": ["Tierra],
+          "ataques": ["Tierra"],
           "inscrito": false,
           "deathsAdventure": 0
         },
