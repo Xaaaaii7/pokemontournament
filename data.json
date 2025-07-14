@@ -32,8 +32,8 @@
           "nombre": "Blissey",
           "imagen": "https://img.pokemondb.net/artwork/blissey.jpg",
           "kills": 3,
-          "deaths": 3,
-          "battles": 3,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Normal"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -52,8 +52,8 @@
           "nombre": "Fletchinder",
           "imagen": "https://img.pokemondb.net/artwork/fletchinder.jpg",
           "kills": 0,
-          "deaths": 2,
-          "battles": 3,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Fuego","Volador"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -62,8 +62,8 @@
           "nombre": "Sudowoodo",
           "imagen": "https://img.pokemondb.net/artwork/sudowoodo.jpg",
           "kills": 2,
-          "deaths": 3,
-          "battles": 3,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -71,9 +71,9 @@
         {
           "nombre": "Tinkatuff",
           "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
-          "kills": 1,
-          "deaths": 1,
-          "battles": 1,
+          "kills": 2,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -122,8 +122,8 @@
           "nombre": "Bronzor",
           "imagen": "https://img.pokemondb.net/artwork/bronzor.jpg",
           "kills": 0,
-          "deaths": 1,
-          "battles": 1,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Acero","Psiquico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -151,9 +151,9 @@
         {
           "nombre": "Azumarill",
           "imagen": "https://img.pokemondb.net/artwork/azumarill.jpg",
-          "kills": 0,
-          "deaths": 1,
-          "battles": 1,
+          "kills": 1,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Agua","Hada"],
           "inscrito": true,
           "deathsAdventure": 0
