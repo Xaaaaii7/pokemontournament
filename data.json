@@ -253,7 +253,7 @@
           "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
           "kills": 4,
           "deaths": 3,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Fuego"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -273,7 +273,7 @@
           "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 2,
           "deaths": 2,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Normal"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -323,7 +323,7 @@
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -333,7 +333,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 4,
           "deaths": 1,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -363,7 +363,7 @@
           "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
           "kills": 1,
           "deaths": 1,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -393,7 +393,7 @@
           "imagen": "https://img.pokemondb.net/artwork/vespiquen.jpg",
           "kills": 0,
           "deaths": 1,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Bicho","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -423,7 +423,7 @@
           "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
           "kills": 3,
           "deaths": 2,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -473,7 +473,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 3,
           "deaths": 1,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -503,7 +503,7 @@
           "imagen": "https://img.pokemondb.net/artwork/sylveon.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Hada"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -523,7 +523,7 @@
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -553,7 +553,7 @@
           "imagen": "https://img.pokemondb.net/artwork/flapple.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Planta","Dragon"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -593,7 +593,7 @@
           "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
