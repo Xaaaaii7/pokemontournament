@@ -61,7 +61,7 @@
         {
           "nombre": "Sudowoodo",
           "imagen": "https://img.pokemondb.net/artwork/sudowoodo.jpg",
-          "kills": 2,
+          "kills": 3,
           "deaths": 4,
           "battles": 4,
           "ataques": ["Roca"],
@@ -71,7 +71,7 @@
         {
           "nombre": "Tinkatuff",
           "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
-          "kills": 2,
+          "kills": 1,
           "deaths": 2,
           "battles": 2,
           "ataques": ["Hada","Acero"],
@@ -421,7 +421,7 @@
         {
           "nombre": "Floragato",
           "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
-          "kills": 3,
+          "kills": 8,
           "deaths": 3,
           "battles": 4,
           "ataques": ["Planta"],
@@ -492,7 +492,7 @@
           "nombre": "Lycanroc",
           "imagen": "https://img.pokemondb.net/artwork/lycanroc-midday.jpg",
           "kills": 0,
-          "deaths": 2,
+          "deaths": 3,
           "battles": 3,
           "ataques": ["Roca"],
           "inscrito": true,
@@ -591,8 +591,8 @@
         {
           "nombre": "Naclstack",
           "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
-          "kills": 0,
-          "deaths": 1,
+          "kills": 1,
+          "deaths": 2,
           "battles": 2,
           "ataques": ["Roca"],
           "inscrito": true,
