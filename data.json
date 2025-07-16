@@ -156,7 +156,7 @@
           "battles": 2,
           "ataques": ["Agua","Hada"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Deerling",
@@ -476,7 +476,7 @@
           "battles": 3,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Charcadet",
