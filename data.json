@@ -146,7 +146,7 @@
           "battles": 0,
           "ataques": ["Fantasma","Volador"],
           "inscrito": false,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Azumarill",
