@@ -365,7 +365,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Planta"],
-          "inscrito": true,
+          "inscrito":false,
           "deathsAdventure": 1
         },
         {
