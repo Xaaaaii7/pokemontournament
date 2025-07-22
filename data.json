@@ -247,6 +247,56 @@
           "ataques": ["Acero"],
           "inscrito": true,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Zoroark",
+          "imagen": "https://img.pokemondb.net/artwork/zoroark.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Grafaiai",
+          "imagen": "https://img.pokemondb.net/artwork/grafaiai.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Veneno","Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Espartha",
+          "imagen": "https://img.pokemondb.net/artwork/espartha.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Toxapex",
+          "imagen": "https://img.pokemondb.net/artwork/toxapex.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gengar",
+          "imagen": "https://img.pokemondb.net/artwork/gengar.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
