@@ -275,7 +275,7 @@
           "deaths": 0,
           "battles": 2,
           "ataques": ["Planta","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 2
         },
         {
@@ -299,13 +299,13 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Arrokuda",
-          "imagen": "https://img.pokemondb.net/artwork/arrokuda.jpg",
+          "nombre": "Barrawskeda",
+          "imagen": "https://img.pokemondb.net/artwork/barrawskeda.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -315,7 +315,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Bicho"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 2
         },
         {
@@ -349,13 +349,13 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Toedscool",
-          "imagen": "https://img.pokemondb.net/artwork/toedscool.jpg",
+          "nombre": "Toedscruel",
+          "imagen": "https://img.pokemondb.net/artwork/toedscruel.jpg",
           "kills": 1,
           "deaths": 2,
           "battles": 2,
           "ataques": ["Tierra","Planta"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -379,13 +379,13 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Steenee",
-          "imagen": "https://img.pokemondb.net/artwork/steenee.jpg",
+          "nombre": "Tsareena",
+          "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Planta"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -395,7 +395,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Acero"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -405,7 +405,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Bicho","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -415,6 +415,96 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gyarados",
+          "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Volador"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Honchrow",
+          "imagen": "https://img.pokemondb.net/artwork/honchrow.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Volador","Siniestro"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Sableye",
+          "imagen": "https://img.pokemondb.net/artwork/sableye.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Cacnea",
+          "imagen": "https://img.pokemondb.net/artwork/cacnea.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Cacnea",
+          "imagen": "https://img.pokemondb.net/artwork/cacnea.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Bruxish",
+          "imagen": "https://img.pokemondb.net/artwork/bruxish.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lokix",
+          "imagen": "https://img.pokemondb.net/artwork/lokix.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lechonk",
+          "imagen": "https://img.pokemondb.net/artwork/lechonk.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Goomy",
+          "imagen": "https://img.pokemondb.net/artwork/goomy.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon"],
           "inscrito": false,
           "deathsAdventure": 0
         }
@@ -460,7 +550,7 @@
         },
         {
           "nombre": "Dugtrio",
-          "imagen": "https://img.pokemondb.net/artwork/diglett.jpg",
+          "imagen": "https://img.pokemondb.net/artwork/dugtrio.jpg",
           "kills": 0,
           "deaths": 1,
           "battles": 1,
@@ -639,7 +729,7 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Jirafarig",
+          "nombre": "Girafarig",
           "imagen": "https://img.pokemondb.net/artwork/jirafarig.jpg",
           "kills": 0,
           "deaths": 0,
