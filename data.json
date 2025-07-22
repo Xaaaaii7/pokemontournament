@@ -65,7 +65,7 @@
           "deaths": 4,
           "battles": 4,
           "ataques": ["Roca"],
-          "inscrito": falsd,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -155,7 +155,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Agua","Hada"],
-          "inscrito": falsd,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
