@@ -82,8 +82,8 @@
           "nombre": "Dachsbun",
           "imagen": "https://img.pokemondb.net/artwork/dachsbun.jpg",
           "kills": 1,
-          "deaths": 2,
-          "battles": 2,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Hada"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -112,8 +112,8 @@
           "nombre": "Barraskewda",
           "imagen": "https://img.pokemondb.net/artwork/barraskewda.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Agua"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -132,8 +132,8 @@
           "nombre": "Hawlucha",
           "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -192,8 +192,8 @@
           "nombre": "Magnezone",
           "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Electrico","Acero"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -222,8 +222,8 @@
           "nombre": "Qwilfish",
           "imagen": "https://img.pokemondb.net/artwork/qwilfish.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Agua","Veneno"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -242,8 +242,8 @@
           "nombre": "Orthworm",
           "imagen": "https://img.pokemondb.net/artwork/orthworm.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Acero"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -323,7 +323,7 @@
           "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
           "kills": 1,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -331,9 +331,9 @@
         {
           "nombre": "Bellibolt",
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -343,7 +343,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 6,
           "deaths": 1,
-          "battles": 4,
+          "battles": 5,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -371,9 +371,9 @@
         {
           "nombre": "Naclstack",
           "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
-          "kills": 2,
+          "kills": 3,
           "deaths": 1,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -381,9 +381,9 @@
         {
           "nombre": "Tsareena",
           "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -421,9 +421,9 @@
         {
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
-          "kills": 0,
+          "kills": 3,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
