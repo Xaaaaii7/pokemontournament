@@ -445,7 +445,7 @@
           "deaths": 1,
           "battles": 1,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -459,13 +459,13 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Diglett",
+          "nombre": "Dugtrio",
           "imagen": "https://img.pokemondb.net/artwork/diglett.jpg",
           "kills": 0,
           "deaths": 1,
           "battles": 1,
           "ataques": ["Tierra"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -489,13 +489,13 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Charcadet",
-          "imagen": "https://img.pokemondb.net/artwork/charcadet.jpg",
+          "nombre": "Ceruledge",
+          "imagen": "https://img.pokemondb.net/artwork/ceruledge.jpg",
           "kills": 0,
           "deaths": 1,
           "battles": 1,
-          "ataques": ["Fuego"],
-          "inscrito": false,
+          "ataques": ["Fuego","Fantasma"],
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -519,13 +519,13 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Skiploom*",
-          "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
+          "nombre": "Jumpluff",
+          "imagen": "https://img.pokemondb.net/artwork/jumpluff.jpg",
           "kills": 2,
           "deaths": 0,
           "battles": 1,
           "ataques": ["Planta","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -539,13 +539,13 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Gulpin",
-          "imagen": "https://img.pokemondb.net/artwork/gulpin.jpg",
+          "nombre": "Swalot",
+          "imagen": "https://img.pokemondb.net/artwork/swalot.jpg",
           "kills": 2,
           "deaths": 1,
           "battles": 2,
           "ataques": ["Veneno"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -555,7 +555,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Siniestro","Fantasma"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -605,7 +605,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Roca"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -615,7 +615,77 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fuego","Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gyarados",
+          "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Volador"],
           "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Cloyster",
+          "imagen": "https://img.pokemondb.net/artwork/cloyster.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Hielo"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Jirafarig",
+          "imagen": "https://img.pokemondb.net/artwork/jirafarig.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico","Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Coalossal",
+          "imagen": "https://img.pokemondb.net/artwork/coalossal.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Roca"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Luvdisc",
+          "imagen": "https://img.pokemondb.net/artwork/luvdisc.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Dreepy",
+          "imagen": "https://img.pokemondb.net/artwork/dreepy.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon","Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        { 
+          "nombre": "Krokorok",
+          "imagen": "https://img.pokemondb.net/artwork/krokorok.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Tierra","Siniestro"],
+          "inscrito": false,
           "deathsAdventure": 0
         }
       ]
