@@ -15,7 +15,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -25,7 +25,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -45,7 +45,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -55,7 +55,7 @@
           "deaths": 3,
           "battles": 4,
           "ataques": ["Fuego","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -65,7 +65,7 @@
           "deaths": 4,
           "battles": 4,
           "ataques": ["Roca"],
-          "inscrito": true,
+          "inscrito": falsd,
           "deathsAdventure": 1
         },
         {
@@ -75,7 +75,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Hada","Acero"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -95,7 +95,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -115,7 +115,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -125,7 +125,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Acero","Psiquico"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -145,7 +145,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma","Volador"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -155,7 +155,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Agua","Hada"],
-          "inscrito": true,
+          "inscrito": falsd,
           "deathsAdventure": 1
         },
         {
@@ -195,7 +195,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Electrico","Acero"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -205,7 +205,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -215,7 +215,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Volador"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -225,7 +225,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Veneno"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -236,6 +236,16 @@
           "battles": 0,
           "ataques": ["Electrico"],
           "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Orthworm",
+          "imagen": "https://img.pokemondb.net/artwork/orthworm.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Acero"],
+          "inscrito": true,
           "deathsAdventure": 0
         }
       ]
