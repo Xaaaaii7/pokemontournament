@@ -56,7 +56,7 @@
           "battles": 4,
           "ataques": ["Fuego","Volador"],
           "inscrito": false,
-          "deathsAdventure": 1
+          "deathsAdventure": 2
         },
         {
           "nombre": "Sudowoodo",
