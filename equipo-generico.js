@@ -61,7 +61,7 @@ export async function renderEquipo(entrenadorId) {
 
     // Ordenar por menor diferencia (mejor rendimiento)
     if (diffA !== diffB) {
-      return diffA - diffB;
+      return diffB - diffA;
     }
 
     // Si hay empate en diferencia, ordenar por menos muertes
