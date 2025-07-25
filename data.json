@@ -376,7 +376,7 @@
           "battles": 3,
           "ataques": ["Psiquico"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 2
         },
         {
           "nombre": "Bellibolt",
@@ -439,14 +439,14 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Tinkatuff",
-          "imagen": "https://img.pokemondb.net/artwork/tinkatuff.jpg",
+          "nombre": "Tinkatom",
+          "imagen": "https://img.pokemondb.net/artwork/tinkaton.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Acero"],
           "inscrito": false,
-          "deathsAdventure": 1
+          "deathsAdventure": 2
         },
         {
           "nombre": "Vespiquen",
@@ -459,14 +459,14 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Flittle",
-          "imagen": "https://img.pokemondb.net/artwork/flittle.jpg",
+          "nombre": "Espathra",
+          "imagen": "https://img.pokemondb.net/artwork/espathra.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico"],
           "inscrito": false,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Gyarados",
@@ -549,15 +549,35 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Goomy",
-          "imagen": "https://img.pokemondb.net/artwork/goomy.jpg",
+          "nombre": "Goodra",
+          "imagen": "https://img.pokemondb.net/artwork/goodra.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Dragon"],
           "inscrito": false,
-          "deathsAdventure": 0
-        }
+          "deathsAdventure": 1
+        },
+        {
+          "nombre": "Grimmsnarl",
+          "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hada","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 1
+        },
+        {
+          "nombre": "Houndstone",
+          "imagen": "https://img.pokemondb.net/artwork/houndstone.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 1
+        },
       ]
     },
     "eudald": {
