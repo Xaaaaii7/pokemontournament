@@ -49,10 +49,21 @@ export async function renderEquipo(entrenadorId) {
 
       const getProporcion = p => calcularKC(p);
 
-      const maxKills = equipo
-        .slice()
-        .sort((a, b) => b.kills - a.kills || getProporcion(b) - getProporcion(a))[0];
+      
+const maxKills = equipo
+  .slice()
+  .sort((a, b) => {
+    const diffA = a.kills - a.battles;
+    const diffB = b.kills - b.battles;
 
+    // Ordenar por mayor diferencia (mejor rendimiento ofensivo)
+    if (diffA !== diffB) {
+      return diffB - diffA;
+    }
+
+    // Si hay empate en diferencia, ordenar por más kills
+    return b.kills - a.kills;
+  })[0];
      const minMuertes = equipo
   .slice()
   .sort((a, b) => {
@@ -75,15 +86,15 @@ export async function renderEquipo(entrenadorId) {
 
       destacadosContainer.innerHTML = `
         <div class="destacado">
-          <h2>🥇 Más Kills: ${maxKills.kills}</h2>
+          <h2>🥇 Mes Ofensiu: ${maxKills.kills}</h2>
           ${renderCardDestacados(maxKills)}
         </div>
         <div class="destacado">
-          <h2>🛡️ Menos Muertes: ${minMuertes.deaths}</h2>
+          <h2>🛡️ Mes Defensiu: ${minMuertes.deaths}</h2>
           ${renderCardDestacados(minMuertes)}
         </div>
         <div class="destacado">
-          <h2>⚖️ Mejor K/C: ${calcularKC(mejorRatio)}</h2>
+          <h2>⚖️ Mes equilibrat: ${calcularKC(mejorRatio)}</h2>
           ${renderCardDestacados(mejorRatio)}
         </div>`;
     }
