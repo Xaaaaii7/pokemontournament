@@ -53,16 +53,21 @@ export async function renderEquipo(entrenadorId) {
         .slice()
         .sort((a, b) => b.kills - a.kills || getProporcion(b) - getProporcion(a))[0];
 
-      const minMuertes = equipo
+     const minMuertes = equipo
   .slice()
   .sort((a, b) => {
-    // Primero ordena por menos muertes
-    if (a.deaths !== b.deaths) {
-      return a.deaths - b.deaths;
+    const diffA = a.deaths - a.combates;
+    const diffB = b.deaths - b.combates;
+
+    // Ordenar por menor diferencia (mejor rendimiento)
+    if (diffA !== diffB) {
+      return diffA - diffB;
     }
-    // Si tienen las mismas muertes, ordena por más combates
-    return b.battles - a.battles;
-  })[0]
+
+    // Si hay empate en diferencia, ordenar por menos muertes
+    return a.deaths - b.deaths;
+  })[0];
+ 
 
       const mejorRatio = equipo
         .slice()
