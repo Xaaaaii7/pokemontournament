@@ -56,8 +56,8 @@ export async function renderEquipo(entrenadorId) {
      const minMuertes = equipo
   .slice()
   .sort((a, b) => {
-    const diffA = a.deaths - a.combates;
-    const diffB = b.deaths - b.combates;
+    const diffA = a.battles - a.deaths;
+    const diffB = b.battles - b.deaths;
 
     // Ordenar por menor diferencia (mejor rendimiento)
     if (diffA !== diffB) {
