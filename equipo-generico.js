@@ -82,7 +82,7 @@ const maxKills = equipo
 
       const mejorRatio = equipo
         .slice()
-        .sort((a, b) => getProporcion(b) - getProporcion(a) || b.kills - a.kills)[0];
+        .sort((a, b) => getProporcion(b) - getProporcion(a) || a.battles - b.battles)[0];
 
       destacadosContainer.innerHTML = `
         <div class="destacado">
