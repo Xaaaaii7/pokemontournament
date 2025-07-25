@@ -54,8 +54,15 @@ export async function renderEquipo(entrenadorId) {
         .sort((a, b) => b.kills - a.kills || getProporcion(b) - getProporcion(a))[0];
 
       const minMuertes = equipo
-        .slice()
-        .sort((a, b) => a.deaths - b.deaths || getProporcion(b) - getProporcion(a))[0];
+  .slice()
+  .sort((a, b) => {
+    // Primero ordena por menos muertes
+    if (a.deaths !== b.deaths) {
+      return a.deaths - b.deaths;
+    }
+    // Si tienen las mismas muertes, ordena por más combates
+    return b.battles - a.battles;
+  })[0]
 
       const mejorRatio = equipo
         .slice()
