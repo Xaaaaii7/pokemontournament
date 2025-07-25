@@ -45,7 +45,7 @@
       "titulo": "Skiploom sorprèn a tots i es manté invicte!",
       "imagen": "img/skiploom.png",
       "fecha": "2025-07-08",
-      "destacada": true,
+      "destacada": false,
       "contenido": "<p>Després de la Jornada 1 del torneig, ningú s’esperava que <strong>Skiploom</strong> es convertís en el gran protagonista. Tant el de <strong>Josep</strong> com el d’<strong>Eudald</strong> han participat en els seus respectius combats sense rebre cap derrota.<br><br>Ni un sol rival ha estat capaç de tombar aquest Pokémon tan aparentment inofensiu. Aquesta actuació ha deixat sorpresos als espectadors i als mateixos entrenadors.<br><br>En <strong>Jordi</strong>, l’únic dels tres que no compta amb un Skiploom al seu equip, ha declarat: “No entenc què està passant. Ho he subestimat completament. A partir d’ara, serà el primer que estudiaré abans de preparar un combat.”<br><br>Caldrà veure si Skiploom pot mantenir aquesta ratxa invicta a les properes jornades o si algun entrenador descobrirà com frenar el seu vol imparable.</p>"
     },
     {
@@ -83,9 +83,9 @@
     {
       "id": 11,
       "titulo": "Polèmica a Paldea: Josep admet entrenament EVs i encén la sorpresa!",
-      "imagen": "img/polemica_josep_evs.jpg",
+      "imagen": "img/4y1iaoky4s9a1.png",
       "fecha": "2025-07-26",
-      "destacada": false,
+      "destacada": true,
       "contenido": "<h2>🔥 <strong>Polèmica a Paldea: Josep admet entrenament EVs i encén la sorpresa!</strong></h2><p><em>“No està prohibit... però tampoc estava en el guió.”</em></p><p>Després de dues jornades consecutives de domini absolut, amb <strong>quatre victòries seguides</strong> i marcadors aclaparadors (com el 6-0 a Jordi i el 6-1 a Eudald), <strong>Josep</strong> va deixar anar una bomba informativa que ha fet tremolar la lliga Pokémon amateur de Paldea.</p><p>En una entrevista post-combat informal, entre riures i Pokéballs encara calentes, Josep va admetre que els seus Pokémon <strong>havien estat entrenats amb EVs</strong> (valors d’esforç), millorant el seu rendiment en àrees clau com la velocitat, defensa o atac especial.</p><p>Tot i que <strong>no hi ha cap norma que ho prohibeixi</strong>, la confessió ha causat reaccions immediates:</p><ul><li>⚡️ <strong>Jordi</strong> va exclamar: “Ah, que això es feia ja?! Jo encara els hi donava Pokégales i mimos...”</li><li>🐢 <strong>Eudald</strong>, sorprès, va afegir: “Jo pensava que estàvem en fase casual... no en fase Cinturó Negre.”</li></ul><p>Fonts properes confirmen que els entrenaments EVs no estaven expressament vetats, però que fins ara cap entrenador <strong>ho havia fet públic</strong>. Josep s’ha defensat afirmant: “Només els he ajudat una mica a treure el seu màxim potencial. Com un bon amic faria!”</p><p>Mentrestant, alguns Pokémon com <em>Naclstack</em> i <em>Pawmot</em> han estat vistos celebrant amb batuts de proteïnes i fulles de carbassa hiperenergètiques.</p><p>Els organitzadors ja han avisat que no canviaran les regles, però que a partir d’ara es podria “formalitzar més” què s’entén per entrenament estàndard... o almenys posar un asterisc als combats de Josep. ⭐</p><p><strong>Continuarà... i potser amb EVs també. Que comenci el combat! ⚔️🤔</strong></p>"
     }
   ]
