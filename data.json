@@ -439,7 +439,7 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Tinkatom",
+          "nombre": "Tinkaton",
           "imagen": "https://img.pokemondb.net/artwork/tinkaton.jpg",
           "kills": 0,
           "deaths": 0,
@@ -556,7 +556,7 @@
           "battles": 0,
           "ataques": ["Dragon"],
           "inscrito": false,
-          "deathsAdventure": 1
+          "deathsAdventure": 2
         },
         {
           "nombre": "Grimmsnarl",
@@ -566,7 +566,7 @@
           "battles": 0,
           "ataques": ["Hada","Siniestro"],
           "inscrito": false,
-          "deathsAdventure": 1
+          "deathsAdventure": 2
         },
         {
           "nombre": "Houndstone",
