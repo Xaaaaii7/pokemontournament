@@ -1,0 +1,830 @@
+[
+  {
+    "nombre": "Quaquaval",
+    "imagen": "https://img.pokemondb.net/artwork/quaquaval.jpg",
+    "stats": {
+      "hp": 85,
+      "attack": 120,
+      "defense": 80,
+      "special-attack": 85,
+      "special-defense": 75,
+      "speed": 85
+    }
+  },
+  {
+    "nombre": "Floatzel",
+    "imagen": "https://img.pokemondb.net/artwork/floatzel.jpg",
+    "stats": {
+      "hp": 85,
+      "attack": 105,
+      "defense": 55,
+      "special-attack": 85,
+      "special-defense": 50,
+      "speed": 115
+    }
+  },
+  {
+    "nombre": "Blissey",
+    "imagen": "https://img.pokemondb.net/artwork/blissey.jpg",
+    "stats": {
+      "hp": 255,
+      "attack": 10,
+      "defense": 10,
+      "special-attack": 75,
+      "special-defense": 135,
+      "speed": 55
+    }
+  },
+  {
+    "nombre": "Gumshoos",
+    "imagen": "https://img.pokemondb.net/artwork/gumshoos.jpg",
+    "stats": {
+      "hp": 88,
+      "attack": 110,
+      "defense": 60,
+      "special-attack": 55,
+      "special-defense": 60,
+      "speed": 45
+    }
+  },
+  {
+    "nombre": "Talonflame",
+    "imagen": "https://img.pokemondb.net/artwork/talonflame.jpg",
+    "stats": {
+      "hp": 78,
+      "attack": 81,
+      "defense": 71,
+      "special-attack": 74,
+      "special-defense": 69,
+      "speed": 126
+    }
+  },
+  {
+    "nombre": "Sudowoodo",
+    "imagen": "https://img.pokemondb.net/artwork/sudowoodo.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 100,
+      "defense": 115,
+      "special-attack": 30,
+      "special-defense": 65,
+      "speed": 30
+    }
+  },
+  {
+    "nombre": "Tinkaton",
+    "imagen": "https://img.pokemondb.net/artwork/tinkaton.jpg",
+    "stats": {
+      "hp": 85,
+      "attack": 75,
+      "defense": 77,
+      "special-attack": 70,
+      "special-defense": 105,
+      "speed": 94
+    }
+  },
+  {
+    "nombre": "Dachsbun",
+    "imagen": "https://img.pokemondb.net/artwork/dachsbun.jpg",
+    "stats": {
+      "hp": 57,
+      "attack": 80,
+      "defense": 115,
+      "special-attack": 50,
+      "special-defense": 80,
+      "speed": 95
+    }
+  },
+  {
+    "nombre": "Corviknight",
+    "imagen": "https://img.pokemondb.net/artwork/corviknight.jpg",
+    "stats": {
+      "hp": 98,
+      "attack": 87,
+      "defense": 105,
+      "special-attack": 53,
+      "special-defense": 85,
+      "speed": 67
+    }
+  },
+  {
+    "nombre": "Luxray",
+    "imagen": "https://img.pokemondb.net/artwork/luxray.jpg",
+    "stats": {
+      "hp": 80,
+      "attack": 120,
+      "defense": 79,
+      "special-attack": 95,
+      "special-defense": 79,
+      "speed": 70
+    }
+  },
+  {
+    "nombre": "Barraskewda",
+    "imagen": "https://img.pokemondb.net/artwork/barraskewda.jpg",
+    "stats": {
+      "hp": 61,
+      "attack": 123,
+      "defense": 60,
+      "special-attack": 60,
+      "special-defense": 50,
+      "speed": 136
+    }
+  },
+  {
+    "nombre": "Bronzong",
+    "imagen": "https://img.pokemondb.net/artwork/bronzong.jpg",
+    "stats": {
+      "hp": 67,
+      "attack": 89,
+      "defense": 116,
+      "special-attack": 79,
+      "special-defense": 116,
+      "speed": 33
+    }
+  },
+  {
+    "nombre": "Hawlucha",
+    "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
+    "stats": {
+      "hp": 78,
+      "attack": 92,
+      "defense": 75,
+      "special-attack": 74,
+      "special-defense": 63,
+      "speed": 118
+    }
+  },
+  {
+    "nombre": "Drifblim",
+    "imagen": "https://img.pokemondb.net/artwork/drifblim.jpg",
+    "stats": {
+      "hp": 150,
+      "attack": 80,
+      "defense": 44,
+      "special-attack": 90,
+      "special-defense": 54,
+      "speed": 80
+    }
+  },
+  {
+    "nombre": "Azumarill",
+    "imagen": "https://img.pokemondb.net/artwork/azumarill.jpg",
+    "stats": {
+      "hp": 100,
+      "attack": 50,
+      "defense": 80,
+      "special-attack": 60,
+      "special-defense": 80,
+      "speed": 50
+    }
+  },
+  {
+    "nombre": "Sawsbuck",
+    "imagen": "https://img.pokemondb.net/artwork/sawsbuck.jpg",
+    "stats": {
+      "hp": 80,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 60,
+      "special-defense": 70,
+      "speed": 95
+    }
+  },
+  {
+    "nombre": "Sandaconda",
+    "imagen": "https://img.pokemondb.net/artwork/sandaconda.jpg",
+    "stats": {
+      "hp": 72,
+      "attack": 107,
+      "defense": 125,
+      "special-attack": 65,
+      "special-defense": 70,
+      "speed": 71
+    }
+  },
+  {
+    "nombre": "Noibat",
+    "imagen": "https://img.pokemondb.net/artwork/noibat.jpg",
+    "stats": {
+      "hp": 40,
+      "attack": 30,
+      "defense": 35,
+      "special-attack": 45,
+      "special-defense": 40,
+      "speed": 55
+    }
+  },
+  {
+    "nombre": "Magnezone",
+    "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 70,
+      "defense": 115,
+      "special-attack": 130,
+      "special-defense": 90,
+      "speed": 60
+    }
+  },
+  {
+    "nombre": "Polteageist",
+    "imagen": "https://img.pokemondb.net/artwork/polteageist.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 65,
+      "special-attack": 134,
+      "special-defense": 114,
+      "speed": 70
+    }
+  },
+  {
+    "nombre": "Pelipper",
+    "imagen": "https://img.pokemondb.net/artwork/pelipper.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 50,
+      "defense": 100,
+      "special-attack": 95,
+      "special-defense": 70,
+      "speed": 65
+    }
+  },
+  {
+    "nombre": "Qwilfish",
+    "imagen": "https://img.pokemondb.net/artwork/qwilfish.jpg",
+    "stats": {
+      "hp": 65,
+      "attack": 95,
+      "defense": 85,
+      "special-attack": 55,
+      "special-defense": 55,
+      "speed": 85
+    }
+  },
+  {
+    "nombre": "Pachirisu",
+    "imagen": "https://img.pokemondb.net/artwork/pachirisu.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 45,
+      "defense": 70,
+      "special-attack": 45,
+      "special-defense": 90,
+      "speed": 95
+    }
+  },
+  {
+    "nombre": "Orthworm",
+    "imagen": "https://img.pokemondb.net/artwork/orthworm.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 85,
+      "defense": 145,
+      "special-attack": 60,
+      "special-defense": 55,
+      "speed": 65
+    }
+  },
+  {
+    "nombre": "Zoroark",
+    "imagen": "https://img.pokemondb.net/artwork/zoroark.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 105,
+      "defense": 60,
+      "special-attack": 120,
+      "special-defense": 60,
+      "speed": 105
+    }
+  },
+  {
+    "nombre": "Grafaiai",
+    "imagen": "https://img.pokemondb.net/artwork/grafaiai.jpg",
+    "stats": {
+      "hp": 63,
+      "attack": 95,
+      "defense": 65,
+      "special-attack": 80,
+      "special-defense": 72,
+      "speed": 110
+    }
+  },
+  {
+    "nombre": "Espathra",
+    "imagen": "https://img.pokemondb.net/artwork/espathra.jpg",
+    "stats": {
+      "hp": 95,
+      "attack": 60,
+      "defense": 60,
+      "special-attack": 101,
+      "special-defense": 60,
+      "speed": 105
+    }
+  },
+  {
+    "nombre": "Toxapex",
+    "imagen": "https://img.pokemondb.net/artwork/toxapex.jpg",
+    "stats": {
+      "hp": 50,
+      "attack": 63,
+      "defense": 152,
+      "special-attack": 53,
+      "special-defense": 142,
+      "speed": 35
+    }
+  },
+  {
+    "nombre": "Gengar",
+    "imagen": "https://img.pokemondb.net/artwork/gengar.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 130,
+      "special-defense": 75,
+      "speed": 110
+    }
+  },
+  {
+    "nombre": "Crocalor",
+    "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
+    "stats": {
+      "hp": 81,
+      "attack": 55,
+      "defense": 78,
+      "special-attack": 90,
+      "special-defense": 58,
+      "speed": 49
+    }
+  },
+  {
+    "nombre": "Skiploom",
+    "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
+    "stats": {
+      "hp": 55,
+      "attack": 45,
+      "defense": 50,
+      "special-attack": 45,
+      "special-defense": 65,
+      "speed": 80
+    }
+  },
+  {
+    "nombre": "Houndoom",
+    "imagen": "https://img.pokemondb.net/artwork/houndoom.jpg",
+    "stats": {
+      "hp": 75,
+      "attack": 90,
+      "defense": 50,
+      "special-attack": 110,
+      "special-defense": 80,
+      "speed": 95
+    }
+  },
+  {
+    "nombre": "Kricketune",
+    "imagen": "https://img.pokemondb.net/artwork/kricketune.jpg",
+    "stats": {
+      "hp": 77,
+      "attack": 85,
+      "defense": 51,
+      "special-attack": 55,
+      "special-defense": 51,
+      "speed": 65
+    }
+  },
+  {
+    "nombre": "Espeon",
+    "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
+    "stats": {
+      "hp": 65,
+      "attack": 65,
+      "defense": 60,
+      "special-attack": 130,
+      "special-defense": 95,
+      "speed": 110
+    }
+  },
+  {
+    "nombre": "Bellibolt",
+    "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
+    "stats": {
+      "hp": 109,
+      "attack": 64,
+      "defense": 91,
+      "special-attack": 103,
+      "special-defense": 83,
+      "speed": 45
+    }
+  },
+  {
+    "nombre": "Pawmot",
+    "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 115,
+      "defense": 70,
+      "special-attack": 70,
+      "special-defense": 60,
+      "speed": 105
+    }
+  },
+  {
+    "nombre": "Toedscruel",
+    "imagen": "https://img.pokemondb.net/artwork/toedscruel.jpg",
+    "stats": {
+      "hp": 80,
+      "attack": 70,
+      "defense": 65,
+      "special-attack": 80,
+      "special-defense": 120,
+      "speed": 100
+    }
+  },
+  {
+    "nombre": "Skiddo",
+    "imagen": "https://img.pokemondb.net/artwork/skiddo.jpg",
+    "stats": {
+      "hp": 66,
+      "attack": 65,
+      "defense": 48,
+      "special-attack": 62,
+      "special-defense": 57,
+      "speed": 52
+    }
+  },
+  {
+    "nombre": "Naclstack",
+    "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 100,
+      "special-attack": 35,
+      "special-defense": 65,
+      "speed": 35
+    }
+  },
+  {
+    "nombre": "Tsareena",
+    "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
+    "stats": {
+      "hp": 72,
+      "attack": 120,
+      "defense": 98,
+      "special-attack": 50,
+      "special-defense": 98,
+      "speed": 72
+    }
+  },
+  {
+    "nombre": "Vespiquen",
+    "imagen": "https://img.pokemondb.net/artwork/vespiquen.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 102,
+      "special-attack": 80,
+      "special-defense": 102,
+      "speed": 40
+    }
+  },
+  {
+    "nombre": "Gyarados",
+    "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
+    "stats": {
+      "hp": 95,
+      "attack": 125,
+      "defense": 79,
+      "special-attack": 60,
+      "special-defense": 100,
+      "speed": 81
+    }
+  },
+  {
+    "nombre": "Honchkrow",
+    "imagen": "https://img.pokemondb.net/artwork/honchkrow.jpg",
+    "stats": {
+      "hp": 100,
+      "attack": 125,
+      "defense": 52,
+      "special-attack": 105,
+      "special-defense": 52,
+      "speed": 71
+    }
+  },
+  {
+    "nombre": "Sableye",
+    "imagen": "https://img.pokemondb.net/artwork/sableye.jpg",
+    "stats": {
+      "hp": 50,
+      "attack": 75,
+      "defense": 75,
+      "special-attack": 65,
+      "special-defense": 65,
+      "speed": 50
+    }
+  },
+  {
+    "nombre": "Cacnea",
+    "imagen": "https://img.pokemondb.net/artwork/cacnea.jpg",
+    "stats": {
+      "hp": 50,
+      "attack": 85,
+      "defense": 40,
+      "special-attack": 85,
+      "special-defense": 40,
+      "speed": 35
+    }
+  },
+  {
+    "nombre": "Bruxish",
+    "imagen": "https://img.pokemondb.net/artwork/bruxish.jpg",
+    "stats": {
+      "hp": 68,
+      "attack": 105,
+      "defense": 70,
+      "special-attack": 70,
+      "special-defense": 70,
+      "speed": 92
+    }
+  },
+  {
+    "nombre": "Lokix",
+    "imagen": "https://img.pokemondb.net/artwork/lokix.jpg",
+    "stats": {
+      "hp": 71,
+      "attack": 102,
+      "defense": 78,
+      "special-attack": 52,
+      "special-defense": 55,
+      "speed": 92
+    }
+  },
+  {
+    "nombre": "Lechonk",
+    "imagen": "https://img.pokemondb.net/artwork/lechonk.jpg",
+    "stats": {
+      "hp": 54,
+      "attack": 45,
+      "defense": 40,
+      "special-attack": 35,
+      "special-defense": 45,
+      "speed": 35
+    }
+  },
+  {
+    "nombre": "Goodra",
+    "imagen": "https://img.pokemondb.net/artwork/goodra.jpg",
+    "stats": {
+      "hp": 90,
+      "attack": 100,
+      "defense": 70,
+      "special-attack": 110,
+      "special-defense": 150,
+      "speed": 80
+    }
+  },
+  {
+    "nombre": "Grimmsnarl",
+    "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
+    "stats": {
+      "hp": 95,
+      "attack": 120,
+      "defense": 65,
+      "special-attack": 95,
+      "special-defense": 75,
+      "speed": 60
+    }
+  },
+  {
+    "nombre": "Houndstone",
+    "imagen": "https://img.pokemondb.net/artwork/houndstone.jpg",
+    "stats": {
+      "hp": 72,
+      "attack": 101,
+      "defense": 100,
+      "special-attack": 50,
+      "special-defense": 97,
+      "speed": 68
+    }
+  },
+  {
+    "nombre": "Floragato",
+    "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
+    "stats": {
+      "hp": 61,
+      "attack": 80,
+      "defense": 63,
+      "special-attack": 60,
+      "special-defense": 63,
+      "speed": 83
+    }
+  },
+  {
+    "nombre": "Psyduck",
+    "imagen": "https://img.pokemondb.net/artwork/psyduck.jpg",
+    "stats": {
+      "hp": 50,
+      "attack": 52,
+      "defense": 48,
+      "special-attack": 65,
+      "special-defense": 50,
+      "speed": 55
+    }
+  },
+  {
+    "nombre": "Deerling",
+    "imagen": "https://img.pokemondb.net/artwork/deerling.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 60,
+      "defense": 50,
+      "special-attack": 40,
+      "special-defense": 50,
+      "speed": 75
+    }
+  },
+  {
+    "nombre": "Dugtrio",
+    "imagen": "https://img.pokemondb.net/artwork/dugtrio.jpg",
+    "stats": {
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "special-attack": 50,
+      "special-defense": 70,
+      "speed": 120
+    }
+  },
+  {
+    "nombre": "Ceruledge",
+    "imagen": "https://img.pokemondb.net/artwork/ceruledge.jpg",
+    "stats": {
+      "hp": 75,
+      "attack": 125,
+      "defense": 80,
+      "special-attack": 60,
+      "special-defense": 100,
+      "speed": 85
+    }
+  },
+  {
+    "nombre": "Sylveon",
+    "imagen": "https://img.pokemondb.net/artwork/sylveon.jpg",
+    "stats": {
+      "hp": 95,
+      "attack": 65,
+      "defense": 65,
+      "special-attack": 110,
+      "special-defense": 130,
+      "speed": 60
+    }
+  },
+  {
+    "nombre": "Jumpluff",
+    "imagen": "https://img.pokemondb.net/artwork/jumpluff.jpg",
+    "stats": {
+      "hp": 75,
+      "attack": 55,
+      "defense": 70,
+      "special-attack": 55,
+      "special-defense": 95,
+      "speed": 110
+    }
+  },
+  {
+    "nombre": "Swalot",
+    "imagen": "https://img.pokemondb.net/artwork/swalot.jpg",
+    "stats": {
+      "hp": 100,
+      "attack": 73,
+      "defense": 83,
+      "special-attack": 73,
+      "special-defense": 83,
+      "speed": 55
+    }
+  },
+  {
+    "nombre": "Flapple",
+    "imagen": "https://img.pokemondb.net/artwork/flapple.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 110,
+      "defense": 80,
+      "special-attack": 95,
+      "special-defense": 60,
+      "speed": 70
+    }
+  },
+  {
+    "nombre": "Flittle",
+    "imagen": "https://img.pokemondb.net/artwork/flittle.jpg",
+    "stats": {
+      "hp": 30,
+      "attack": 35,
+      "defense": 30,
+      "special-attack": 55,
+      "special-defense": 30,
+      "speed": 75
+    }
+  },
+  {
+    "nombre": "Shuppet",
+    "imagen": "https://img.pokemondb.net/artwork/shuppet.jpg",
+    "stats": {
+      "hp": 44,
+      "attack": 75,
+      "defense": 35,
+      "special-attack": 63,
+      "special-defense": 33,
+      "speed": 45
+    }
+  },
+  {
+    "nombre": "Litleo",
+    "imagen": "https://img.pokemondb.net/artwork/litleo.jpg",
+    "stats": {
+      "hp": 62,
+      "attack": 50,
+      "defense": 58,
+      "special-attack": 73,
+      "special-defense": 54,
+      "speed": 72
+    }
+  },
+  {
+    "nombre": "Cloyster",
+    "imagen": "https://img.pokemondb.net/artwork/cloyster.jpg",
+    "stats": {
+      "hp": 50,
+      "attack": 95,
+      "defense": 180,
+      "special-attack": 85,
+      "special-defense": 45,
+      "speed": 70
+    }
+  },
+  {
+    "nombre": "Girafarig",
+    "imagen": "https://img.pokemondb.net/artwork/jirafarig.jpg",
+    "stats": {
+      "hp": 70,
+      "attack": 80,
+      "defense": 65,
+      "special-attack": 90,
+      "special-defense": 65,
+      "speed": 85
+    }
+  },
+  {
+    "nombre": "Coalossal",
+    "imagen": "https://img.pokemondb.net/artwork/coalossal.jpg",
+    "stats": {
+      "hp": 110,
+      "attack": 80,
+      "defense": 120,
+      "special-attack": 80,
+      "special-defense": 90,
+      "speed": 30
+    }
+  },
+  {
+    "nombre": "Luvdisc",
+    "imagen": "https://img.pokemondb.net/artwork/luvdisc.jpg",
+    "stats": {
+      "hp": 43,
+      "attack": 30,
+      "defense": 55,
+      "special-attack": 40,
+      "special-defense": 65,
+      "speed": 97
+    }
+  },
+  {
+    "nombre": "Dreepy",
+    "imagen": "https://img.pokemondb.net/artwork/dreepy.jpg",
+    "stats": {
+      "hp": 28,
+      "attack": 60,
+      "defense": 30,
+      "special-attack": 40,
+      "special-defense": 30,
+      "speed": 82
+    }
+  },
+  {
+    "nombre": "Krokorok",
+    "imagen": "https://img.pokemondb.net/artwork/krokorok.jpg",
+    "stats": {
+      "hp": 60,
+      "attack": 82,
+      "defense": 45,
+      "special-attack": 45,
+      "special-defense": 45,
+      "speed": 74
+    }
+  }
+]
