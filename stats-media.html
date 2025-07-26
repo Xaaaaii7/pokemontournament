@@ -28,12 +28,12 @@
       width: 100%;
       max-width: 600px;
       margin: 2rem auto;
-      padding: 0 1rem;
     }
 
     canvas {
-      width: 100% !important;
-      height: auto !important;
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
     }
 
     @media (max-width: 600px) {
@@ -125,7 +125,7 @@
       div.className = 'chart-container';
       div.innerHTML = `
         <h3 style="text-align:center;">⭐ ${r.entrenador}</h3>
-        <canvas id="${id}"></canvas>
+        <canvas id="${id}" width="400" height="400"></canvas>
       `;
       container.appendChild(div);
 
@@ -145,21 +145,20 @@
         },
         options: {
           responsive: true,
-          maintainAspectRatio: false,
           scales: {
             r: {
               beginAtZero: true,
               suggestedMax: 150,
               ticks: {
-                maxTicksLimit: 6,
-                backdropColor: 'transparent',
-                color: '#444'
+                stepSize: 20,
+                color: '#444',
+                backdropColor: 'transparent'
               },
               pointLabels: {
+                color: '#000',
                 font: {
                   size: 12
-                },
-                color: '#000'
+                }
               }
             }
           },
