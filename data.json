@@ -336,7 +336,7 @@
           "battles": 3,
           "ataques": ["Normal"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Houndoom",
@@ -396,7 +396,7 @@
           "battles": 6,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Toedscruel",
