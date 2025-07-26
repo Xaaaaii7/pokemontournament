@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pokemon Torneig - Classificació per Stat</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    select[multiple] {
+      width: 150px;
+      height: 5em;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
 <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
@@ -25,12 +32,20 @@
         <option value="speed">Velocidad</option>
       </select>
     </label>
+
     <label style="margin-left:1rem;">
       <input type="checkbox" id="soloInscritos" checked /> Solo inscritos
     </label>
-    <button id="btnMostrar">Mostrar</button>
+
+    <label style="margin-left:1rem;">
+      Entrenador(es):
+      <select id="entrenadorFiltro" multiple></select>
+    </label>
+
+    <button id="btnMostrar" style="margin-left:1rem;">Mostrar</button>
   </div>
-  <div id="clasificacion-container">Selecciona un stat para ver la clasificación.</div>
+
+  <div id="clasificacion-container">Selecciona un stat y entrenador(es) para ver la clasificación.</div>
 </div>
 
 <script type="module">
@@ -42,7 +57,6 @@
   let statsData = [];
   let entrenadores = [];
 
-  // Cargar datos de los archivos
   async function cargarDatos() {
     const [stats, data] = await Promise.all([
       fetch('./pokemon_stats.json').then(r => r.json()),
@@ -50,6 +64,17 @@
     ]);
     statsData = stats;
     entrenadores = Object.values(data.entrenadores);
+    rellenarEntrenadores(entrenadores);
+  }
+
+  function rellenarEntrenadores(entrenadores) {
+    const select = document.getElementById("entrenadorFiltro");
+    entrenadores.forEach(e => {
+      const option = document.createElement("option");
+      option.value = e.nombre;
+      option.textContent = e.nombre;
+      select.appendChild(option);
+    });
   }
 
   async function mostrarClasificacion() {
@@ -57,32 +82,35 @@
 
     const statKey = document.getElementById("stat").value;
     const soloInscritos = document.getElementById("soloInscritos").checked;
+    const seleccionados = Array.from(document.getElementById("entrenadorFiltro").selectedOptions).map(o => o.value);
     const container = document.getElementById("clasificacion-container");
 
-    // Generar set de nombres válidos
-    const nombresInscritos = new Set();
-    if (soloInscritos) {
-      for (const entrenador of entrenadores) {
+    const entrenadorFiltroActivo = seleccionados.length > 0;
+    const nombresPermitidos = new Set();
+
+    for (const entrenador of entrenadores) {
+      if (!entrenadorFiltroActivo || seleccionados.includes(entrenador.nombre)) {
         for (const p of entrenador.equipo) {
-          if (p.inscrito) nombresInscritos.add(p.nombre);
+          if (!soloInscritos || p.inscrito) {
+            nombresPermitidos.add(p.nombre);
+          }
         }
       }
     }
 
-    // Filtrar y ordenar
     const lista = statsData
-      .filter(p => !soloInscritos || nombresInscritos.has(p.nombre))
+      .filter(p => nombresPermitidos.has(p.nombre))
       .sort((a, b) => b.stats[statKey] - a.stats[statKey]);
 
     if (lista.length === 0) {
-      container.innerHTML = `<p style="text-align:center;">⚠️ No hay Pokémon para mostrar.</p>`;
+      container.innerHTML = `<p style="text-align:center;">⚠️ No hay Pokémon que cumplan los criterios.</p>`;
       return;
     }
 
     const [first, second, third, ...otros] = lista;
 
     container.innerHTML = `
-      <!-- Primer lugar -->
+      <!-- Campeón -->
       <div class="top-card champion">
         <img src="${first.imagen}" alt="${first.nombre}">
         <div class="stats">
@@ -100,10 +128,11 @@
               <h3>${p.nombre}</h3>
               <p>${statKey.toUpperCase()}: ${p.stats[statKey]}</p>
             </div>
-          </div>`).join('')}
+          </div>
+        `).join('')}
       </div>
 
-      <!-- Resto de Pokémon -->
+      <!-- Resto -->
       <ul class="compact-list">
         ${otros.map((p, i) => `
           <li>
@@ -112,18 +141,17 @@
             <span class="icons">
               <span>${statKey.toUpperCase()}: ${p.stats[statKey]}</span>
             </span>
-          </li>`).join('')}
+          </li>
+        `).join('')}
       </ul>
     `;
   }
 
-  // Vincular el botón con el evento (¡aquí está la solución al error!)
-  document.addEventListener("DOMContentLoaded", () => {
+  // Eventos
+  document.addEventListener("DOMContentLoaded", async () => {
+    await cargarDatos();
     document.getElementById("btnMostrar").addEventListener("click", mostrarClasificacion);
   });
-
-  // Precarga de datos opcional
-  cargarDatos();
 </script>
 </body>
 </html>
