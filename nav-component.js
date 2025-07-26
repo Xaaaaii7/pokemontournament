@@ -18,7 +18,13 @@ export function renderNav(currentPage = '') {
                 { href: "equipos-eudald.html", text: "Eudald" }
             ]
         },
-        { href: "combates.html", text: "Combats" }
+        { href: "combates.html", text: "Combats" },
+        {
+            text: "Tests"
+            subItems: [ { href: "clasificacion-stat.html", text: "Stats"}
+            ]
+        }
+
     ];
 
     return `
