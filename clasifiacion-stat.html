@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokemon Torneig - Classificació per Stat</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+<nav id="main-nav"></nav>
+
+<div class="leaderboard" id="leaderboard">
+  <div class="title">📊 Classificació per Stat Base</div>
+  <div style="text-align:center; margin-bottom: 1rem;">
+    <label>Estadística:
+      <select id="stat">
+        <option value="hp">HP</option>
+        <option value="attack">Ataque</option>
+        <option value="defense">Defensa</option>
+        <option value="special-attack">Ataque Especial</option>
+        <option value="special-defense">Defensa Especial</option>
+        <option value="speed">Velocidad</option>
+      </select>
+    </label>
+    <label style="margin-left:1rem;">
+      <input type="checkbox" id="soloInscritos" checked /> Solo inscritos
+    </label>
+    <button onclick="mostrarClasificacion()">Mostrar</button>
+  </div>
+  <div id="clasificacion-container">Selecciona un stat para ver la clasificación.</div>
+</div>
+
+<script type="module">
+  import { setupNav } from './nav-component.js';
+  document.addEventListener('DOMContentLoaded', setupNav);
+</script>
+
+<script type="module">
+  let statsData = [];
+  let entrenadores = [];
+
+  // Cargar datos de los archivos
+  async function cargarDatos() {
+    const [stats, data] = await Promise.all([
+      fetch('./pokemon_stats.json').then(r => r.json()),
+      fetch('./data.json').then(r => r.json())
+    ]);
+    statsData = stats;
+    entrenadores = Object.values(data.entrenadores);
+  }
+
+  async function mostrarClasificacion() {
+    if (statsData.length === 0) await cargarDatos();
+
+    const statKey = document.getElementById("stat").value;
+    const soloInscritos = document.getElementById("soloInscritos").checked;
+    const container = document.getElementById("clasificacion-container");
+
+    // Generar set de nombres válidos
+    const nombresInscritos = new Set();
+    if (soloInscritos) {
+      for (const entrenador of entrenadores) {
+        for (const p of entrenador.equipo) {
+          if (p.inscrito) nombresInscritos.add(p.nombre);
+        }
+      }
+    }
+
+    // Filtrar y ordenar
+    const lista = statsData
+      .filter(p => !soloInscritos || nombresInscritos.has(p.nombre))
+      .sort((a, b) => b.stats[statKey] - a.stats[statKey]);
+
+    if (lista.length === 0) {
+      container.innerHTML = `<p style="text-align:center;">⚠️ No hay Pokémon para mostrar.</p>`;
+      return;
+    }
+
+    const [first, second, third, ...otros] = lista;
+
+    container.innerHTML = `
+      <!-- Primer lugar -->
+      <div class="top-card champion">
+        <img src="${first.imagen}" alt="${first.nombre}">
+        <div class="stats">
+          <h2>${first.nombre}</h2>
+          <p class="entrenador">${statKey.toUpperCase()}: ${first.stats[statKey]}</p>
+        </div>
+      </div>
+
+      <!-- Segundo y tercer lugar -->
+      <div class="podium">
+        ${[second, third].map(p => `
+          <div class="podium-card">
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <div class="stats">
+              <h3>${p.nombre}</h3>
+              <p>${statKey.toUpperCase()}: ${p.stats[statKey]}</p>
+            </div>
+          </div>`).join('')}
+      </div>
+
+      <!-- Resto de Pokémon -->
+      <ul class="compact-list">
+        ${otros.map((p, i) => `
+          <li>
+            <span class="pos">${i + 4}º</span>
+            <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
+            <span class="icons">
+              <span>${statKey.toUpperCase()}: ${p.stats[statKey]}</span>
+            </span>
+          </li>`).join('')}
+      </ul>
+    `;
+  }
+
+  // Precarga opcional
+  document.addEventListener("DOMContentLoaded", cargarDatos);
+</script>
+</body>
+</html>
