@@ -372,6 +372,18 @@
     }
   },
   {
+    "nombre": "Oinkologne-female",
+    "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
+    "stats": {
+      "hp": 115,
+      "attack": 90,
+      "defense": 70,
+      "special-attack": 59,
+      "special-defense": 90,
+      "speed": 65
+    }
+  },
+  {
     "nombre": "Houndoom",
     "imagen": "https://img.pokemondb.net/artwork/houndoom.jpg",
     "stats": {
@@ -672,6 +684,18 @@
     }
   },
   {
+    "nombre": "Lycanroc-midday",
+    "imagen": "https://img.pokemondb.net/artwork/lycanroc-midday.jpg",
+    "stats": {
+      "hp": 75,
+      "attack": 115,
+      "defense": 65,
+      "special-attack": 55,
+      "special-defense": 65,
+      "speed": 112
+    }
+  },
+  {
     "nombre": "Sylveon",
     "imagen": "https://img.pokemondb.net/artwork/sylveon.jpg",
     "stats": {
@@ -717,6 +741,18 @@
       "special-attack": 95,
       "special-defense": 60,
       "speed": 70
+    }
+  },
+  {
+    "nombre": "Oinkologne-male",
+    "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
+    "stats": {
+      "hp": 110,
+      "attack": 100,
+      "defense": 75,
+      "special-attack": 59,
+      "special-defense": 80,
+      "speed": 65
     }
   },
   {
@@ -769,7 +805,7 @@
   },
   {
     "nombre": "Girafarig",
-    "imagen": "https://img.pokemondb.net/artwork/jirafarig.jpg",
+    "imagen": "https://img.pokemondb.net/artwork/girafarig.jpg",
     "stats": {
       "hp": 70,
       "attack": 80,
