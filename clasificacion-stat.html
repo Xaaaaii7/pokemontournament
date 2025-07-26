@@ -28,7 +28,7 @@
     <label style="margin-left:1rem;">
       <input type="checkbox" id="soloInscritos" checked /> Solo inscritos
     </label>
-    <button onclick="mostrarClasificacion()">Mostrar</button>
+    <button id="btnMostrar">Mostrar</button>
   </div>
   <div id="clasificacion-container">Selecciona un stat para ver la clasificación.</div>
 </div>
@@ -117,8 +117,13 @@
     `;
   }
 
-  // Precarga opcional
-  document.addEventListener("DOMContentLoaded", cargarDatos);
+  // Vincular el botón con el evento (¡aquí está la solución al error!)
+  document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("btnMostrar").addEventListener("click", mostrarClasificacion);
+  });
+
+  // Precarga de datos opcional
+  cargarDatos();
 </script>
 </body>
 </html>
