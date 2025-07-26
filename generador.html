@@ -8,16 +8,39 @@
   <h1>⚙️ Generador de Stats Base Pokémon</h1>
   <button onclick="generarArchivoConStats()">🔽 Guardar archivo con stats</button>
 
+  <p id="estado">Cargando datos...</p>
+
   <script>
-    const data = /* Pega aquí tu JSON de entrenadores (data.json) */;
-    
+    let data = null;
+
+    // Cargar el JSON desde el archivo local
+    fetch('./data.json')
+      .then(res => res.json())
+      .then(json => {
+        data = json;
+        document.getElementById("estado").textContent = "Datos cargados correctamente ✅";
+      })
+      .catch(err => {
+        document.getElementById("estado").textContent = "❌ Error al cargar data.json";
+        console.error(err);
+      });
+
     async function generarArchivoConStats() {
-      const statKeys = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
+      if (!data) {
+        alert("El JSON aún no está cargado.");
+        return;
+      }
+
       const pokemonsProcesados = new Map();
 
       for (const entrenador of Object.values(data.entrenadores)) {
         for (const pokemon of entrenador.equipo) {
-          const nombreLimpio = pokemon.nombre.toLowerCase().replace("*", "").replace("’", "").replace(".", "").replace(" ", "-");
+          const nombreLimpio = pokemon.nombre
+            .toLowerCase()
+            .replace("*", "")
+            .replace(/[’'.]/g, "")
+            .replace(/\s+/g, "-");
+
           if (pokemonsProcesados.has(nombreLimpio)) continue;
 
           try {
