@@ -6,25 +6,41 @@
   <title>Pokemon Torneig - Mitjanes per Entrenador</title>
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1rem auto;
+      max-width: 1000px;
+    }
+
     table {
       width: 100%;
-      max-width: 1000px;
-      margin: 2rem auto;
+      min-width: 600px;
       border-collapse: collapse;
     }
+
     th, td {
       border: 1px solid #aaa;
       padding: 8px 12px;
       text-align: center;
     }
+
     .chart-container {
       width: 100%;
       max-width: 600px;
       margin: 2rem auto;
+      padding: 0 1rem;
     }
+
     canvas {
       width: 100% !important;
       height: auto !important;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 14px;
+        padding: 6px;
+      }
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -37,7 +53,9 @@
 
 <div class="leaderboard">
   <div class="title">📊 Mitjanes de stats base per Entrenador</div>
-  <div id="tabla-container"></div>
+  <div class="table-wrapper">
+    <div id="tabla-container"></div>
+  </div>
   <div id="graficos-container"></div>
 </div>
 
@@ -127,11 +145,22 @@
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           scales: {
             r: {
               beginAtZero: true,
               suggestedMax: 150,
-              ticks: { stepSize: 20 }
+              ticks: {
+                maxTicksLimit: 6,
+                backdropColor: 'transparent',
+                color: '#444'
+              },
+              pointLabels: {
+                font: {
+                  size: 12
+                },
+                color: '#000'
+              }
             }
           },
           plugins: {
