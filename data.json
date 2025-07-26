@@ -329,7 +329,7 @@
           "deathsAdventure": 2
         },
         {
-          "nombre": "Oinkologne",
+          "nombre": "Oinkologne-female",
           "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 5,
           "deaths": 3,
@@ -639,7 +639,7 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Pawmot*",
+          "nombre": "Pawmot",
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 3,
           "deaths": 4,
@@ -659,7 +659,7 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Lycanroc",
+          "nombre": "Lycanroc-midday",
           "imagen": "https://img.pokemondb.net/artwork/lycanroc-midday.jpg",
           "kills": 0,
           "deaths": 5,
@@ -729,7 +729,7 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Oinkologne",
+          "nombre": "Oinkologne-male",
           "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 0,
           "deaths": 0,
