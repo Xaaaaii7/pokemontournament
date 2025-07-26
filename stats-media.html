@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <style>
     table {
+      width: 100%;
+      max-width: 1000px;
       margin: 2rem auto;
       border-collapse: collapse;
     }
@@ -15,10 +17,14 @@
       padding: 8px 12px;
       text-align: center;
     }
-    canvas {
+    .chart-container {
+      width: 100%;
       max-width: 600px;
       margin: 2rem auto;
-      display: block;
+    }
+    canvas {
+      width: 100% !important;
+      height: auto !important;
     }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -32,7 +38,7 @@
 <div class="leaderboard">
   <div class="title">📊 Mitjanes de stats base per Entrenador</div>
   <div id="tabla-container"></div>
-  <canvas id="starPlot"></canvas>
+  <div id="graficos-container"></div>
 </div>
 
 <script type="module">
@@ -42,7 +48,6 @@
 
 <script type="module">
   const statKeys = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
-  const colors = ['#FF6384', '#36A2EB', '#FFCE56'];
 
   let pokemonStats = [];
   let entrenadores = [];
@@ -92,42 +97,48 @@
     container.innerHTML = `<table>${header}${rows}</table>`;
   }
 
-  function generarRadarChart(resumen) {
-    const ctx = document.getElementById('starPlot').getContext('2d');
-    new Chart(ctx, {
-      type: 'radar',
-      data: {
-        labels: statKeys.map(k => k.toUpperCase()),
-        datasets: resumen.map((r, i) => ({
-          label: r.entrenador,
-          data: statKeys.map(k => r.medias[k]),
-          fill: true,
-          backgroundColor: colors[i % colors.length] + '33',
-          borderColor: colors[i % colors.length],
-          pointBackgroundColor: colors[i % colors.length],
-          borderWidth: 2
-        }))
-      },
-      options: {
-        responsive: true,
-        scales: {
-          r: {
-            beginAtZero: true,
-            suggestedMax: 150,
-            ticks: {
-              stepSize: 20
-            }
-          }
+  function generarGraficosIndividuales(resumen) {
+    const container = document.getElementById('graficos-container');
+    container.innerHTML = '';
+
+    resumen.forEach((r, i) => {
+      const id = `chart-entrenador-${i}`;
+      const div = document.createElement('div');
+      div.className = 'chart-container';
+      div.innerHTML = `
+        <h3 style="text-align:center;">⭐ ${r.entrenador}</h3>
+        <canvas id="${id}"></canvas>
+      `;
+      container.appendChild(div);
+
+      const ctx = document.getElementById(id).getContext('2d');
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: statKeys.map(k => k.toUpperCase()),
+          datasets: [{
+            label: r.entrenador,
+            data: statKeys.map(k => r.medias[k]),
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 2
+          }]
         },
-        plugins: {
-          legend: {
-            position: 'top'
+        options: {
+          responsive: true,
+          scales: {
+            r: {
+              beginAtZero: true,
+              suggestedMax: 150,
+              ticks: { stepSize: 20 }
+            }
           },
-          title: {
-            display: false
+          plugins: {
+            legend: { display: false }
           }
         }
-      }
+      });
     });
   }
 
@@ -135,7 +146,7 @@
     await cargarDatos();
     const resumen = calcularMediasPorEntrenador();
     mostrarTabla(resumen);
-    generarRadarChart(resumen);
+    generarGraficosIndividuales(resumen);
   });
 </script>
 </body>
