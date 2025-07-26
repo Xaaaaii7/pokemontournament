@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokemon Torneig - Mitjanes per Entrenador</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    table {
+      margin: 2rem auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px 12px;
+      text-align: center;
+    }
+    canvas {
+      max-width: 600px;
+      margin: 2rem auto;
+      display: block;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+<nav id="main-nav"></nav>
+
+<div class="leaderboard">
+  <div class="title">📊 Mitjanes de stats base per Entrenador</div>
+  <div id="tabla-container"></div>
+  <canvas id="starPlot"></canvas>
+</div>
+
+<script type="module">
+  import { setupNav } from './nav-component.js';
+  document.addEventListener('DOMContentLoaded', setupNav);
+</script>
+
+<script type="module">
+  const statKeys = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
+  const colors = ['#FF6384', '#36A2EB', '#FFCE56'];
+
+  let pokemonStats = [];
+  let entrenadores = [];
+
+  async function cargarDatos() {
+    const [stats, data] = await Promise.all([
+      fetch('./pokemon_stats.json').then(r => r.json()),
+      fetch('./data.json').then(r => r.json())
+    ]);
+    pokemonStats = stats;
+    entrenadores = Object.values(data.entrenadores);
+  }
+
+  function calcularMediasPorEntrenador() {
+    const resumen = [];
+
+    for (const entrenador of entrenadores) {
+      const pokemonsInscritos = entrenador.equipo.filter(p => p.inscrito);
+      const pokemonsConStats = pokemonsInscritos.map(p =>
+        pokemonStats.find(ps => ps.nombre === p.nombre)
+      ).filter(Boolean);
+
+      const mediaStats = {};
+      for (const stat of statKeys) {
+        const total = pokemonsConStats.reduce((sum, p) => sum + p.stats[stat], 0);
+        mediaStats[stat] = pokemonsConStats.length ? +(total / pokemonsConStats.length).toFixed(1) : 0;
+      }
+
+      resumen.push({
+        entrenador: entrenador.nombre,
+        medias: mediaStats
+      });
+    }
+
+    return resumen;
+  }
+
+  function mostrarTabla(resumen) {
+    const container = document.getElementById('tabla-container');
+    const header = `<tr><th>Entrenador</th>${statKeys.map(k => `<th>${k.toUpperCase()}</th>`).join('')}</tr>`;
+    const rows = resumen.map(r => `
+      <tr>
+        <td>${r.entrenador}</td>
+        ${statKeys.map(stat => `<td>${r.medias[stat]}</td>`).join('')}
+      </tr>`).join('');
+
+    container.innerHTML = `<table>${header}${rows}</table>`;
+  }
+
+  function generarRadarChart(resumen) {
+    const ctx = document.getElementById('starPlot').getContext('2d');
+    new Chart(ctx, {
+      type: 'radar',
+      data: {
+        labels: statKeys.map(k => k.toUpperCase()),
+        datasets: resumen.map((r, i) => ({
+          label: r.entrenador,
+          data: statKeys.map(k => r.medias[k]),
+          fill: true,
+          backgroundColor: colors[i % colors.length] + '33',
+          borderColor: colors[i % colors.length],
+          pointBackgroundColor: colors[i % colors.length],
+          borderWidth: 2
+        }))
+      },
+      options: {
+        responsive: true,
+        scales: {
+          r: {
+            beginAtZero: true,
+            suggestedMax: 150,
+            ticks: {
+              stepSize: 20
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: false
+          }
+        }
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', async () => {
+    await cargarDatos();
+    const resumen = calcularMediasPorEntrenador();
+    mostrarTabla(resumen);
+    generarRadarChart(resumen);
+  });
+</script>
+</body>
+</html>
