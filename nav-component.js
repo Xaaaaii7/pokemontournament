@@ -20,7 +20,7 @@ export function renderNav(currentPage = '') {
         },
         { href: "combates.html", text: "Combats" },
         {
-            text: "Tests"
+            text: "Tests",
             subItems: [ { href: "clasificacion-stat.html", text: "Stats"}
             ]
         }
