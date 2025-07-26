@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Generador de Stats Pokémon</title>
+</head>
+<body>
+  <h1>⚙️ Generador de Stats Base Pokémon</h1>
+  <button onclick="generarArchivoConStats()">🔽 Guardar archivo con stats</button>
+
+  <script>
+    const data = /* Pega aquí tu JSON de entrenadores (data.json) */;
+    
+    async function generarArchivoConStats() {
+      const statKeys = ['hp', 'attack', 'defense', 'special-attack', 'special-defense', 'speed'];
+      const pokemonsProcesados = new Map();
+
+      for (const entrenador of Object.values(data.entrenadores)) {
+        for (const pokemon of entrenador.equipo) {
+          const nombreLimpio = pokemon.nombre.toLowerCase().replace("*", "").replace("’", "").replace(".", "").replace(" ", "-");
+          if (pokemonsProcesados.has(nombreLimpio)) continue;
+
+          try {
+            const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${nombreLimpio}`);
+            const pokeData = await response.json();
+
+            const stats = {};
+            for (const s of pokeData.stats) {
+              stats[s.stat.name] = s.base_stat;
+            }
+
+            pokemonsProcesados.set(nombreLimpio, {
+              nombre: pokemon.nombre,
+              imagen: pokemon.imagen,
+              stats,
+            });
+          } catch (err) {
+            console.warn(`❌ Error con ${nombreLimpio}:`, err);
+          }
+        }
+      }
+
+      const resultadoFinal = Array.from(pokemonsProcesados.values());
+
+      const blob = new Blob([JSON.stringify(resultadoFinal, null, 2)], { type: "application/json" });
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = "pokemon_stats.json";
+      link.click();
+    }
+  </script>
+</body>
+</html>
