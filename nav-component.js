@@ -21,7 +21,7 @@ export function renderNav(currentPage = '') {
         { href: "combates.html", text: "Combats" },
         {
             text: "Tests",
-            subItems: [ { href: "clasifiacion-stat.html", text: "Stats"}
+            subItems: [ { href: "clasificacion-stat.html", text: "Stats"}
             ]
         }
 
