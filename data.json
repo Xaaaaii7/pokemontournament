@@ -309,18 +309,18 @@
       "battles": 6,
       "equipo": [
         {
-          "nombre": "Crocalor",
-          "imagen": "https://img.pokemondb.net/artwork/crocalor.jpg",
+          "nombre": "Skeledirge",
+          "imagen": "https://img.pokemondb.net/artwork/skeledirge.jpg",
           "kills": 4,
           "deaths": 4,
           "battles": 4,
-          "ataques": ["Fuego"],
+          "ataques": ["Fuego","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 1
         },
         {
-          "nombre": "Skiploom",
-          "imagen": "https://img.pokemondb.net/artwork/skiploom.jpg",
+          "nombre": "Jumpluff",
+          "imagen": "https://img.pokemondb.net/artwork/jumpluff.jpg",
           "kills": 1,
           "deaths": 0,
           "battles": 2,
@@ -409,8 +409,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Skiddo",
-          "imagen": "https://img.pokemondb.net/artwork/skiddo.jpg",
+          "nombre": "Gogoat",
+          "imagen": "https://img.pokemondb.net/artwork/Gogoat.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -419,8 +419,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Naclstack",
-          "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
+          "nombre": "Garganacl",
+          "imagen": "https://img.pokemondb.net/artwork/Garganacl.jpg",
           "kills": 6,
           "deaths": 1,
           "battles": 4,
@@ -499,8 +499,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Cacnea",
-          "imagen": "https://img.pokemondb.net/artwork/cacnea.jpg",
+          "nombre": "Cacturne",
+          "imagen": "https://img.pokemondb.net/artwork/cacturne.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -509,8 +509,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Cacnea",
-          "imagen": "https://img.pokemondb.net/artwork/cacnea.jpg",
+          "nombre": "Cacturne",
+          "imagen": "https://img.pokemondb.net/artwork/cacturne.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -539,8 +539,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Lechonk",
-          "imagen": "https://img.pokemondb.net/artwork/lechonk.jpg",
+          "nombre": "Oinkologne-female",
+          "imagen": "https://img.pokemondb.net/artwork/oinkologne.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -549,8 +549,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Goodra",
-          "imagen": "https://img.pokemondb.net/artwork/goodra.jpg",
+          "nombre": "Sliggoo",
+          "imagen": "https://img.pokemondb.net/artwork/sliggoo.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -577,6 +577,56 @@
           "ataques": ["Fantasma"],
           "inscrito": false,
           "deathsAdventure": 1
+        },
+        {
+          "nombre": "Blissey",
+          "imagen": "https://img.pokemondb.net/artwork/blissey.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Toxapex",
+          "imagen": "https://img.pokemondb.net/artwork/toxapex.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Snover",
+          "imagen": "https://img.pokemondb.net/artwork/snover.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Scovillain",
+          "imagen": "https://img.pokemondb.net/artwork/scovillain.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Fuego"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Pachirisu",
+          "imagen": "https://img.pokemondb.net/artwork/pachirisu.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
