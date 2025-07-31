@@ -877,6 +877,26 @@
           "ataques": ["Hada","Siniestro"],
           "inscrito": false,
           "deathsAdventure": 0
+        },
+        { 
+          "nombre": "Clawitzer",
+          "imagen": "https://img.pokemondb.net/artwork/clawitzer.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        { 
+          "nombre": "Copperajah",
+          "imagen": "https://img.pokemondb.net/artwork/copperajah.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     }
