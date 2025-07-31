@@ -589,8 +589,8 @@
       "battles": 6,
       "equipo": [
         {
-          "nombre": "Floragato",
-          "imagen": "https://img.pokemondb.net/artwork/floragato.jpg",
+          "nombre": "Meowscarada",
+          "imagen": "https://img.pokemondb.net/artwork/meowscarada.jpg",
           "kills": 8,
           "deaths": 4,
           "battles": 5,
@@ -599,8 +599,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Psyduck",
-          "imagen": "https://img.pokemondb.net/artwork/psyduck.jpg",
+          "nombre":"Golduck",
+          "imagen": "https://img.pokemondb.net/artwork/golduck.jpg",
           "kills": 0,
           "deaths": 1,
           "battles": 1,
@@ -609,8 +609,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Deerling",
-          "imagen": "https://img.pokemondb.net/artwork/deerling.jpg",
+          "nombre": "Sawsbuck",
+          "imagen": "https://img.pokemondb.net/artwork/sawsbuck.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -739,8 +739,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Flittle",
-          "imagen": "https://img.pokemondb.net/artwork/flittle.jpg",
+          "nombre": "Espathra",
+          "imagen": "https://img.pokemondb.net/artwork/espathra.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -749,8 +749,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Shuppet",
-          "imagen": "https://img.pokemondb.net/artwork/shuppet.jpg",
+          "nombre": "Banette",
+          "imagen": "https://img.pokemondb.net/artwork/banette.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -759,8 +759,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Naclstack",
-          "imagen": "https://img.pokemondb.net/artwork/naclstack.jpg",
+          "nombre": "Garganacl",
+          "imagen": "https://img.pokemondb.net/artwork/gargancl.jpg",
           "kills": 1,
           "deaths": 2,
           "battles": 2,
@@ -769,8 +769,8 @@
           "deathsAdventure": 1
         },
         {
-          "nombre": "Litleo",
-          "imagen": "https://img.pokemondb.net/artwork/litleo.jpg",
+          "nombre": "Pyroar",
+          "imagen": "https://img.pokemondb.net/artwork/pyroar.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -799,8 +799,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Girafarig",
-          "imagen": "https://img.pokemondb.net/artwork/girafarig.jpg",
+          "nombre": "Farigiraf",
+          "imagen": "https://img.pokemondb.net/artwork/farigiraf.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -839,7 +839,7 @@
           "deathsAdventure": 0
         },
         { 
-          "nombre": "Krokorok",
+          "nombre": "Krookodile",
           "imagen": "https://img.pokemondb.net/artwork/krokorok.jpg",
           "kills": 0,
           "deaths": 0,
