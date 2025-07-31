@@ -1,4 +1,4 @@
-{
+de{
   "entrenadores": {
     "jordi": {
       "nombre": "Jordi",
@@ -760,7 +760,7 @@
         },
         {
           "nombre": "Garganacl",
-          "imagen": "https://img.pokemondb.net/artwork/gargancl.jpg",
+          "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
           "kills": 1,
           "deaths": 2,
           "battles": 2,
