@@ -16,7 +16,7 @@
           "battles": 0,
           "ataques": ["Agua","Lucha"],
           "inscrito": false,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Floatzel",
