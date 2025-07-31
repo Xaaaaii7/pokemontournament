@@ -1,4 +1,4 @@
-de{
+{
   "entrenadores": {
     "jordi": {
       "nombre": "Jordi",
@@ -840,7 +840,7 @@ de{
         },
         { 
           "nombre": "Krookodile",
-          "imagen": "https://img.pokemondb.net/artwork/krokorok.jpg",
+          "imagen": "https://img.pokemondb.net/artwork/krookodile.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
