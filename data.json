@@ -848,6 +848,36 @@
           "inscrito": false,
           "deathsAdventure": 0
         }
+        { 
+          "nombre": "Annihilape",
+          "imagen": "https://img.pokemondb.net/artwork/annihilape.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha","Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        { 
+          "nombre": "Gabite",
+          "imagen": "https://img.pokemondb.net/artwork/gabite.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Tierra","Dragon"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        { 
+          "nombre": "Grimmsnarl",
+          "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hada","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        }
       ]
     }
   }
