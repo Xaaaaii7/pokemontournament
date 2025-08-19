@@ -159,175 +159,149 @@
 
 <nav id="main-nav"></nav>
 
-<div class="combates-container">
-  <h1 style="text-align:center; color:var(--secondary); margin-bottom:2rem;">🎥 Combats per Jornada</h1>
-  <!-- Jornada 1 -->
-  <div class="jornada">
-    <div class="jornada-header">Jornada 1 - Inici de Temporada</div>
-    <div class="combates-grid">
-      <!-- Combate 1 -->
-      <div class="combate-card" data-muertes="Rockruff(Eudald) 💀 Sudowoodo(Jordi); Charcadet(Eudald) 💀 Corvisquire(Jordi); Diglett(Eudald) 💀 Fidough(Jordi); Fidough(Jordi) 💀 Gulpin(Eudald); Chansey(Jordi) 💀 Pawmo(Eudald); Fletchinder(Jordi) 💀 Gulpin(Eudald); Gulpin(Eudald) 💀 Luxio(Jordi); Luxio(Jordi) 💀 Floragato(Eudald); Floragato(Eudald) 💀 Corvisquire(Jordi); Corvisquire(Jordi) 💀 Pawmo(Eudald); Sudowoodo(Jordi) 💀 Pawmo(Eudald)">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/UojOkKS5GD8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Jordi vs Eudald</h3>
-          <div class="participantes">
-            <span>Jordi</span>
-            <span class="ganador">Eudald (Guanyador)</span>
-          </div>
-          <div class="combate-meta">
-            <span>06/07/2025</span>
-            <span>⏱️ 22:00</span>
-          </div>
-        </div>
-      </div>
-      <!-- Combate 2 -->
-      <div class="combate-card" data-muertes="Oinkologne(Josep) 💀 Sudowoodo(Jordi); Sudowoodo(Jordi) 💀 Toedscool(Josep); Fidough(Jordi) 💀 Skiploom(Josep); Chansey(Jordi) 💀 Pawmo(Josep); Corvisquire(Jordi) 💀 Crocalor(Josep); Toedscool(Josep) 💀 Luxio(Jordi); Kricketune(Josep) 💀 Luxio(Jordi); Crocalor(Josep) 💀 Luxio(Jordi)">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/CXq6x19AvyY" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Jordi vs Josep</h3>
-          <div class="participantes">
-            <span class="ganador">Jordi (Guanyador)</span>
-            <span>Josep</span>
-          </div>
-          <div class="combate-meta">
-            <span>06/07/2025</span>
-            <span>⏱️ 22:30</span>
-          </div>
-        </div>
-      </div>
-      <!-- Combate 3 -->
-      <div class="combate-card" data-muertes="Rockruff (Eudald) 💀 Oinkologne(Josep); Psyduck(Eudald) 💀 Oinkologne(Josep); Oinkologne(Josep) 💀 Floragato(Eudald); Toedscool(Josep) 💀 Skiploom(Eudald); Kircketune(Josep) 💀 Floragato(Eudald); Floragato(Eudald) 💀 Crocalor(Josep); Pawmo(Eudald) 💀 Crocalor(Josep); Crocalor(Josep) 💀 Skiploom(Eudald);">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/J1sCcv2xzHU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Josep vs Eudald</h3>
-          <div class="participantes">
-            <span>Josep</span>
-            <span>Eudald</span>
-          </div>
-          <div class="combate-meta">
-            <span>06/07/2025</span>
-            <span>⏱️ 23:00</span>
-          </div>
-        </div>
-      </div>
+  <div class="combates-container">
+    <h1 style="text-align:center; color:var(--secondary); margin-bottom:2rem;">🎥 Combats per Jornada</h1>
+    <div id="jornades-container"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Detalls del combat</h2>
+      <h3>Muertes</h3>
+      <ul id="muertes-list"></ul>
+      <h3>Equips</h3>
+      <p id="equips-info"></p>
+      <h3>Bans</h3>
+      <p id="bans-info"></p>
+      <a id="youtube-link" href="#" target="_blank">Ver en YouTube</a>
     </div>
   </div>
-  <!-- Jornada 2 -->
-  <div class="jornada">
-    <div class="jornada-header">Jornada 2 </div>
-    <div class="combates-grid">
-      <!-- Combate 1 -->
-      <div class="combate-card" data-muertes="Rockruff(Eudald) 💀 Sudowoodo(Jordi); Charcadet(Eudald) 💀 Corvisquire(Jordi); Diglett(Eudald) 💀 Fidough(Jordi); Fidough(Jordi) 💀 Gulpin(Eudald); Chansey(Jordi) 💀 Pawmo(Eudald); Fletchinder(Jordi) 💀 Gulpin(Eudald); Gulpin(Eudald) 💀 Luxio(Jordi); Luxio(Jordi) 💀 Floragato(Eudald); Floragato(Eudald) 💀 Corvisquire(Jordi); Corvisquire(Jordi) 💀 Pawmo(Eudald); Sudowoodo(Jordi) 💀 Pawmo(Eudald)">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/wzYC9wzwvyU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Jordi vs Josep</h3>
-          <div class="participantes">
-            <span>Jordi</span>
-            <span class="ganador">Josep (Guanyador)</span>
-          </div>
-          <div class="combate-meta">
-            <span>13/07/2025</span>
-            <span>⏱️ 22:30</span>
-          </div>
-        </div>
-      </div>
-      <!-- Combate 2 -->
-      <div class="combate-card" data-muertes="Oinkologne(Josep) 💀 Sudowoodo(Jordi); Sudowoodo(Jordi) 💀 Toedscool(Josep); Fidough(Jordi) 💀 Skiploom(Josep); Chansey(Jordi) 💀 Pawmo(Josep); Corvisquire(Jordi) 💀 Crocalor(Josep); Toedscool(Josep) 💀 Luxio(Jordi); Kricketune(Josep) 💀 Luxio(Jordi); Crocalor(Josep) 💀 Luxio(Jordi)">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/GcLunYRxzYo" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Eudald vs Josep</h3>
-          <div class="participantes">
-            <span class="ganador">Josep (Guanyador)</span>
-            <span>Eudald</span>
-          </div>
-          <div class="combate-meta">
-            <span>13/07/2025</span>
-            <span>⏱️ 23:00</span>
-          </div>
-        </div>
-      </div>
-      <!-- Combate 3 -->
-      <div class="combate-card" data-muertes="Rockruff (Eudald) 💀 Oinkologne(Josep); Psyduck(Eudald) 💀 Oinkologne(Josep); Oinkologne(Josep) 💀 Floragato(Eudald); Toedscool(Josep) 💀 Skiploom(Eudald); Kircketune(Josep) 💀 Floragato(Eudald); Floragato(Eudald) 💀 Crocalor(Josep); Pawmo(Eudald) 💀 Crocalor(Josep); Crocalor(Josep) 💀 Skiploom(Eudald);">
-        <div class="combate-video">
-          <iframe src="https://www.youtube.com/embed/6uAHdV7UEXw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="combate-info">
-          <h3>Jordi vs Eudald</h3>
-          <div class="participantes">
-            <span class="ganador">Eudald (Guanyador)</span>
-            <span>Jordi</span>
-          </div>
-          <div class="combate-meta">
-            <span>13/07/2025</span>
-            <span>⏱️ 23:30</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Más jornadas según necesites -->
-</div>
 
-<!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Muertes</h2>
-    <ul id="muertes-list"></ul>
-    <a id="youtube-link" href="#" target="_blank">Ver en YouTube</a>
-  </div>
-</div>
+  <script>
+  async function loadCombats() {
+    const response = await fetch('data/jornades.json');
+    const data = await response.json();
+    const container = document.getElementById('jornades-container');
+    data.jornades.forEach(jornada => {
+      const jornadaDiv = document.createElement('div');
+      jornadaDiv.className = 'jornada';
+      const header = document.createElement('div');
+      header.className = 'jornada-header';
+      header.textContent = `Jornada ${jornada.numero}${jornada.nom ? ' - ' + jornada.nom : ''}`;
+      jornadaDiv.appendChild(header);
+      const grid = document.createElement('div');
+      grid.className = 'combates-grid';
+      jornada.combats.forEach(combat => {
+        const card = document.createElement('div');
+        card.className = 'combate-card';
+        card.dataset.muertes = (combat.muertes || []).join('; ');
+        card.dataset.equips = JSON.stringify(combat.equips || {});
+        card.dataset.bans = JSON.stringify(combat.bans || {});
 
-<script>
-// Abre el modal al hacer clic en el título del combate
-const titles = document.querySelectorAll('.combate-info h3');
-const modal = document.getElementById('modal');
-const muertesList = document.getElementById('muertes-list');
-const youtubeLink = document.getElementById('youtube-link');
+        const videoDiv = document.createElement('div');
+        videoDiv.className = 'combate-video';
+        const iframe = document.createElement('iframe');
+        iframe.src = combat.youtube;
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        videoDiv.appendChild(iframe);
+        card.appendChild(videoDiv);
 
-titles.forEach(title => {
-  title.addEventListener('click', (e) => {
-    const card = e.target.closest('.combate-card');
-    const muertesData = (card.dataset.muertes || '').split(';');
-    muertesList.innerHTML = '';
-    muertesData.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item.trim();
-      muertesList.appendChild(li);
+        const infoDiv = document.createElement('div');
+        infoDiv.className = 'combate-info';
+        const title = document.createElement('h3');
+        title.textContent = `${combat.jugador1} vs ${combat.jugador2}`;
+        infoDiv.appendChild(title);
+
+        const participantes = document.createElement('div');
+        participantes.className = 'participantes';
+        const p1 = document.createElement('span');
+        p1.textContent = combat.jugador1;
+        const p2 = document.createElement('span');
+        p2.textContent = combat.jugador2;
+        if (combat.guanyador === combat.jugador1) {
+          p1.classList.add('ganador');
+          p1.textContent += ' (Guanyador)';
+        }
+        if (combat.guanyador === combat.jugador2) {
+          p2.classList.add('ganador');
+          p2.textContent += ' (Guanyador)';
+        }
+        participantes.appendChild(p1);
+        participantes.appendChild(p2);
+        infoDiv.appendChild(participantes);
+
+        const meta = document.createElement('div');
+        meta.className = 'combate-meta';
+        const dateSpan = document.createElement('span');
+        dateSpan.textContent = combat.data;
+        const timeSpan = document.createElement('span');
+        timeSpan.textContent = `⏱️ ${combat.hora}`;
+        meta.appendChild(dateSpan);
+        meta.appendChild(timeSpan);
+        infoDiv.appendChild(meta);
+
+        card.appendChild(infoDiv);
+        grid.appendChild(card);
+      });
+      jornadaDiv.appendChild(grid);
+      container.appendChild(jornadaDiv);
     });
-    // Convierte la URL del iframe en enlace a YouTube
-    const iframe = card.querySelector('iframe');
-    if (iframe) {
-      const src = iframe.src;
-      // Reemplaza "embed/" por "watch?v=" para enlace normal
-      const normalUrl = src.replace('embed/', 'watch?v=');
-      youtubeLink.href = normalUrl;
-    }
-    modal.style.display = 'flex';
-  });
-});
-
-// Cerrar modal
-const closeBtn = document.querySelector('.close-btn');
-closeBtn.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-window.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.style.display = 'none';
+    attachModalHandlers();
   }
-});
-</script>
+
+  function attachModalHandlers() {
+    const titles = document.querySelectorAll('.combate-info h3');
+    const modal = document.getElementById('modal');
+    const muertesList = document.getElementById('muertes-list');
+    const equipsInfo = document.getElementById('equips-info');
+    const bansInfo = document.getElementById('bans-info');
+    const youtubeLink = document.getElementById('youtube-link');
+
+    titles.forEach(title => {
+      title.addEventListener('click', (e) => {
+        const card = e.target.closest('.combate-card');
+        const muertesData = (card.dataset.muertes || '').split(';');
+        muertesList.innerHTML = '';
+        muertesData.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item.trim();
+          muertesList.appendChild(li);
+        });
+        const equipsData = JSON.parse(card.dataset.equips || '{}');
+        equipsInfo.textContent = Object.entries(equipsData)
+          .map(([trainer, team]) => `${trainer}: ${team.join(', ')}`)
+          .join(' | ');
+        const bansData = JSON.parse(card.dataset.bans || '{}');
+        const bansText = Object.entries(bansData)
+          .map(([trainer, bans]) => `${trainer}: ${bans.join(', ')}`)
+          .join(' | ');
+        bansInfo.textContent = bansText ? `Bans: ${bansText}` : '';
+        const iframe = card.querySelector('iframe');
+        if (iframe) {
+          const src = iframe.src;
+          const normalUrl = src.replace('embed/', 'watch?v=');
+          youtubeLink.href = normalUrl;
+        }
+        modal.style.display = 'flex';
+      });
+    });
+
+    const closeBtn = document.querySelector('.close-btn');
+    closeBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  }
+
+  loadCombats();
+  </script>
 <script type="module">
     import { setupNav } from './nav-component.js';
     document.addEventListener('DOMContentLoaded', setupNav);
