@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pokemon Torneig - Jornades</title>
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  :root {
+    --primary: #ffcb05;
+    --secondary: #3b4cca;
+    --shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  body {font-family: system-ui, sans-serif;}
+  .jornades-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .jornada {
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .jornada h2 {
+    background: var(--primary);
+    margin: 0;
+    padding: 1rem;
+    color: #212529;
+    font-size: 1.5rem;
+  }
+  .match-card {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  .match-card:last-child {border-bottom: none;}
+  .teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .team {text-align: center;}
+  .team .trainer {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    margin-bottom: 0.5rem;
+  }
+  .pokemon-team img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 0.2rem;
+  }
+  .vs {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .winner {color: #d4af37; font-weight: bold;}
+  .video {text-decoration: none; color: var(--secondary);}
+  @media (max-width: 768px) {
+    .teams {flex-direction: column;}
+    .vs {margin: 0.5rem 0;}
+    .details {flex-direction: column; gap: 0.5rem;}
+  }
+</style>
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata i Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+
+<nav id="main-nav"></nav>
+
+<main id="jornades" class="jornades-container"></main>
+
+<script type="module">
+import { setupNav } from './nav-component.js';
+setupNav();
+
+async function loadJornades(){
+  const [jornadesData, trainersData] = await Promise.all([
+    fetch('data/jornades.json').then(r=>r.json()),
+    fetch('data.json').then(r=>r.json())
+  ]);
+  const entrenadors = trainersData.entrenadores;
+  const container = document.getElementById('jornades');
+  jornadesData.jornades.forEach(jornada => {
+    const jornadaSection = document.createElement('section');
+    jornadaSection.className = 'jornada';
+    jornadaSection.innerHTML = `<h2>Jornada ${jornada.numero} - ${jornada.nom}</h2>`;
+    jornada.combats.forEach(combat => {
+      const card = document.createElement('div');
+      card.className = 'match-card';
+      const t1 = entrenadors[combat.jugador1.toLowerCase()];
+      const t2 = entrenadors[combat.jugador2.toLowerCase()];
+      const team1Imgs = (combat.equips[combat.jugador1]||[]).map(p=>{
+        const pk = t1.equipo.find(e=>e.nombre===p);
+        return pk ? `<img src="${pk.imagen}" alt="${p}">` : '';
+      }).join('');
+      const team2Imgs = (combat.equips[combat.jugador2]||[]).map(p=>{
+        const pk = t2.equipo.find(e=>e.nombre===p);
+        return pk ? `<img src="${pk.imagen}" alt="${p}">` : '';
+      }).join('');
+      card.innerHTML = `
+        <div class="teams">
+          <div class="team">
+            <img class="trainer" src="${t1.imagen}" alt="${combat.jugador1}">
+            <div>${combat.jugador1}</div>
+            <div class="pokemon-team">${team1Imgs}</div>
+          </div>
+          <span class="vs">vs</span>
+          <div class="team">
+            <img class="trainer" src="${t2.imagen}" alt="${combat.jugador2}">
+            <div>${combat.jugador2}</div>
+            <div class="pokemon-team">${team2Imgs}</div>
+          </div>
+        </div>
+        <div class="details">
+          <span class="date">${combat.data} - ${combat.hora}</span>
+          <span class="winner">🏆 ${combat.guanyador}</span>
+          <a class="video" href="${combat.youtube}" target="_blank">Vídeo</a>
+        </div>`;
+      jornadaSection.appendChild(card);
+    });
+    container.appendChild(jornadaSection);
+  });
+}
+loadJornades();
+</script>
+</body>
+</html>

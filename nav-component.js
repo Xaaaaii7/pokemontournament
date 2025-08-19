@@ -19,6 +19,7 @@ export function renderNav(currentPage = '') {
             ]
         },
         { href: "combates.html", text: "Combats" },
+        { href: "jornades.html", text: "Jornades" },
         {
             text: "Tests",
             subItems: [ { href: "clasificacion-stat.html", text: "Stats"}
