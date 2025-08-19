@@ -1,0 +1,178 @@
+{
+  "jornades": [
+    {
+      "numero": 1,
+      "nom": "Inici de Temporada",
+      "combats": [
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Eudald",
+          "guanyador": "Eudald",
+          "data": "06/07/2025",
+          "hora": "22:00",
+          "youtube": "https://www.youtube.com/embed/UojOkKS5GD8",
+          "equips": {
+            "Jordi": ["Sudowoodo","Corvisquire","Fidough","Chansey","Fletchinder","Luxio"],
+            "Eudald": ["Rockruff","Charcadet","Diglett","Gulpin","Pawmo","Floragato"]
+          },
+          "bans": {
+            "Jordi": ["Quaxwell"],
+            "Eudald": ["Sylveon"]
+          },
+          "muertes": [
+            "Rockruff(Eudald) 💀 Sudowoodo(Jordi)",
+            "Charcadet(Eudald) 💀 Corvisquire(Jordi)",
+            "Diglett(Eudald) 💀 Fidough(Jordi)",
+            "Fidough(Jordi) 💀 Gulpin(Eudald)",
+            "Chansey(Jordi) 💀 Pawmo(Eudald)",
+            "Fletchinder(Jordi) 💀 Gulpin(Eudald)",
+            "Gulpin(Eudald) 💀 Luxio(Jordi)",
+            "Luxio(Jordi) 💀 Floragato(Eudald)",
+            "Floragato(Eudald) 💀 Corvisquire(Jordi)",
+            "Corvisquire(Jordi) 💀 Pawmo(Eudald)",
+            "Sudowoodo(Jordi) 💀 Pawmo(Eudald)"
+          ]
+        },
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Josep",
+          "guanyador": "Jordi",
+          "data": "06/07/2025",
+          "hora": "22:30",
+          "youtube": "https://www.youtube.com/embed/CXq6x19AvyY",
+          "equips": {
+            "Jordi": ["Sudowoodo","Fidough","Chansey","Corvisquire","Luxio"],
+            "Josep": ["Oinkologne","Toedscool","Skiploom","Pawmo","Crocalor","Kricketune"]
+          },
+          "bans": {
+            "Jordi": ["Quaxwell"],
+            "Josep": ["Espeon"]
+          },
+          "muertes": [
+            "Oinkologne(Josep) 💀 Sudowoodo(Jordi)",
+            "Sudowoodo(Jordi) 💀 Toedscool(Josep)",
+            "Fidough(Jordi) 💀 Skiploom(Josep)",
+            "Chansey(Jordi) 💀 Pawmo(Josep)",
+            "Corvisquire(Jordi) 💀 Crocalor(Josep)",
+            "Toedscool(Josep) 💀 Luxio(Jordi)",
+            "Kricketune(Josep) 💀 Luxio(Jordi)",
+            "Crocalor(Josep) 💀 Luxio(Jordi)"
+          ]
+        },
+        {
+          "jugador1": "Josep",
+          "jugador2": "Eudald",
+          "guanyador": null,
+          "data": "06/07/2025",
+          "hora": "23:00",
+          "youtube": "https://www.youtube.com/embed/J1sCcv2xzHU",
+          "equips": {
+            "Josep": ["Oinkologne","Toedscool","Kricketune","Crocalor"],
+            "Eudald": ["Rockruff","Psyduck","Floragato","Skiploom","Pawmo"]
+          },
+          "bans": {
+            "Josep": ["Espeon"],
+            "Eudald": ["Sylveon"]
+          },
+          "muertes": [
+            "Rockruff(Eudald) 💀 Oinkologne(Josep)",
+            "Psyduck(Eudald) 💀 Oinkologne(Josep)",
+            "Oinkologne(Josep) 💀 Floragato(Eudald)",
+            "Toedscool(Josep) 💀 Skiploom(Eudald)",
+            "Kircketune(Josep) 💀 Floragato(Eudald)",
+            "Floragato(Eudald) 💀 Crocalor(Josep)",
+            "Pawmo(Eudald) 💀 Crocalor(Josep)",
+            "Crocalor(Josep) 💀 Skiploom(Eudald)"
+          ]
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "nom": "",
+      "combats": [
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Josep",
+          "guanyador": "Josep",
+          "data": "13/07/2025",
+          "hora": "22:30",
+          "youtube": "https://www.youtube.com/embed/wzYC9wzwvyU",
+          "equips": {
+            "Jordi": ["Sudowoodo","Corvisquire","Fidough","Chansey","Fletchinder","Luxio"],
+            "Josep": ["Rockruff","Charcadet","Diglett","Gulpin","Pawmo","Floragato"]
+          },
+          "bans": {
+            "Jordi": ["Pelipper"],
+            "Josep": []
+          },
+          "muertes": [
+            "Rockruff(Eudald) 💀 Sudowoodo(Jordi)",
+            "Charcadet(Eudald) 💀 Corvisquire(Jordi)",
+            "Diglett(Eudald) 💀 Fidough(Jordi)",
+            "Fidough(Jordi) 💀 Gulpin(Eudald)",
+            "Chansey(Jordi) 💀 Pawmo(Eudald)",
+            "Fletchinder(Jordi) 💀 Gulpin(Eudald)",
+            "Gulpin(Eudald) 💀 Luxio(Jordi)",
+            "Luxio(Jordi) 💀 Floragato(Eudald)",
+            "Floragato(Eudald) 💀 Corvisquire(Jordi)",
+            "Corvisquire(Jordi) 💀 Pawmo(Eudald)",
+            "Sudowoodo(Jordi) 💀 Pawmo(Eudald)"
+          ]
+        },
+        {
+          "jugador1": "Eudald",
+          "jugador2": "Josep",
+          "guanyador": "Josep",
+          "data": "13/07/2025",
+          "hora": "23:00",
+          "youtube": "https://www.youtube.com/embed/GcLunYRxzYo",
+          "equips": {
+            "Eudald": ["Sudowoodo","Fidough","Chansey","Corvisquire","Luxio"],
+            "Josep": ["Oinkologne","Toedscool","Skiploom","Pawmo","Crocalor","Kricketune"]
+          },
+          "bans": {
+            "Eudald": ["Sylveon"],
+            "Josep": []
+          },
+          "muertes": [
+            "Oinkologne(Josep) 💀 Sudowoodo(Jordi)",
+            "Sudowoodo(Jordi) 💀 Toedscool(Josep)",
+            "Fidough(Jordi) 💀 Skiploom(Josep)",
+            "Chansey(Jordi) 💀 Pawmo(Josep)",
+            "Corvisquire(Jordi) 💀 Crocalor(Josep)",
+            "Toedscool(Josep) 💀 Luxio(Jordi)",
+            "Kricketune(Josep) 💀 Luxio(Jordi)",
+            "Crocalor(Josep) 💀 Luxio(Jordi)"
+          ]
+        },
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Eudald",
+          "guanyador": "Eudald",
+          "data": "13/07/2025",
+          "hora": "23:30",
+          "youtube": "https://www.youtube.com/embed/6uAHdV7UEXw",
+          "equips": {
+            "Jordi": ["Rockruff","Psyduck","Floragato","Skiploom","Pawmo"],
+            "Eudald": ["Oinkologne","Toedscool","Kricketune","Crocalor"]
+          },
+          "bans": {
+            "Jordi": [],
+            "Eudald": []
+          },
+          "muertes": [
+            "Rockruff (Eudald) 💀 Oinkologne(Josep)",
+            "Psyduck(Eudald) 💀 Oinkologne(Josep)",
+            "Oinkologne(Josep) 💀 Floragato(Eudald)",
+            "Toedscool(Josep) 💀 Skiploom(Eudald)",
+            "Kircketune(Josep) 💀 Floragato(Eudald)",
+            "Floragato(Eudald) 💀 Crocalor(Josep)",
+            "Pawmo(Eudald) 💀 Crocalor(Josep)",
+            "Crocalor(Josep) 💀 Skiploom(Eudald)"
+          ]
+        }
+      ]
+    }
+  ]
+}
