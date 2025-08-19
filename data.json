@@ -15,7 +15,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Lucha"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -25,7 +25,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -35,7 +35,7 @@
           "deaths": 4,
           "battles": 4,
           "ataques": ["Normal"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -75,7 +75,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Hada","Acero"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -95,7 +95,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Volador","Acero"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -105,7 +105,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Electrico"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -115,7 +115,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -125,7 +125,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Acero","Psiquico"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -145,7 +145,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -175,7 +175,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Tierra"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -205,7 +205,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -215,7 +215,7 @@
           "deaths": 0,
           "battles": 1,
           "ataques": ["Agua","Volador"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -225,7 +225,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Agua","Veneno"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -255,7 +255,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Siniestro"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -285,7 +285,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Veneno"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -295,7 +295,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma","Veneno"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         }
       ]
@@ -335,7 +335,7 @@
           "deaths": 3,
           "battles": 3,
           "ataques": ["Normal"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -345,7 +345,7 @@
           "deaths": 0,
           "battles": 1,
           "ataques": ["Siniestro","Fuego"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -355,7 +355,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -445,7 +445,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Acero"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 2
         },
         {
@@ -465,7 +465,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -485,7 +485,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Volador","Siniestro"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -565,7 +565,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Siniestro"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 2
         },
         {
@@ -575,7 +575,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -675,7 +675,7 @@
           "deaths": 3,
           "battles": 3,
           "ataques": ["Tierra"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -695,7 +695,7 @@
           "deaths": 4,
           "battles": 5,
           "ataques": ["Electrico","Lucha"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -705,7 +705,7 @@
           "deaths": 3,
           "battles": 3,
           "ataques": ["Fuego","Fantasma"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -755,7 +755,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Veneno"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -785,7 +785,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -815,7 +815,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Roca"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -895,7 +895,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Tierra","Siniestro"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         { 
@@ -905,7 +905,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Lucha","Fantasma"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         { 
@@ -925,7 +925,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hada","Siniestro"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         { 
@@ -935,7 +935,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         { 
