@@ -230,27 +230,24 @@
         {
           "jugador1": "Josep",
           "jugador2": "Eudald",
-          "guanyador": null,
-          "data": "06/07/2025",
+          "guanyador": "Josep",
+          "data": "19/08/2025",
           "hora": "23:00",
-          "youtube": "https://www.youtube.com/embed/J1sCcv2xzHU",
+          "youtube": "https://www.youtube.com/embed/kQSzjkwSf5M",
           "equips": {
-            "Josep": ["Oinkologne","Toedscool","Kricketune","Crocalor"],
-            "Eudald": ["Rockruff","Psyduck","Floragato","Skiploom","Pawmo"]
+            "Josep": ["Pawmot","Espeon","Tinkaton","Tsareena","Garganacl","Grimmsnarl"],
+            "Eudald": ["Annihilape","Garganacl","Krokodile","Gyarados","Bellibolt","Grimmsnarl"]
           },
           "bans": {
-            "Josep": ["Espeon"],
-            "Eudald": ["Sylveon"]
+            "Josep": ["Gyarados"],
+            "Eudald": ["Meowscarada"]
           },
           "muertes": [
-            "Rockruff(Eudald) 💀 Oinkologne(Josep)",
-            "Psyduck(Eudald) 💀 Oinkologne(Josep)",
-            "Oinkologne(Josep) 💀 Floragato(Eudald)",
-            "Toedscool(Josep) 💀 Skiploom(Eudald)",
-            "Kircketune(Josep) 💀 Floragato(Eudald)",
-            "Floragato(Eudald) 💀 Crocalor(Josep)",
-            "Pawmo(Eudald) 💀 Crocalor(Josep)",
-            "Crocalor(Josep) 💀 Skiploom(Eudald)"
+            "Grimmsnarl(Eudald) 💀 Tinkaton(Josep)",
+            "Krokodile(Eudald) 💀 Tsareena(Josep)",
+            "Annihilape(Eudald) 💀 Tsareena(Josep)",
+            "Gyarados(Eudald) 💀 Grimmsnarl(Josep)",
+            "Grimmsnarl(Josep) 💀 Garganacl(Eudald)",
           ]
         }
       ]
