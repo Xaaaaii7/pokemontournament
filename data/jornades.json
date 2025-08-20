@@ -209,22 +209,22 @@
           "hora": "22:30",
           "youtube": "https://www.youtube.com/embed/_2FsLv0_CE4",
           "equips": {
-            "Jordi": ["Sudowoodo","Fidough","Chansey","Corvisquire","Luxio"],
-            "Josep": ["Oinkologne","Toedscool","Skiploom","Pawmo","Crocalor","Kricketune"]
+            "Jordi": ["Magnezone","Sandaconda","Quaquaval","Dachsbun","Hawlucha","Gengar"],
+            "Eudald": ["Annihilape","Garganacl","Krokodile","Gyarados","Bellibolt","Grimmsnarl"]
           },
           "bans": {
-            "Jordi": ["Quaxwell"],
-            "Josep": ["Espeon"]
+            "Jordi": ["Corviknight"],
+            "Eudald": ["Meowscarada"]
           },
           "muertes": [
-            "Oinkologne(Josep) 💀 Sudowoodo(Jordi)",
-            "Sudowoodo(Jordi) 💀 Toedscool(Josep)",
-            "Fidough(Jordi) 💀 Skiploom(Josep)",
-            "Chansey(Jordi) 💀 Pawmo(Josep)",
-            "Corvisquire(Jordi) 💀 Crocalor(Josep)",
-            "Toedscool(Josep) 💀 Luxio(Jordi)",
-            "Kricketune(Josep) 💀 Luxio(Jordi)",
-            "Crocalor(Josep) 💀 Luxio(Jordi)"
+            "Gengar(Jordi) 💀 Gyarados(Eudald)",
+            "Hawlucha(Jordi) 💀 Gyarados(Eudald)",
+            "Gyarados(Eudald) 💀 Sandaconda(Jordi)",
+            "Bellibolt(Eudald) 💀 Quaquaval(Jordi)",
+            "Quaquaval(Jordi) 💀 Krokodile(Eudald)",
+            "Sandaconda(Jordi) 💀 Krokodile(Eudald)",
+            "Dachsbun(Jordi) 💀 Krokodile(Eudald)",
+            "Magnezone(Jordi) 💀 Krokodile(Eudald)"
           ]
         },
         {
