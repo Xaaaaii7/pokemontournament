@@ -413,7 +413,7 @@
           "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
           "kills": 1,
           "deaths": 0,
-          "battles": 4,
+          "battles": 5,
           "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -433,7 +433,7 @@
           "imagen": "https://img.pokemondb.net/artwork/pawmot.jpg",
           "kills": 6,
           "deaths": 1,
-          "battles": 6,
+          "battles": 7,
           "ataques": ["Electrico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -463,7 +463,7 @@
           "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
           "kills": 6,
           "deaths": 1,
-          "battles": 4,
+          "battles": 5,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -471,9 +471,9 @@
         {
           "nombre": "Tsareena",
           "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
-          "kills": 3,
+          "kills": 5,
           "deaths": 0,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -481,9 +481,9 @@
         {
           "nombre": "Tinkaton",
           "imagen": "https://img.pokemondb.net/artwork/tinkaton.jpg",
-          "kills": 1,
+          "kills": 2,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -601,9 +601,9 @@
         {
           "nombre": "Grimmsnarl",
           "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Hada","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -783,7 +783,7 @@
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 2,
           "deaths": 2,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -851,9 +851,9 @@
         {
           "nombre": "Garganacl",
           "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
-          "kills": 1,
+          "kills": 2,
           "deaths": 2,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -872,8 +872,8 @@
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
           "kills": 3,
-          "deaths": 3,
-          "battles": 3,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -932,8 +932,8 @@
           "nombre": "Krookodile",
           "imagen": "https://img.pokemondb.net/artwork/krookodile.jpg",
           "kills": 4,
-          "deaths": 0,
-          "battles": 1,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Tierra","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -943,7 +943,7 @@
           "imagen": "https://img.pokemondb.net/artwork/annihilape.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 1,
+          "battles": 2,
           "ataques": ["Lucha","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -962,8 +962,8 @@
           "nombre": "Grimmsnarl",
           "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 1,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Hada","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
