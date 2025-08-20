@@ -942,7 +942,7 @@
           "nombre": "Annihilape",
           "imagen": "https://img.pokemondb.net/artwork/annihilape.jpg",
           "kills": 0,
-          "deaths": 0,
+          "deaths": 1,
           "battles": 2,
           "ataques": ["Lucha","Fantasma"],
           "inscrito": true,
