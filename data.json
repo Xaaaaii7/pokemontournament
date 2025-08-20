@@ -133,7 +133,7 @@
           "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
           "kills": 2,
           "deaths": 1,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -173,7 +173,7 @@
           "imagen": "https://img.pokemondb.net/artwork/sandaconda.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Tierra"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -192,8 +192,8 @@
           "nombre": "Magnezone",
           "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
           "kills": 2,
-          "deaths": 1,
-          "battles": 2,
+          "deaths": 2,
+          "battles": 3,
           "ataques": ["Electrico","Acero"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -251,9 +251,9 @@
         {
           "nombre": "Zoroark",
           "imagen": "https://img.pokemondb.net/artwork/zoroark.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 2,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -292,8 +292,8 @@
           "nombre": "Gengar",
           "imagen": "https://img.pokemondb.net/artwork/gengar.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Fantasma","Veneno"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -313,7 +313,7 @@
           "imagen": "https://img.pokemondb.net/artwork/skeledirge.jpg",
           "kills": 4,
           "deaths": 4,
-          "battles": 4,
+          "battles": 5,
           "ataques": ["Fuego","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -373,7 +373,7 @@
           "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
           "kills": 1,
           "deaths": 0,
-          "battles": 3,
+          "battles": 4,
           "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -382,8 +382,8 @@
           "nombre": "Bellibolt",
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 1,
-          "deaths": 0,
-          "battles": 4,
+          "deaths": 1,
+          "battles": 5,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -433,7 +433,7 @@
           "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
           "kills": 3,
           "deaths": 0,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -441,9 +441,9 @@
         {
           "nombre": "Tinkaton",
           "imagen": "https://img.pokemondb.net/artwork/tinkaton.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Hada","Acero"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -471,9 +471,9 @@
         {
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
-          "kills": 3,
-          "deaths": 0,
-          "battles": 1,
+          "kills": 5,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
