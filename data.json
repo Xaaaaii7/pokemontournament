@@ -297,6 +297,46 @@
           "ataques": ["Fantasma","Veneno"],
           "inscrito": true,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Sableye",
+          "imagen": "https://img.pokemondb.net/artwork/sableye.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma","Siniestro"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Deino",
+          "imagen": "https://img.pokemondb.net/artwork/deino.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Dragon"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Glimmora",
+          "imagen": "https://img.pokemondb.net/artwork/glimmora.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Roca","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Honchkrow",
+          "imagen": "https://img.pokemondb.net/artwork/honchkrow.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
@@ -945,6 +985,66 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gallade",
+          "imagen": "https://img.pokemondb.net/artwork/gallade.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico","Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Altaria",
+          "imagen": "https://img.pokemondb.net/artwork/altaria.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Cryogonal",
+          "imagen": "https://img.pokemondb.net/artwork/cryogonal.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Medicham",
+          "imagen": "https://img.pokemondb.net/artwork/medicham.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico","Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Beartic",
+          "imagen": "https://img.pokemondb.net/artwork/beartic.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Glalie",
+          "imagen": "https://img.pokemondb.net/artwork/glalie.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo"],
           "inscrito": false,
           "deathsAdventure": 0
         }
