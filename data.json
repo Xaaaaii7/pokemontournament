@@ -11,9 +11,9 @@
         {
           "nombre": "Quaquaval",
           "imagen": "https://img.pokemondb.net/artwork/quaquaval.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Agua","Lucha"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -82,8 +82,8 @@
           "nombre": "Dachsbun",
           "imagen": "https://img.pokemondb.net/artwork/dachsbun.jpg",
           "kills": 1,
-          "deaths": 3,
-          "battles": 3,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Hada"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -132,8 +132,8 @@
           "nombre": "Hawlucha",
           "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
           "kills": 2,
-          "deaths": 1,
-          "battles": 3,
+          "deaths": 2,
+          "battles": 4,
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -171,9 +171,9 @@
         {
           "nombre": "Sandaconda",
           "imagen": "https://img.pokemondb.net/artwork/sandaconda.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 1,
+          "kills": 1,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Tierra"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -192,8 +192,8 @@
           "nombre": "Magnezone",
           "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
           "kills": 2,
-          "deaths": 2,
-          "battles": 3,
+          "deaths": 3,
+          "battles": 4,
           "ataques": ["Electrico","Acero"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -292,8 +292,8 @@
           "nombre": "Gengar",
           "imagen": "https://img.pokemondb.net/artwork/gengar.jpg",
           "kills": 0,
-          "deaths": 1,
-          "battles": 1,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Fantasma","Veneno"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -742,8 +742,8 @@
           "nombre": "Bellibolt",
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 2,
-          "deaths": 1,
-          "battles": 2,
+          "deaths": 2,
+          "battles": 3,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -813,7 +813,7 @@
           "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
           "kills": 1,
           "deaths": 2,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -831,9 +831,9 @@
         {
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
-          "kills": 1,
-          "deaths": 2,
-          "battles": 2,
+          "kills": 3,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -891,9 +891,9 @@
         { 
           "nombre": "Krookodile",
           "imagen": "https://img.pokemondb.net/artwork/krookodile.jpg",
-          "kills": 0,
+          "kills": 4,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Tierra","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -903,7 +903,7 @@
           "imagen": "https://img.pokemondb.net/artwork/annihilape.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Lucha","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -923,7 +923,7 @@
           "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Hada","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
