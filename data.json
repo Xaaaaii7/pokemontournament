@@ -4,9 +4,9 @@
       "nombre": "Jordi",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/blckbelt.png",
       "wins": 2,
-      "lose": 4,
+      "lose": 6,
       "draw":0,
-      "battles": 6,
+      "battles": 8,
       "equipo": [
         {
           "nombre": "Quaquaval",
@@ -303,10 +303,10 @@
     "josep": {
       "nombre": "Josep",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/youngster.png",
-      "wins": 4,
+      "wins": 6,
       "lose": 1,
       "draw":1,
-      "battles": 6,
+      "battles": 8,
       "equipo": [
         {
           "nombre": "Skeledirge",
@@ -633,10 +633,10 @@
     "eudald": {
       "nombre": "Eudald",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png",
-      "wins": 2,
-      "lose": 3,
+      "wins": 3,
+      "lose": 4,
       "draw":1,
-      "battles": 6,
+      "battles": 8,
       "equipo": [
         {
           "nombre": "Meowscarada",
