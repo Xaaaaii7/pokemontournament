@@ -136,7 +136,7 @@
           "battles": 4,
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
-          "deathsAdventure": 1
+          "deathsAdventure": 2
         },
         {
           "nombre": "Drifblim",
