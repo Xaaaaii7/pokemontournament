@@ -296,7 +296,7 @@
           "battles": 2,
           "ataques": ["Fantasma","Veneno"],
           "inscrito": true,
-          "deathsAdventure": 0
+          "deathsAdventure": 1
         },
         {
           "nombre": "Sableye",
