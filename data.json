@@ -245,7 +245,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Acero"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -925,7 +925,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Hielo"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
