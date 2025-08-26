@@ -35,7 +35,7 @@
           "deaths": 4,
           "battles": 4,
           "ataques": ["Normal"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 1
         },
         {
@@ -75,7 +75,7 @@
           "deaths": 2,
           "battles": 2,
           "ataques": ["Hada","Acero"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -85,7 +85,7 @@
           "deaths": 4,
           "battles": 4,
           "ataques": ["Hada"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -115,7 +115,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Agua"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -179,8 +179,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Noibat",
-          "imagen": "https://img.pokemondb.net/artwork/noibat.jpg",
+          "nombre": "Noivern",
+          "imagen": "https://img.pokemondb.net/artwork/noivern.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -215,7 +215,7 @@
           "deaths": 0,
           "battles": 1,
           "ataques": ["Agua","Volador"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -285,7 +285,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua","Veneno"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -325,12 +325,12 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Roca","Veneno"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
-          "nombre": "Honchkrow",
-          "imagen": "https://img.pokemondb.net/artwork/honchkrow.jpg",
+          "nombre": "Murkrow",
+          "imagen": "https://img.pokemondb.net/artwork/murkrow.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -505,7 +505,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -615,7 +615,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Fantasma"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 1
         },
         {
@@ -665,6 +665,46 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Clodsire",
+          "imagen": "https://img.pokemondb.net/artwork/clodsire.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Veneno","Tierra"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Mudsdale",
+          "imagen": "https://img.pokemondb.net/artwork/mudsdale.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Tierra"],
+          "inscrito": true,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gumshoos",
+          "imagen": "https://img.pokemondb.net/artwork/gumshoos.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Rufflet",
+          "imagen": "https://img.pokemondb.net/artwork/rufflet.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal","Volador"],
           "inscrito": false,
           "deathsAdventure": 0
         }
@@ -745,7 +785,7 @@
           "deaths": 3,
           "battles": 3,
           "ataques": ["Fuego","Fantasma"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -755,7 +795,7 @@
           "deaths": 5,
           "battles": 5,
           "ataques": ["Roca"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -815,7 +855,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Planta","Dragon"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         {
@@ -935,7 +975,7 @@
           "deaths": 1,
           "battles": 2,
           "ataques": ["Tierra","Siniestro"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         { 
@@ -949,13 +989,13 @@
           "deathsAdventure": 0
         },
         { 
-          "nombre": "Gabite",
-          "imagen": "https://img.pokemondb.net/artwork/gabite.jpg",
+          "nombre": "Garchomp",
+          "imagen": "https://img.pokemondb.net/artwork/garchomp.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Tierra","Dragon"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         { 
@@ -975,7 +1015,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Agua"],
-          "inscrito": true,
+          "inscrito": false,
           "deathsAdventure": 0
         },
         { 
@@ -995,7 +1035,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Psiquico","Lucha"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -1005,7 +1045,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Dragon","Volador"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
@@ -1015,7 +1055,7 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hielo"],
-          "inscrito": false,
+          "inscrito": true,
           "deathsAdventure": 0
         },
         {
