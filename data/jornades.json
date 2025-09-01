@@ -251,6 +251,84 @@
           ]
         }
       ]
+    },
+    {
+      "numero": 4,
+      "nom": "Mitja Temporada",
+      "combats": [
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Josep",
+          "guanyador": "Ningu",
+          "data": "01/09/2025",
+          "hora": "22:00",
+          "youtube": "https://www.youtube.com/embed/lWiLllwns-g",
+          "equips": {
+            "Jordi": ["Magnezone","Sandaconda","Zoroark","Dachsbun","Hawlucha","Gengar"],
+            "Josep": ["Gyarados","Espeon","Tinkaton","Tsareena","Skeledirge","Bellibolt"]
+          },
+          "bans": {
+            "Jordi": ["Corviknight"],
+            "Josep": ["Mudsdale"]
+          },
+          "muertes": [
+            "Magnezone(Jordi) 💀 Gyarados(Josep)",
+            "Gengar(Jordi) 💀 Gyarados(Josep)",
+            "Gyarados(Josep) 💀 Zoroark(Jordi)",
+            "Bellibolt(Josep) 💀 Zoroark(Jordi)",
+            "Zoroark(Jordi) 💀 Tinkaton(Josep)"
+          ]
+        },
+        {
+          "jugador1": "Jordi",
+          "jugador2": "Eudald",
+          "guanyador": "Eudald",
+          "data": "01/09/2025",
+          "hora": "22:30",
+          "youtube": "https://www.youtube.com/embed/asEsltqhG8g",
+          "equips": {
+            "Jordi": ["Magnezone","Sandaconda","Quaquaval","Dachsbun","Hawlucha","Gengar"],
+            "Eudald": ["Annihilape","Garganacl","Krookodile","Gyarados","Bellibolt","Grimmsnarl"]
+          },
+          "bans": {
+            "Jordi": ["Corviknight"],
+            "Eudald": ["Garchomp"]
+          },
+          "muertes": [
+            "Gengar(Jordi) 💀 Gyarados(Eudald)",
+            "Hawlucha(Jordi) 💀 Gyarados(Eudald)",
+            "Gyarados(Eudald) 💀 Sandaconda(Jordi)",
+            "Bellibolt(Eudald) 💀 Quaquaval(Jordi)",
+            "Quaquaval(Jordi) 💀 Krokodile(Eudald)",
+            "Sandaconda(Jordi) 💀 Krokodile(Eudald)",
+            "Dachsbun(Jordi) 💀 Krokodile(Eudald)",
+            "Magnezone(Jordi) 💀 Krokodile(Eudald)"
+          ]
+        },
+        {
+          "jugador1": "Josep",
+          "jugador2": "Eudald",
+          "guanyador": "Josep",
+          "data": "19/08/2025",
+          "hora": "23:00",
+          "youtube": "https://www.youtube.com/embed/kQSzjkwSf5M",
+          "equips": {
+            "Josep": ["Pawmot","Espeon","Tinkaton","Tsareena","Garganacl","Grimmsnarl"],
+            "Eudald": ["Annihilape","Garganacl","Krookodile","Gyarados","Bellibolt","Grimmsnarl"]
+          },
+          "bans": {
+            "Josep": ["Gyarados"],
+            "Eudald": ["Meowscarada"]
+          },
+          "muertes": [
+            "Grimmsnarl(Eudald) 💀 Tinkaton(Josep)",
+            "Krokodile(Eudald) 💀 Tsareena(Josep)",
+            "Annihilape(Eudald) 💀 Tsareena(Josep)",
+            "Gyarados(Eudald) 💀 Grimmsnarl(Josep)",
+            "Grimmsnarl(Josep) 💀 Garganacl(Eudald)"
+          ]
+        }
+      ]
     }
   ]
 }
