@@ -253,8 +253,8 @@
       ]
     },
     {
-      "numero": 4,
-      "nom": "Mitja Temporada",
+      "numero": 5,
+      "nom": "5na Jornada de la Temporada",
       "combats": [
         {
           "jugador1": "Jordi",
@@ -313,11 +313,11 @@
           "hora": "23:00",
           "youtube": "https://www.youtube.com/embed/kQSzjkwSf5M",
           "equips": {
-            "Josep": ["Toedscruel","Espeon","Skeledirge","Tsareena","Mudsdale","Grimmsnarl"],
+            "Josep": ["Toedscruel","Espeon","Skeledirge","Gyarados","Mudsdale","Grimmsnarl"],
             "Eudald": ["Cryogonal","Garganacl","Garchomp","Gyarados","Bellibolt","Gallade"]
           },
           "bans": {
-            "Josep": ["Gyarados"],
+            "Josep": ["Garganacl"],
             "Eudald": ["Meowscarada"]
           },
           "muertes": [
