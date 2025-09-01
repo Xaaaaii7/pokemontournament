@@ -4,9 +4,9 @@
       "nombre": "Jordi",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/blckbelt.png",
       "wins": 2,
-      "lose": 6,
-      "draw":0,
-      "battles": 8,
+      "lose": 7,
+      "draw":1,
+      "battles": 10,
       "equipo": [
         {
           "nombre": "Quaquaval",
@@ -111,9 +111,9 @@
         {
           "nombre": "Barraskewda",
           "imagen": "https://img.pokemondb.net/artwork/barraskewda.jpg",
-          "kills": 0,
-          "deaths": 1,
-          "battles": 2,
+          "kills": 1,
+          "deaths": 3,
+          "battles": 4,
           "ataques": ["Agua"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -131,9 +131,9 @@
         {
           "nombre": "Hawlucha",
           "imagen": "https://img.pokemondb.net/artwork/hawlucha.jpg",
-          "kills": 2,
-          "deaths": 2,
-          "battles": 4,
+          "kills": 3,
+          "deaths": 3,
+          "battles": 6,
           "ataques": ["Lucha","Volador"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -171,9 +171,9 @@
         {
           "nombre": "Sandaconda",
           "imagen": "https://img.pokemondb.net/artwork/sandaconda.jpg",
-          "kills": 1,
-          "deaths": 1,
-          "battles": 2,
+          "kills": 2,
+          "deaths": 2,
+          "battles": 4,
           "ataques": ["Tierra"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -192,8 +192,8 @@
           "nombre": "Magnezone",
           "imagen": "https://img.pokemondb.net/artwork/magnezone.jpg",
           "kills": 2,
-          "deaths": 3,
-          "battles": 4,
+          "deaths": 4,
+          "battles": 6,
           "ataques": ["Electrico","Acero"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -291,9 +291,9 @@
         {
           "nombre": "Gengar",
           "imagen": "https://img.pokemondb.net/artwork/gengar.jpg",
-          "kills": 0,
-          "deaths": 2,
-          "battles": 2,
+          "kills": 1,
+          "deaths": 4,
+          "battles": 4,
           "ataques": ["Fantasma","Veneno"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -322,8 +322,8 @@
           "nombre": "Glimmora",
           "imagen": "https://img.pokemondb.net/artwork/glimmora.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 2,
+          "battles": 2,
           "ataques": ["Roca","Veneno"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -343,17 +343,17 @@
     "josep": {
       "nombre": "Josep",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/youngster.png",
-      "wins": 6,
+      "wins": 7,
       "lose": 1,
-      "draw":1,
-      "battles": 8,
+      "draw":2,
+      "battles": 10,
       "equipo": [
         {
           "nombre": "Skeledirge",
           "imagen": "https://img.pokemondb.net/artwork/skeledirge.jpg",
           "kills": 4,
-          "deaths": 4,
-          "battles": 5,
+          "deaths": 5,
+          "battles": 6,
           "ataques": ["Fuego","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -411,9 +411,9 @@
         {
           "nombre": "Espeon",
           "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
-          "kills": 1,
+          "kills": 2,
           "deaths": 0,
-          "battles": 5,
+          "battles": 7,
           "ataques": ["Psiquico"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -423,7 +423,7 @@
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 1,
           "deaths": 1,
-          "battles": 5,
+          "battles": 6,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -442,8 +442,8 @@
           "nombre": "Toedscruel",
           "imagen": "https://img.pokemondb.net/artwork/toedscruel.jpg",
           "kills": 1,
-          "deaths": 2,
-          "battles": 2,
+          "deaths": 3,
+          "battles": 3,
           "ataques": ["Tierra","Planta"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -461,9 +461,9 @@
         {
           "nombre": "Garganacl",
           "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
-          "kills": 6,
+          "kills": 7,
           "deaths": 1,
-          "battles": 5,
+          "battles": 6,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -473,7 +473,7 @@
           "imagen": "https://img.pokemondb.net/artwork/tsareena.jpg",
           "kills": 5,
           "deaths": 0,
-          "battles": 4,
+          "battles": 5,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -511,9 +511,9 @@
         {
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
-          "kills": 5,
+          "kills": 11,
           "deaths": 1,
-          "battles": 2,
+          "battles": 4,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -602,8 +602,8 @@
           "nombre": "Grimmsnarl",
           "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
           "kills": 1,
-          "deaths": 1,
-          "battles": 1,
+          "deaths": 2,
+          "battles": 3,
           "ataques": ["Hada","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 2
@@ -671,9 +671,9 @@
         {
           "nombre": "Clodsire",
           "imagen": "https://img.pokemondb.net/artwork/clodsire.jpg",
-          "kills": 0,
+          "kills": 1,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Veneno","Tierra"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -683,7 +683,7 @@
           "imagen": "https://img.pokemondb.net/artwork/mudsdale.jpg",
           "kills": 0,
           "deaths": 0,
-          "battles": 0,
+          "battles": 1,
           "ataques": ["Tierra"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -713,17 +713,17 @@
     "eudald": {
       "nombre": "Eudald",
       "imagen": "https://img.pokemondb.net/sprites/trainers/normal/ace-trainer-m.png",
-      "wins": 3,
-      "lose": 4,
+      "wins": 4,
+      "lose": 5,
       "draw":1,
-      "battles": 8,
+      "battles": 10,
       "equipo": [
         {
           "nombre": "Meowscarada",
           "imagen": "https://img.pokemondb.net/artwork/meowscarada.jpg",
-          "kills": 8,
-          "deaths": 4,
-          "battles": 5,
+          "kills": 9,
+          "deaths": 5,
+          "battles": 6,
           "ataques": ["Planta"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -822,8 +822,8 @@
           "nombre": "Bellibolt",
           "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
           "kills": 2,
-          "deaths": 2,
-          "battles": 4,
+          "deaths": 4,
+          "battles": 6,
           "ataques": ["Electrico"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -892,8 +892,8 @@
           "nombre": "Garganacl",
           "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
           "kills": 2,
-          "deaths": 2,
-          "battles": 4,
+          "deaths": 3,
+          "battles": 6,
           "ataques": ["Roca"],
           "inscrito": true,
           "deathsAdventure": 1
@@ -911,9 +911,9 @@
         {
           "nombre": "Gyarados",
           "imagen": "https://img.pokemondb.net/artwork/gyarados.jpg",
-          "kills": 3,
-          "deaths": 4,
-          "battles": 4,
+          "kills": 7,
+          "deaths": 6,
+          "battles": 6,
           "ataques": ["Agua","Volador"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -983,7 +983,7 @@
           "imagen": "https://img.pokemondb.net/artwork/annihilape.jpg",
           "kills": 0,
           "deaths": 1,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Lucha","Fantasma"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -992,8 +992,8 @@
           "nombre": "Garchomp",
           "imagen": "https://img.pokemondb.net/artwork/garchomp.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Tierra","Dragon"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -1003,7 +1003,7 @@
           "imagen": "https://img.pokemondb.net/artwork/grimmsnarl.jpg",
           "kills": 0,
           "deaths": 1,
-          "battles": 2,
+          "battles": 3,
           "ataques": ["Hada","Siniestro"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -1031,9 +1031,9 @@
         {
           "nombre": "Gallade",
           "imagen": "https://img.pokemondb.net/artwork/gallade.jpg",
-          "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "kills": 2,
+          "deaths": 1,
+          "battles": 2,
           "ataques": ["Psiquico","Lucha"],
           "inscrito": true,
           "deathsAdventure": 0
@@ -1052,8 +1052,8 @@
           "nombre": "Cryogonal",
           "imagen": "https://img.pokemondb.net/artwork/cryogonal.jpg",
           "kills": 0,
-          "deaths": 0,
-          "battles": 0,
+          "deaths": 1,
+          "battles": 1,
           "ataques": ["Hielo"],
           "inscrito": true,
           "deathsAdventure": 0
