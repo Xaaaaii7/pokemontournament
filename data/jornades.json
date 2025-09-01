@@ -272,11 +272,10 @@
             "Josep": ["Mudsdale"]
           },
           "muertes": [
-            "Magnezone(Jordi) 💀 Gyarados(Josep)",
-            "Gengar(Jordi) 💀 Gyarados(Josep)",
-            "Gyarados(Josep) 💀 Zoroark(Jordi)",
-            "Bellibolt(Josep) 💀 Zoroark(Jordi)",
-            "Zoroark(Jordi) 💀 Tinkaton(Josep)"
+            "Grimmsnarl(Josep) 💀 Sandaconda(Josep)",
+            "Glimmora(Jordi) 💀 Gyarados(Josep)",
+            "Barraskewda(Jordi) 💀 Garganacl(Josep)",
+            "Gengar(Jordi) 💀 Clodsire(Josep)"
           ]
         },
         {
@@ -295,21 +294,22 @@
             "Eudald": ["Garchomp"]
           },
           "muertes": [
-            "Gengar(Jordi) 💀 Gyarados(Eudald)",
-            "Hawlucha(Jordi) 💀 Gyarados(Eudald)",
-            "Gyarados(Eudald) 💀 Sandaconda(Jordi)",
-            "Bellibolt(Eudald) 💀 Quaquaval(Jordi)",
-            "Quaquaval(Jordi) 💀 Krokodile(Eudald)",
-            "Sandaconda(Jordi) 💀 Krokodile(Eudald)",
-            "Dachsbun(Jordi) 💀 Krokodile(Eudald)",
-            "Magnezone(Jordi) 💀 Krokodile(Eudald)"
+            "Magnezone(Jordi) 💀 Gyarados(Eudald)",
+            "Glimmora(Jordi) 💀 Gyarados(Eudald)",
+            "Gyarados(Eudald) 💀 Barraskewda(Jordi)",
+            "Barraskewda(Jordi) 💀 Gallade(Eudald)",
+            "Bellibolt(Eudald) 💀 Gengar(Jordi)",
+            "Gengar(Jordi) 💀 Meowscarada(Eudald)",
+            "Meowscarada(Eudald) 💀 Hawlucha(Jordi)",
+            "Hawlucha(Jordi) 💀 Gallade(Eudald)",
+            "Sandaconda (Jordi) 💀 Gallade(Eudald)"
           ]
         },
         {
           "jugador1": "Josep",
           "jugador2": "Eudald",
           "guanyador": "Josep",
-          "data": "19/08/2025",
+          "data": "01/09/2025",
           "hora": "23:00",
           "youtube": "https://www.youtube.com/embed/QXZ_lIqd2n8",
           "equips": {
@@ -321,11 +321,14 @@
             "Eudald": ["Meowscarada"]
           },
           "muertes": [
-            "Grimmsnarl(Eudald) 💀 Tinkaton(Josep)",
-            "Krokodile(Eudald) 💀 Tsareena(Josep)",
-            "Annihilape(Eudald) 💀 Tsareena(Josep)",
-            "Gyarados(Eudald) 💀 Grimmsnarl(Josep)",
-            "Grimmsnarl(Josep) 💀 Garganacl(Eudald)"
+            "Garganacl(Eudald) 💀 Espeon(Josep)",
+            "Skeledirge(Josep) 💀 Gyarados(Eudald)",
+            "Toedscruel(Josep) 💀 Gyarados(Eudald)",
+            "Cryogonal(Eudald) 💀 Gyarados (Josep)",
+            "Bellibolt (Eudald) 💀 Gyarados (Josep)",
+            "Gyarados (Eudald) 💀 Gyarados (Josep)",
+            "Gallade (Eudald) 💀 Gyarados (Josep)",
+            "Garchomp (Eudald) 💀 Gyarados (Josep)"
           ]
         }
       ]
