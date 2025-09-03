@@ -29,7 +29,7 @@
       fetch('./smogon_tiers.json').then(r => r.json())
     ]);
 
-    const tierOrder = ['Uber', 'OU', 'UU', 'RU', 'NU', 'PU', 'LC', 'Desconocido'];
+    const tierOrder = ['Uber', 'OU','UUBL', 'UU', 'RU', 'NU', 'PU','NFE', 'LC', 'Desconocido'];
     const pokemons = {};
 
     Object.values(data.entrenadores).forEach(entrenador => {
