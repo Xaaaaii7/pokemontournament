@@ -56,7 +56,11 @@
           ${grouped[t].map(p => `
             <li>
               <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
-              <span class="icons">${p.nombre}</span>
+              <span class="icons">
+            <a href="https://www.smogon.com/dex/sv/pokemon/${p.nombre.toLowerCase()}/" target="_blank">
+              ${p.nombre}
+            </a>
+          </span>
             </li>
           `).join('')}
         </ul>
