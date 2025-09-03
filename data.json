@@ -1247,6 +1247,46 @@
           "ataques": ["Planta","Veneno"],
           "inscrito": false,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Dragonite",
+          "imagen": "https://img.pokemondb.net/artwork/dragonite.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Eiscue",
+          "imagen": "https://img.pokemondb.net/artwork/eiscue.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gumshoos",
+          "imagen": "https://img.pokemondb.net/artwork/gumshoos.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Masquerain",
+          "imagen": "https://img.pokemondb.net/artwork/masquerain.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     }
