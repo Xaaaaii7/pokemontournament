@@ -337,6 +337,66 @@
           "ataques": ["Siniestro","Volador"],
           "inscrito": false,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Altaria",
+          "imagen": "https://img.pokemondb.net/artwork/altaria.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Indeedee",
+          "imagen": "https://img.pokemondb.net/artwork/indeedee.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico","Normal"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Espeon",
+          "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Scizor",
+          "imagen": "https://img.pokemondb.net/artwork/scizor.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Avalugg",
+          "imagen": "https://img.pokemondb.net/artwork/avalugg.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lurantis",
+          "imagen": "https://img.pokemondb.net/artwork/lurantis.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
@@ -699,12 +759,62 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Rufflet",
-          "imagen": "https://img.pokemondb.net/artwork/rufflet.jpg",
+          "nombre": "Braviary",
+          "imagen": "https://img.pokemondb.net/artwork/braviary.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
           "ataques": ["Normal","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Applin",
+          "imagen": "https://img.pokemondb.net/artwork/applin.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Dragon"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Heracross",
+          "imagen": "https://img.pokemondb.net/artwork/heracross.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Toxicroak",
+          "imagen": "https://img.pokemondb.net/artwork/toxicroak.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Qwilfish",
+          "imagen": "https://img.pokemondb.net/artwork/qwilfish.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Raichu",
+          "imagen": "https://img.pokemondb.net/artwork/raichu.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico"],
           "inscrito": false,
           "deathsAdventure": 0
         }
@@ -1085,6 +1195,56 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Hielo"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Braviary",
+          "imagen": "https://img.pokemondb.net/artwork/braviary.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Falinks",
+          "imagen": "https://img.pokemondb.net/artwork/falinks.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Espeon",
+          "imagen": "https://img.pokemondb.net/artwork/espeon.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Psiquico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Kilowattrel",
+          "imagen": "https://img.pokemondb.net/artwork/kilowattrel.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Amoonguss",
+          "imagen": "https://img.pokemondb.net/artwork/amoonguss.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Veneno"],
           "inscrito": false,
           "deathsAdventure": 0
         }
