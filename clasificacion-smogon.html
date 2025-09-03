@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pokemon Torneig - Classificació per Tiers</title>
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    select[multiple] { width: 150px; height: 5em; vertical-align: middle; }
+  </style>
 </head>
 <body>
 <header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
@@ -14,6 +17,19 @@
 
 <div class="leaderboard" id="leaderboard">
   <div class="title">📊 Classificació per Tiers (Smogon SV)</div>
+
+  <!-- Controles de filtrado -->
+  <div style="text-align:center; margin-bottom:1rem;">
+    <label style="margin-right:1rem;">
+      <input type="checkbox" id="soloInscritos" /> Solo inscritos
+    </label>
+
+    <label style="margin-right:0.5rem;">Entrenador(es):</label>
+    <select id="entrenadorFiltro" multiple></select>
+
+    <button id="btnMostrar" style="margin-left:1rem;">Aplicar</button>
+  </div>
+
   <div id="tiers-container">Carregant...</div>
 </div>
 
@@ -23,33 +39,84 @@
 </script>
 
 <script type="module">
-  async function loadData() {
+  let DATA = null;
+  let TIERS = null;
+  let ENTRENADORES = [];
+
+  const tierOrder = ['Uber','OU','UUBL','UU','RU','NU','PUBL','PU','ZU','NFE','LC','Desconocido'];
+
+  async function loadAll() {
     const [data, tiers] = await Promise.all([
       fetch('./data.json').then(r => r.json()),
       fetch('./smogon_tiers.json').then(r => r.json())
     ]);
+    DATA = data;
+    TIERS = tiers;
+    ENTRENADORES = Object.values(DATA.entrenadores || {});
+    rellenarEntrenadores();
+    render();
+  }
 
-    const tierOrder = ['Uber', 'OU','UUBL', 'UU', 'RU', 'NU','PUBL' ,'PU','ZU','NFE', 'LC', 'Desconocido'];
-    const pokemons = {};
+  function rellenarEntrenadores() {
+    const select = document.getElementById('entrenadorFiltro');
+    select.innerHTML = '';
+    ENTRENADORES.forEach(e => {
+      const opt = document.createElement('option');
+      opt.value = e.nombre;
+      opt.textContent = e.nombre;
+      select.appendChild(opt);
+    });
+  }
 
-    Object.values(data.entrenadores).forEach(entrenador => {
-      entrenador.equipo.forEach(p => {
-        if (!pokemons[p.nombre]) {
-          pokemons[p.nombre] = { nombre: p.nombre, imagen: p.imagen };
-        }
-      });
+  function getSeleccionados() {
+    return Array.from(document.getElementById('entrenadorFiltro').selectedOptions).map(o => o.value);
+  }
+
+  function buildPokemonsFiltrados() {
+    const soloInscritos = document.getElementById('soloInscritos').checked;
+    const seleccionados = new Set(getSeleccionados());
+    const filtraPorEntrenador = seleccionados.size > 0;
+
+    // nombres permitidos por filtro de entrenadores/inscripción
+    const permitidos = new Map(); // nombre -> { nombre, imagen }
+
+    ENTRENADORES.forEach(ent => {
+      if (!filtraPorEntrenador || seleccionados.has(ent.nombre)) {
+        (ent.equipo || []).forEach(p => {
+          if (!soloInscritos || p.inscrito) {
+            if (!permitidos.has(p.nombre)) {
+              permitidos.set(p.nombre, { nombre: p.nombre, imagen: p.imagen });
+            }
+          }
+        });
+      }
     });
 
+    return Array.from(permitidos.values());
+  }
+
+  function render() {
+    const container = document.getElementById('tiers-container');
+    const pokemons = buildPokemonsFiltrados();
+
+    if (pokemons.length === 0) {
+      container.innerHTML = `<p style="text-align:center;">⚠️ No hi ha Pokémon que compleixin els criteris.</p>`;
+      return;
+    }
+
+    // Agrupar por tier (según smogon_tiers.json)
     const grouped = {};
-    Object.values(pokemons).forEach(p => {
-      const tier = tiers[p.nombre] || 'Desconocido';
+    pokemons.forEach(p => {
+      const tier = TIERS[p.nombre] || 'Desconocido';
       if (!grouped[tier]) grouped[tier] = [];
       grouped[tier].push(p);
     });
 
-    const container = document.getElementById('tiers-container');
+    // Orden alfabético dentro de cada tier (opcional)
+    Object.values(grouped).forEach(arr => arr.sort((a,b) => a.nombre.localeCompare(b.nombre, 'es')));
+
     container.innerHTML = tierOrder
-      .filter(t => grouped[t])
+      .filter(t => grouped[t] && grouped[t].length)
       .map(t => `
         <h2>${t}</h2>
         <ul class="compact-list">
@@ -57,17 +124,20 @@
             <li>
               <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
               <span class="icons">
-            <a href="https://www.smogon.com/dex/sv/pokemon/${p.nombre.toLowerCase()}/" target="_blank">
-              ${p.nombre}
-            </a>
-          </span>
+                <a href="https://www.smogon.com/dex/sv/pokemon/${p.nombre.toLowerCase()}/" target="_blank" rel="noopener">
+                  ${p.nombre}
+                </a>
+              </span>
             </li>
           `).join('')}
         </ul>
-      `).join('');
+      `).join('') || `<p style="text-align:center;">No hi ha resultats per als filtres actuals.</p>`;
   }
 
-  document.addEventListener('DOMContentLoaded', loadData);
+  document.addEventListener('DOMContentLoaded', () => {
+    loadAll();
+    document.getElementById('btnMostrar').addEventListener('click', render);
+  });
 </script>
 </body>
 </html>
