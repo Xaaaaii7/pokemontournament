@@ -22,7 +22,9 @@ export function renderNav(currentPage = '') {
         { href: "jornades.html", text: "Jornades" },
         {
             text: "Tests",
-            subItems: [ { href: "clasificacion-stat.html", text: "Stats"}
+            subItems: [
+                { href: "clasificacion-stat.html", text: "Stats" },
+                { href: "clasificacion-smogon.html", text: "Tiers" }
             ]
         }
 

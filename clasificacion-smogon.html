@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pokemon Torneig - Classificació per Tiers</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header style="text-align:center; padding:1rem; background:#fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  <img src="images.jpeg" alt="Pokémon Escarlata y Púrpura" style="max-width:100%; height:auto; border-radius:12px;" />
+</header>
+<nav id="main-nav"></nav>
+
+<div class="leaderboard" id="leaderboard">
+  <div class="title">📊 Classificació per Tiers (Smogon SV)</div>
+  <div id="tiers-container">Carregant...</div>
+</div>
+
+<script type="module">
+  import { setupNav } from './nav-component.js';
+  document.addEventListener('DOMContentLoaded', setupNav);
+</script>
+
+<script type="module">
+  async function loadData() {
+    const [data, tiers] = await Promise.all([
+      fetch('./data.json').then(r => r.json()),
+      fetch('./smogon_tiers.json').then(r => r.json())
+    ]);
+
+    const tierOrder = ['Uber', 'OU', 'UU', 'RU', 'NU', 'PU', 'LC', 'Desconocido'];
+    const pokemons = {};
+
+    Object.values(data.entrenadores).forEach(entrenador => {
+      entrenador.equipo.forEach(p => {
+        if (!pokemons[p.nombre]) {
+          pokemons[p.nombre] = { nombre: p.nombre, imagen: p.imagen };
+        }
+      });
+    });
+
+    const grouped = {};
+    Object.values(pokemons).forEach(p => {
+      const tier = tiers[p.nombre] || 'Desconocido';
+      if (!grouped[tier]) grouped[tier] = [];
+      grouped[tier].push(p);
+    });
+
+    const container = document.getElementById('tiers-container');
+    container.innerHTML = tierOrder
+      .filter(t => grouped[t])
+      .map(t => `
+        <h2>${t}</h2>
+        <ul class="compact-list">
+          ${grouped[t].map(p => `
+            <li>
+              <img src="${p.imagen}" alt="${p.nombre}" title="${p.nombre}">
+              <span class="icons">${p.nombre}</span>
+            </li>
+          `).join('')}
+        </ul>
+      `).join('');
+  }
+
+  document.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body>
+</html>
