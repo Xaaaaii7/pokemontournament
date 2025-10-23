@@ -397,6 +397,96 @@
           "ataques": ["Planta"],
           "inscrito": false,
           "deathsAdventure": 0
+        },
+        {
+          "nombre": "Bellibolt",
+          "imagen": "https://img.pokemondb.net/artwork/bellibolt.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Camerupt",
+          "imagen": "https://img.pokemondb.net/artwork/camerupt.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Tierra"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Garganacl",
+          "imagen": "https://img.pokemondb.net/artwork/garganacl.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Roca"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Staraptor",
+          "imagen": "https://img.pokemondb.net/artwork/staraptor.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Normal","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Gliscor",
+          "imagen": "https://img.pokemondb.net/artwork/gurdurr.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Tierra","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Hydrapple",
+          "imagen": "https://img.pokemondb.net/artwork/hydrapple.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Dragon","Planta"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Victreebel",
+          "imagen": "https://img.pokemondb.net/artwork/victreebel.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Dusknoir",
+          "imagen": "https://img.pokemondb.net/artwork/dusknoir.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Basculin",
+          "imagen": "https://img.pokemondb.net/artwork/basculin.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
         }
       ]
     },
@@ -649,8 +739,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Sliggoo",
-          "imagen": "https://img.pokemondb.net/artwork/sliggoo.jpg",
+          "nombre": "Goodra",
+          "imagen": "https://img.pokemondb.net/artwork/goodra.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -699,8 +789,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Snover",
-          "imagen": "https://img.pokemondb.net/artwork/snover.jpg",
+          "nombre": "Abomasnow",
+          "imagen": "https://img.pokemondb.net/artwork/abomasnow.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -815,6 +905,96 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Yanmega",
+          "imagen": "https://img.pokemondb.net/artwork/gurdurr.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Luxray",
+          "imagen": "https://img.pokemondb.net/artwork/luxray.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Electrico"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Poliwhirl",
+          "imagen": "https://img.pokemondb.net/artwork/poliwhirl.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Chandelure",
+          "imagen": "https://img.pokemondb.net/artwork/chandelure.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Fantasma"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Swanna",
+          "imagen": "https://img.pokemondb.net/artwork/swanna.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lurantis",
+          "imagen": "https://img.pokemondb.net/artwork/lurantis.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Ting-Lu",
+          "imagen": "https://img.pokemondb.net/artwork/ting-lu.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Tierra"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Coalossal",
+          "imagen": "https://img.pokemondb.net/artwork/coalossal.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Roca"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Krookodile",
+          "imagen": "https://img.pokemondb.net/artwork/krookodile.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Tierra"],
           "inscrito": false,
           "deathsAdventure": 0
         }
@@ -1285,6 +1465,96 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Bicho","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Camerupt",
+          "imagen": "https://img.pokemondb.net/artwork/camerupt.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Tierra"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Kingambit",
+          "imagen": "https://img.pokemondb.net/artwork/kingambit.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Siniestro","Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Ferropolilla",
+          "imagen": "https://img.pokemondb.net/artwork/ferropolilla.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Fuego","Veneno"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Conkeldurr",
+          "imagen": "https://img.pokemondb.net/artwork/conkeldurr.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Ludicolo",
+          "imagen": "https://img.pokemondb.net/artwork/ludicolo.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Planta","Agua"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Yanmega",
+          "imagen": "https://img.pokemondb.net/artwork/yanmega.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lucario",
+          "imagen": "https://img.pokemondb.net/artwork/lucario.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha","Acero"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Cramorant",
+          "imagen": "https://img.pokemondb.net/artwork/cramorant.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Agua","Volador"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Mamoswine",
+          "imagen": "https://img.pokemondb.net/artwork/mamoswine.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Hielo","Tierra"],
           "inscrito": false,
           "deathsAdventure": 0
         }
