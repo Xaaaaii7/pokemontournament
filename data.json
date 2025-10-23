@@ -1490,7 +1490,7 @@
         },
         {
           "nombre": "Ferropolilla",
-          "imagen": "https://img.pokemondb.net/artwork/ferropolilla.jpg",
+          "imagen": "https://img.pokemondb.net/artwork/ironmoth.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -1557,7 +1557,17 @@
           "ataques": ["Hielo","Tierra"],
           "inscrito": false,
           "deathsAdventure": 0
-        }
+        },
+        {
+          "nombre": "Wo-Chien",
+          "imagen": "https://img.pokemondb.net/artwork/wo-chien.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
       ]
     }
   }
