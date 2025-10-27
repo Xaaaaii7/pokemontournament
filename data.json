@@ -309,8 +309,8 @@
           "deathsAdventure": 0
         },
         {
-          "nombre": "Deino",
-          "imagen": "https://img.pokemondb.net/artwork/deino.jpg",
+          "nombre": "Hydreigon",
+          "imagen": "https://img.pokemondb.net/artwork/hydreigon.jpg",
           "kills": 0,
           "deaths": 0,
           "battles": 0,
@@ -1565,6 +1565,16 @@
           "deaths": 0,
           "battles": 0,
           "ataques": ["Lucha"],
+          "inscrito": false,
+          "deathsAdventure": 0
+        },
+        {
+          "nombre": "Lokix",
+          "imagen": "https://img.pokemondb.net/artwork/lokix.jpg",
+          "kills": 0,
+          "deaths": 0,
+          "battles": 0,
+          "ataques": ["Bicho","Siniestro"],
           "inscrito": false,
           "deathsAdventure": 0
         }
